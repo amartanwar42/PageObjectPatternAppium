@@ -1,0 +1,96 @@
+{
+    "services": [
+                 {
+                 "name": "GO-SEND",
+                 "token_type": "go-send"
+                 },
+                 {
+                 "name": "GO-FOOD",
+                 "token_type": "go-food"
+                 },
+                 {
+                 "name": "GO-MART",
+                 "token_type": "go-mart"
+                 },
+                 {
+                 "name": "GO-BOX",
+                 "token_type": "go-box"
+                 },
+                 {
+                 "name": "GO-CLEAN",
+                 "token_type": "go_clean"
+                 },
+                 {
+                 "name": "GO-MASSAGE",
+                 "token_type": "go_massage"
+                 },
+                 {
+                 "name": "GO-GLAM",
+                 "token_type": "go_glam"
+                 },
+                 {
+                 "name": "GO-TIX",
+                 "token_type": "go-tix"
+                 },
+                 {
+                 "name": "GO-SEND",
+                 "token_type": "go-kilat"
+                 },
+                 {
+                 "name": "GO-POINTS",
+                 "token_type": "go-points"
+                 },
+                 {
+                 "name": "GO-AUTO",
+                 "token_type": "go_auto"
+                 },
+                 {
+                 "name": "GO-MED",
+                 "token_type": "go_med"
+                 },
+                 {
+                 "name": "GO-PULSA",
+                 "token_type": "go_pulsa"
+                 },
+                 {
+                 "name": "GO-CAR",
+                 "token_type": "go_car"
+                 },
+                 {
+                 "name": "GO-BLUEBIRD",
+                 "token_type": "go_blue_bird"
+                 },
+                 {
+                 "name": "GO-SEND",
+                 "token_type": "go_kilat_new"
+                 },
+                 {
+                 "name": "GO-RIDE",
+                 "token_type": "go-ride"
+                 },
+                 {
+                 "name": "GO-BILLS",
+                 "token_type": "go-bills"
+                 },
+                 {
+                 "name": "GO-SHOP",
+                 "token_type": "shopping"
+                 },
+                 {
+                 "name": "GO-PAY",
+                 "token_type": "gopay_offline"
+                 },
+                 {
+                 "name": "GO-PAY",
+                 "token_type": "online_gateway"
+                 },
+                 {
+                 "name": "GO-DEALS",
+                 "token_type": "go-deals"
+                 },
+                 {
+                 "name": "G0-CAR (L)",
+                 "token_type": "go_car_xtra"
+                 }
+                 ]
+}

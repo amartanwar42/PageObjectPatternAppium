@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMediumPatched.ttf">
+            <string>NeoSansPro-MediumPatched</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="PromotionCardTableViewCell" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="122"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="121.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="checkMark" translatesAutoresizingMaskIntoConstraints="NO" id="D11-MR-pCQ">
+                        <rect key="frame" x="339" y="49.5" width="24" height="24"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="4HN-cW-D2h"/>
+                            <constraint firstAttribute="height" constant="24" id="kzf-oY-Klu"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cashbackIconBig" translatesAutoresizingMaskIntoConstraints="NO" id="Jm2-W5-LPm">
+                        <rect key="frame" x="16" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="9Nc-c5-vdp"/>
+                            <constraint firstAttribute="height" constant="40" id="MXj-Js-KgU"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7f3-FY-bPb">
+                        <rect key="frame" x="72" y="16" width="259" height="89.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="752" text="20% Cashback, Upto 10K" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rVU-ki-rOM">
+                                <rect key="frame" x="0.0" y="0.0" width="259" height="20.5"/>
+                                <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Expires: 21:00, 26 Fed 2018" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ZA-EV-qzj">
+                                <rect key="frame" x="0.0" y="28.5" width="259" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Min Purchase: Rp100K" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKK-Pi-hfy">
+                                <rect key="frame" x="0.0" y="51.5" width="259" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" text="Usage: 1 per user" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vin-JS-TXt">
+                                <rect key="frame" x="0.0" y="74" width="99" height="15.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="rVU-ki-rOM" firstAttribute="leading" secondItem="7f3-FY-bPb" secondAttribute="leading" id="0FX-3h-6IE"/>
+                            <constraint firstItem="Vin-JS-TXt" firstAttribute="leading" secondItem="7f3-FY-bPb" secondAttribute="leading" id="5B3-9Z-LiQ"/>
+                            <constraint firstItem="5ZA-EV-qzj" firstAttribute="leading" secondItem="7f3-FY-bPb" secondAttribute="leading" id="Bmz-nZ-CaL"/>
+                            <constraint firstItem="rVU-ki-rOM" firstAttribute="top" secondItem="7f3-FY-bPb" secondAttribute="top" id="Iag-p1-oJZ"/>
+                            <constraint firstAttribute="trailing" secondItem="rVU-ki-rOM" secondAttribute="trailing" id="Ig7-9c-UHN"/>
+                            <constraint firstItem="5ZA-EV-qzj" firstAttribute="top" secondItem="rVU-ki-rOM" secondAttribute="bottom" constant="8" id="NVp-eh-5eZ"/>
+                            <constraint firstAttribute="bottom" secondItem="Vin-JS-TXt" secondAttribute="bottom" id="TKH-gt-3Im"/>
+                            <constraint firstAttribute="trailing" secondItem="5ZA-EV-qzj" secondAttribute="trailing" id="XA1-XE-BFB"/>
+                            <constraint firstItem="IKK-Pi-hfy" firstAttribute="top" secondItem="5ZA-EV-qzj" secondAttribute="bottom" constant="8" id="arT-Gb-LXi"/>
+                            <constraint firstAttribute="trailing" secondItem="IKK-Pi-hfy" secondAttribute="trailing" id="hC4-tH-uNK"/>
+                            <constraint firstItem="IKK-Pi-hfy" firstAttribute="leading" secondItem="7f3-FY-bPb" secondAttribute="leading" id="oIn-Zp-8ph"/>
+                            <constraint firstItem="Vin-JS-TXt" firstAttribute="top" secondItem="IKK-Pi-hfy" secondAttribute="bottom" constant="8" id="rP9-l5-7ja"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7f3-FY-bPb" secondAttribute="bottom" priority="999" constant="16" id="2uO-X4-nNr"/>
+                    <constraint firstItem="Jm2-W5-LPm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="5Gt-tt-s8b"/>
+                    <constraint firstItem="7f3-FY-bPb" firstAttribute="leading" secondItem="Jm2-W5-LPm" secondAttribute="trailing" constant="16" id="CqV-A6-8Gc"/>
+                    <constraint firstItem="Jm2-W5-LPm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Mme-Ww-nkj"/>
+                    <constraint firstItem="7f3-FY-bPb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Stj-mX-AzR"/>
+                    <constraint firstItem="D11-MR-pCQ" firstAttribute="leading" secondItem="7f3-FY-bPb" secondAttribute="trailing" constant="8" id="Xa5-Kb-QUk"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Jm2-W5-LPm" secondAttribute="bottom" constant="16" id="cjv-P0-ET3"/>
+                    <constraint firstItem="D11-MR-pCQ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="jMo-WA-BVS"/>
+                    <constraint firstAttribute="trailing" secondItem="D11-MR-pCQ" secondAttribute="trailing" constant="12" id="qQK-oI-GQS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="expiresLabel" destination="5ZA-EV-qzj" id="8UY-yS-AeO"/>
+                <outlet property="minPurchaseAndExpiresConstraint" destination="arT-Gb-LXi" id="faH-ok-bru"/>
+                <outlet property="minPurchaseAndUsageConstraint" destination="rP9-l5-7ja" id="y3u-wo-LrQ"/>
+                <outlet property="minPurchaseLabel" destination="IKK-Pi-hfy" id="ICe-3T-Dit"/>
+                <outlet property="promoImageView" destination="Jm2-W5-LPm" id="q3O-T4-HCk"/>
+                <outlet property="selectionCheck" destination="D11-MR-pCQ" id="sY0-Lv-w4A"/>
+                <outlet property="selectionCheckWidthConstraint" destination="4HN-cW-D2h" id="56w-f8-7pM"/>
+                <outlet property="titleAndExpiresConstraint" destination="NVp-eh-5eZ" id="RVe-8b-NwT"/>
+                <outlet property="titleAndMaxAmountLabel" destination="rVU-ki-rOM" id="ovF-kq-p0I"/>
+                <outlet property="usageLabel" destination="Vin-JS-TXt" id="BnF-3a-GZt"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="66"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cashbackIconBig" width="40" height="40"/>
+        <image name="checkMark" width="28" height="28"/>
+    </resources>
+</document>

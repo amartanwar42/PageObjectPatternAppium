@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackInputView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="containerViewBottomConstraint" destination="ciF-J8-FzA" id="RhI-wg-fJG"/>
+                <outlet property="deleteButton" destination="VJ4-jV-wcp" id="hvS-LW-iJB"/>
+                <outlet property="submitButton" destination="xo9-nd-sau" id="ObD-1U-bcd"/>
+                <outlet property="textCounterLabel" destination="UFy-S9-vYA" id="I88-3o-eZ8"/>
+                <outlet property="textView" destination="Qav-76-zg2" id="JYb-iR-vUi"/>
+                <outlet property="titleLabel" destination="Ua7-GU-NF2" id="nuI-gT-RtD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="419"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNZ-Tk-es3" userLabel="Container View">
+                    <rect key="frame" x="0.0" y="0.0" width="379" height="419"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Any words for us?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ua7-GU-NF2">
+                            <rect key="frame" x="16" y="16" width="281" height="22"/>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="22"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzh-Mu-wTf">
+                            <rect key="frame" x="16" y="54" width="347" height="2"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="SaC-Lr-9TT"/>
+                            </constraints>
+                            <string key="text">-----------------------------------------------------------------------------------------------------------------------------------------------</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Qav-76-zg2">
+                            <rect key="frame" x="16" y="56" width="347" height="310"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ4-jV-wcp">
+                            <rect key="frame" x="313" y="15" width="50" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="Lvf-0e-kpx"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="12"/>
+                            <state key="normal" title="Delete">
+                                <color key="titleColor" red="0.81568627450980391" green="0.0078431372549019607" blue="0.10588235294117647" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="deleteButtonTapped:" destination="-1" eventType="touchUpInside" id="4NW-Pe-39o"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/160" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFy-S9-vYA">
+                            <rect key="frame" x="16" y="384" width="37" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xo9-nd-sau">
+                            <rect key="frame" x="300" y="380" width="63" height="27"/>
+                            <color key="backgroundColor" red="0.26666666666666666" green="0.6705882352941176" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="27" id="0db-bj-Wld"/>
+                                <constraint firstAttribute="width" constant="63" id="KgL-ds-nfy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="12"/>
+                            <state key="normal" title="SUBMIT">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="submitButtonTapped:" destination="-1" eventType="touchUpInside" id="Gc8-12-cVt"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9v-jH-aWJ">
+                            <rect key="frame" x="16" y="366" width="347" height="2"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="hpY-IU-8mX"/>
+                            </constraints>
+                            <string key="text">-----------------------------------------------------------------------------------------------------------------------------------------------</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <color key="textColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="UFy-S9-vYA" firstAttribute="leading" secondItem="GNZ-Tk-es3" secondAttribute="leading" constant="16" id="46I-vu-Tdl"/>
+                        <constraint firstAttribute="bottom" secondItem="Qav-76-zg2" secondAttribute="bottom" constant="53" id="4B9-Qx-Pp8"/>
+                        <constraint firstItem="Qav-76-zg2" firstAttribute="top" secondItem="dzh-Mu-wTf" secondAttribute="bottom" id="9iP-pA-TZC"/>
+                        <constraint firstItem="Ua7-GU-NF2" firstAttribute="leading" secondItem="GNZ-Tk-es3" secondAttribute="leading" constant="16" id="Gbm-PT-A6X"/>
+                        <constraint firstItem="Qav-76-zg2" firstAttribute="leading" secondItem="GNZ-Tk-es3" secondAttribute="leading" constant="16" id="JOO-U0-Odv"/>
+                        <constraint firstItem="VJ4-jV-wcp" firstAttribute="centerY" secondItem="Ua7-GU-NF2" secondAttribute="centerY" id="KGh-dr-H8c"/>
+                        <constraint firstAttribute="trailing" secondItem="VJ4-jV-wcp" secondAttribute="trailing" constant="16" id="LhW-s7-ujg"/>
+                        <constraint firstItem="w9v-jH-aWJ" firstAttribute="leading" secondItem="GNZ-Tk-es3" secondAttribute="leading" constant="16" id="MK7-6l-GkJ"/>
+                        <constraint firstItem="dzh-Mu-wTf" firstAttribute="leading" secondItem="GNZ-Tk-es3" secondAttribute="leading" constant="16" id="Q2R-tY-Yxz"/>
+                        <constraint firstAttribute="trailing" secondItem="xo9-nd-sau" secondAttribute="trailing" constant="16" id="RFl-2T-aiA"/>
+                        <constraint firstAttribute="bottom" secondItem="xo9-nd-sau" secondAttribute="bottom" constant="12" id="So1-U0-QTJ"/>
+                        <constraint firstItem="w9v-jH-aWJ" firstAttribute="top" secondItem="Qav-76-zg2" secondAttribute="bottom" id="TGV-sv-zPt"/>
+                        <constraint firstItem="Ua7-GU-NF2" firstAttribute="top" secondItem="GNZ-Tk-es3" secondAttribute="top" constant="16" id="UWl-fG-HZH"/>
+                        <constraint firstItem="dzh-Mu-wTf" firstAttribute="top" secondItem="Ua7-GU-NF2" secondAttribute="bottom" constant="16" id="Vgd-RJ-6kD"/>
+                        <constraint firstAttribute="trailing" secondItem="Qav-76-zg2" secondAttribute="trailing" constant="16" id="cEZ-0Y-v7T"/>
+                        <constraint firstAttribute="trailing" secondItem="w9v-jH-aWJ" secondAttribute="trailing" constant="16" id="fBn-AT-EZ0"/>
+                        <constraint firstAttribute="bottom" secondItem="UFy-S9-vYA" secondAttribute="bottom" constant="18" id="jHN-AT-GRA"/>
+                        <constraint firstItem="VJ4-jV-wcp" firstAttribute="leading" secondItem="Ua7-GU-NF2" secondAttribute="trailing" constant="16" id="wql-xf-uKB"/>
+                        <constraint firstAttribute="trailing" secondItem="dzh-Mu-wTf" secondAttribute="trailing" constant="16" id="zIA-px-vWX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="GNZ-Tk-es3" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="AKW-VB-38O"/>
+                <constraint firstItem="GNZ-Tk-es3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="KJz-ft-kZM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="GNZ-Tk-es3" secondAttribute="bottom" id="ciF-J8-FzA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GNZ-Tk-es3" secondAttribute="trailing" id="lLB-wp-fkL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="10" y="62"/>
+        </view>
+    </objects>
+</document>

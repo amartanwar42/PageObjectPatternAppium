@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+        <array key="NeoSansProMediumPatched.ttf">
+            <string>NeoSansPro-MediumPatched</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardListView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="addCardButton" destination="38H-Qz-KXa" id="1JR-oB-sPz"/>
+                <outlet property="cardListTableView" destination="NbJ-Lo-PG2" id="Wst-ZI-mlN"/>
+                <outlet property="titleLabel" destination="lma-Yt-96n" id="Fdl-TV-b4n"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="463"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change payment method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lma-Yt-96n">
+                    <rect key="frame" x="16" y="0.0" width="343" height="22"/>
+                    <accessibility key="accessibilityConfiguration" identifier="label_directDebit_changePaymentMethod_title"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="22"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NbJ-Lo-PG2">
+                    <rect key="frame" x="0.0" y="38" width="375" height="365"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fGn-On-tKH"/>
+                        <outlet property="delegate" destination="-1" id="xVN-BW-ioM"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38H-Qz-KXa">
+                    <rect key="frame" x="16" y="419" width="343" height="44"/>
+                    <accessibility key="accessibilityConfiguration" identifier="label_directDebit_addNewBCACard_button"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="M7I-wG-S9N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="14"/>
+                    <state key="normal" title="ADD NEW BCA DEBIT CARD"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lma-Yt-96n" secondAttribute="trailing" constant="16" id="Ekq-k4-tNh"/>
+                <constraint firstItem="lma-Yt-96n" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Otl-wB-Lx8"/>
+                <constraint firstAttribute="trailing" secondItem="38H-Qz-KXa" secondAttribute="trailing" constant="16" id="UrE-Ec-wnw"/>
+                <constraint firstItem="38H-Qz-KXa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="aUq-Dr-Oc3"/>
+                <constraint firstItem="38H-Qz-KXa" firstAttribute="top" secondItem="NbJ-Lo-PG2" secondAttribute="bottom" constant="16" id="asQ-Ad-1uw"/>
+                <constraint firstItem="NbJ-Lo-PG2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="dm9-5f-IhP"/>
+                <constraint firstItem="NbJ-Lo-PG2" firstAttribute="top" secondItem="lma-Yt-96n" secondAttribute="bottom" constant="16" id="gaP-7o-gJE"/>
+                <constraint firstAttribute="bottom" secondItem="38H-Qz-KXa" secondAttribute="bottom" id="iZq-hY-Yvb"/>
+                <constraint firstItem="lma-Yt-96n" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="nQ4-Pn-YLB"/>
+                <constraint firstAttribute="trailing" secondItem="NbJ-Lo-PG2" secondAttribute="trailing" id="vMm-nL-kcW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="23.5" y="-13.5"/>
+        </view>
+    </objects>
+</document>

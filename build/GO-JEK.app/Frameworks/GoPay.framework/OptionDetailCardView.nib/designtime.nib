@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionDetailCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingIndicator" destination="ns7-un-5fK" id="LFE-U1-ulu"/>
+                <outlet property="optionInfoTableView" destination="KNb-7N-PJJ" id="CnH-Dx-dXG"/>
+                <outlet property="topShadowView" destination="TFs-eZ-AWe" id="AsC-Fy-VwD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KNb-7N-PJJ">
+                    <rect key="frame" x="0.0" y="8" width="375" height="659"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="BhA-7Y-vf6"/>
+                        <outlet property="delegate" destination="-1" id="TKT-pX-obi"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TFs-eZ-AWe" customClass="ShadowView" customModule="Asphalt">
+                    <rect key="frame" x="0.0" y="2" width="375" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="Us0-GY-daP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="shadowPosition" value="top"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="separatorStyle" value="none"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ns7-un-5fK">
+                    <rect key="frame" x="177.5" y="48" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="6KQ-Gb-iyr"/>
+                        <constraint firstAttribute="height" constant="20" id="BRk-ie-7hW"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TFs-eZ-AWe" secondAttribute="trailing" id="1tE-9C-4aW"/>
+                <constraint firstItem="KNb-7N-PJJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="25O-8R-mZ2"/>
+                <constraint firstItem="ns7-un-5fK" firstAttribute="top" secondItem="TFs-eZ-AWe" secondAttribute="bottom" constant="40" id="4DF-Vb-znx"/>
+                <constraint firstItem="TFs-eZ-AWe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="4Td-WF-4c4"/>
+                <constraint firstAttribute="trailing" secondItem="KNb-7N-PJJ" secondAttribute="trailing" id="U57-Ii-kRp"/>
+                <constraint firstItem="KNb-7N-PJJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WNf-WI-ZIE"/>
+                <constraint firstItem="TFs-eZ-AWe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lMg-Rw-qan"/>
+                <constraint firstAttribute="bottom" secondItem="KNb-7N-PJJ" secondAttribute="bottom" id="nt9-Xg-V2Q"/>
+                <constraint firstItem="ns7-un-5fK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wFN-wg-zFW"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

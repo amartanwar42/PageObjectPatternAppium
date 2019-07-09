@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" rowHeight="70" id="KGk-i7-Jjw" customClass="MerchantDetailsTableViewCell" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYe-GK-Asv">
+                        <rect key="frame" x="16" y="16" width="288" height="18"/>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXI-6N-8Vm">
+                        <rect key="frame" x="16" y="40" width="288" height="22.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0S-WD-okm">
+                        <rect key="frame" x="16" y="74.5" width="121.5" height="17"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i0e-ZU-S5B">
+                                <rect key="frame" x="7" y="-0.5" width="110.5" height="17"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_go_nearby_detail_pay_start" translatesAutoresizingMaskIntoConstraints="NO" id="fEF-Ah-PMK">
+                                <rect key="frame" x="0.0" y="0.0" width="7" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="7" id="VCY-Aa-810"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO-PAY ACCEPTED HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWl-2f-biB">
+                                <rect key="frame" x="8" y="5" width="105.5" height="9.5"/>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="9.5"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_go_nearby_detail_pay_end" translatesAutoresizingMaskIntoConstraints="NO" id="fbt-Wq-kYh">
+                                <rect key="frame" x="117.5" y="0.0" width="4" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="57g-DP-wcE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="BWl-2f-biB" firstAttribute="centerY" secondItem="g0S-WD-okm" secondAttribute="centerY" constant="1" id="0PC-m8-Cge"/>
+                            <constraint firstItem="fEF-Ah-PMK" firstAttribute="leading" secondItem="g0S-WD-okm" secondAttribute="leading" id="0fW-kP-znO"/>
+                            <constraint firstAttribute="trailing" secondItem="i0e-ZU-S5B" secondAttribute="trailing" constant="4" id="As5-v8-gmy"/>
+                            <constraint firstItem="i0e-ZU-S5B" firstAttribute="leading" secondItem="g0S-WD-okm" secondAttribute="leading" constant="7" id="Bpf-aR-pkp"/>
+                            <constraint firstAttribute="height" constant="17" id="DHE-MZ-rEP"/>
+                            <constraint firstAttribute="trailing" secondItem="fbt-Wq-kYh" secondAttribute="trailing" id="DSn-LI-3s2"/>
+                            <constraint firstItem="i0e-ZU-S5B" firstAttribute="top" secondItem="g0S-WD-okm" secondAttribute="top" id="Eia-Eq-lAT"/>
+                            <constraint firstItem="fEF-Ah-PMK" firstAttribute="top" secondItem="g0S-WD-okm" secondAttribute="top" id="LIu-dB-OvI"/>
+                            <constraint firstItem="BWl-2f-biB" firstAttribute="leading" secondItem="g0S-WD-okm" secondAttribute="leading" constant="8" id="k2M-l7-2Lt"/>
+                            <constraint firstAttribute="bottom" secondItem="fEF-Ah-PMK" secondAttribute="bottom" id="lEM-sr-VkC"/>
+                            <constraint firstAttribute="trailing" secondItem="BWl-2f-biB" secondAttribute="trailing" constant="8" id="mhE-sT-sRh"/>
+                            <constraint firstItem="fbt-Wq-kYh" firstAttribute="top" secondItem="g0S-WD-okm" secondAttribute="top" id="ne5-hQ-dO5"/>
+                            <constraint firstAttribute="bottom" secondItem="fbt-Wq-kYh" secondAttribute="bottom" id="v5j-XV-dPD"/>
+                            <constraint firstAttribute="bottom" secondItem="i0e-ZU-S5B" secondAttribute="bottom" id="yu1-kf-jfs"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUN-bA-zzU">
+                        <rect key="frame" x="141.5" y="74" width="121.5" height="17"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VoN-8b-bDL">
+                                <rect key="frame" x="6" y="-0.5" width="111.5" height="17"/>
+                                <color key="backgroundColor" red="1" green="0.74509803921568629" blue="0.16862745098039217" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_go_nearby_detail_voucher_start" translatesAutoresizingMaskIntoConstraints="NO" id="wTW-Hs-UKv">
+                                <rect key="frame" x="0.0" y="0.0" width="6" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="6" id="ccv-6B-zmt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO-PAY ACCEPTED HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spk-yH-NQf">
+                                <rect key="frame" x="8" y="5" width="105.5" height="9.5"/>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="9.5"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_go_nearby_detail_voucher_end" translatesAutoresizingMaskIntoConstraints="NO" id="ggp-5h-4IA">
+                                <rect key="frame" x="117.5" y="0.0" width="4" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="4" id="kFa-wi-XgQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wTW-Hs-UKv" firstAttribute="leading" secondItem="uUN-bA-zzU" secondAttribute="leading" id="3zt-sx-Osm"/>
+                            <constraint firstItem="spk-yH-NQf" firstAttribute="centerY" secondItem="uUN-bA-zzU" secondAttribute="centerY" constant="1" id="5iR-4n-BPv"/>
+                            <constraint firstItem="VoN-8b-bDL" firstAttribute="top" secondItem="uUN-bA-zzU" secondAttribute="top" id="Cbn-cv-eJM"/>
+                            <constraint firstItem="spk-yH-NQf" firstAttribute="leading" secondItem="uUN-bA-zzU" secondAttribute="leading" constant="8" id="Ee3-DS-n3s"/>
+                            <constraint firstAttribute="trailing" secondItem="spk-yH-NQf" secondAttribute="trailing" constant="8" id="RIB-be-a9a"/>
+                            <constraint firstItem="wTW-Hs-UKv" firstAttribute="top" secondItem="uUN-bA-zzU" secondAttribute="top" id="Y8j-SB-t6i"/>
+                            <constraint firstItem="ggp-5h-4IA" firstAttribute="top" secondItem="uUN-bA-zzU" secondAttribute="top" id="cJ6-Ha-kT0"/>
+                            <constraint firstAttribute="height" constant="17" id="eIj-EK-zeW"/>
+                            <constraint firstAttribute="bottom" secondItem="wTW-Hs-UKv" secondAttribute="bottom" id="g1e-AG-Pwy"/>
+                            <constraint firstItem="VoN-8b-bDL" firstAttribute="leading" secondItem="uUN-bA-zzU" secondAttribute="leading" constant="6" id="hdi-lJ-QDU"/>
+                            <constraint firstAttribute="bottom" secondItem="ggp-5h-4IA" secondAttribute="bottom" id="mpM-pC-fLg"/>
+                            <constraint firstAttribute="trailing" secondItem="VoN-8b-bDL" secondAttribute="trailing" constant="4" id="q0D-Oa-Lem"/>
+                            <constraint firstAttribute="bottom" secondItem="VoN-8b-bDL" secondAttribute="bottom" id="vRP-ha-OT1"/>
+                            <constraint firstAttribute="trailing" secondItem="ggp-5h-4IA" secondAttribute="trailing" id="vgf-OL-zWG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ZYe-GK-Asv" secondAttribute="trailing" constant="16" id="3bI-SB-pea"/>
+                    <constraint firstItem="rXI-6N-8Vm" firstAttribute="leading" secondItem="ZYe-GK-Asv" secondAttribute="leading" id="8OD-2N-Vaw"/>
+                    <constraint firstItem="rXI-6N-8Vm" firstAttribute="trailing" secondItem="ZYe-GK-Asv" secondAttribute="trailing" id="Dtb-xX-vyc"/>
+                    <constraint firstItem="ZYe-GK-Asv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="LbO-yW-VcG"/>
+                    <constraint firstItem="g0S-WD-okm" firstAttribute="top" secondItem="rXI-6N-8Vm" secondAttribute="bottom" constant="12" id="WAe-T0-fKO"/>
+                    <constraint firstItem="uUN-bA-zzU" firstAttribute="centerY" secondItem="g0S-WD-okm" secondAttribute="centerY" id="c1p-M2-xRr"/>
+                    <constraint firstItem="ZYe-GK-Asv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="cQm-JY-NRb"/>
+                    <constraint firstItem="rXI-6N-8Vm" firstAttribute="top" secondItem="ZYe-GK-Asv" secondAttribute="bottom" constant="6" id="ddi-Av-Ffh"/>
+                    <constraint firstItem="uUN-bA-zzU" firstAttribute="leading" secondItem="g0S-WD-okm" secondAttribute="trailing" constant="4" id="dpM-is-6su"/>
+                    <constraint firstItem="g0S-WD-okm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="xuG-xF-eMo"/>
+                    <constraint firstAttribute="bottom" secondItem="g0S-WD-okm" secondAttribute="bottom" constant="12" id="yVh-7X-8Wy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="acceptGoPayLabel" destination="BWl-2f-biB" id="9IL-Rq-Y6u"/>
+                <outlet property="acceptGoPayView" destination="g0S-WD-okm" id="789-KR-L8z"/>
+                <outlet property="acceptGradientView" destination="i0e-ZU-S5B" id="1KG-pX-CH5"/>
+                <outlet property="addressLabel" destination="rXI-6N-8Vm" id="5uN-Sf-mMZ"/>
+                <outlet property="bottomConstraint" destination="yVh-7X-8Wy" id="UZq-gA-Auo"/>
+                <outlet property="titleLabel" destination="ZYe-GK-Asv" id="PdL-mU-jJh"/>
+                <outlet property="voucherAvailableView" destination="uUN-bA-zzU" id="VXy-wJ-Evk"/>
+                <outlet property="voucherGradientView" destination="VoN-8b-bDL" id="1lj-Kv-5dX"/>
+                <outlet property="voucherLabel" destination="spk-yH-NQf" id="xI6-OS-0vK"/>
+            </connections>
+            <point key="canvasLocation" x="-142" y="-106"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_go_nearby_detail_pay_end" width="4" height="17"/>
+        <image name="ic_go_nearby_detail_pay_start" width="7" height="17"/>
+        <image name="ic_go_nearby_detail_voucher_end" width="4" height="17"/>
+        <image name="ic_go_nearby_detail_voucher_start" width="6" height="17"/>
+    </resources>
+</document>

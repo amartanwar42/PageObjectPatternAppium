@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AmountDistributionButton" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="firstButton" destination="rdg-Z0-OiF" id="4YS-3b-l8u"/>
+                <outlet property="firstButtonContainer" destination="cvL-ol-0HV" id="HqY-0O-b64"/>
+                <outlet property="firstButtonSubtitle" destination="SpS-fR-3wp" id="ktr-Bq-gsg"/>
+                <outlet property="firstButtonTitle" destination="n4Y-Qv-65e" id="eIt-2H-Nhj"/>
+                <outlet property="secondButton" destination="c5m-5d-jw1" id="gJz-hF-ORA"/>
+                <outlet property="secondButtonCenterXConstraint" destination="kQ6-Gd-qM1" id="AxI-Y3-bN4"/>
+                <outlet property="secondButtonContainer" destination="zHF-oW-bhC" id="PbI-Id-tXG"/>
+                <outlet property="secondButtonLeadingConstraint" destination="Ym3-SO-I5n" id="JBO-se-lpm"/>
+                <outlet property="secondButtonSubtitle" destination="9L8-6i-opI" id="u6g-Y0-s0H"/>
+                <outlet property="secondButtonTitle" destination="b1E-7Q-2q6" id="97h-Ol-dVl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvL-ol-0HV" userLabel="First Button Container" customClass="UIControl">
+                    <rect key="frame" x="0.0" y="0.0" width="120" height="56"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdg-Z0-OiF" customClass="AmountDistributionSquareView" customModule="GoPay" customModuleProvider="target">
+                            <rect key="frame" x="16" y="16" width="24" height="24"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="9cP-uA-nHv"/>
+                                <constraint firstAttribute="height" constant="24" id="za3-3E-zQy"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paid by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4Y-Qv-65e">
+                            <rect key="frame" x="56" y="13" width="42.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpS-fR-3wp">
+                            <rect key="frame" x="56" y="33.5" width="27.5" height="14"/>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="14"/>
+                            <color key="textColor" red="0.27058823529999998" green="0.6705882353" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="n4Y-Qv-65e" firstAttribute="leading" secondItem="rdg-Z0-OiF" secondAttribute="trailing" constant="16" id="AI2-ox-w53"/>
+                        <constraint firstItem="n4Y-Qv-65e" firstAttribute="top" secondItem="rdg-Z0-OiF" secondAttribute="top" constant="-3" id="PeU-D2-B03"/>
+                        <constraint firstItem="rdg-Z0-OiF" firstAttribute="top" secondItem="cvL-ol-0HV" secondAttribute="top" constant="16" id="UEI-OH-Tkh"/>
+                        <constraint firstItem="SpS-fR-3wp" firstAttribute="leading" secondItem="n4Y-Qv-65e" secondAttribute="leading" id="ckN-0G-9Vd"/>
+                        <constraint firstAttribute="width" constant="120" id="gb4-zM-Hj7"/>
+                        <constraint firstItem="rdg-Z0-OiF" firstAttribute="leading" secondItem="cvL-ol-0HV" secondAttribute="leading" constant="16" id="m82-SZ-RrD"/>
+                        <constraint firstItem="SpS-fR-3wp" firstAttribute="top" secondItem="n4Y-Qv-65e" secondAttribute="bottom" constant="6" id="vGc-AQ-Gil"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zHF-oW-bhC" userLabel="Second Button Container" customClass="UIControl">
+                    <rect key="frame" x="146" y="0.0" width="120" height="56"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c5m-5d-jw1" customClass="AmountDistributionSquareView" customModule="GoPay" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="16" width="24" height="24"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="8aH-co-cim"/>
+                                <constraint firstAttribute="width" constant="24" id="ou5-ew-pBC"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Split" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1E-7Q-2q6">
+                            <rect key="frame" x="41" y="13" width="26.5" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EQUAL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9L8-6i-opI" userLabel="EQUAL">
+                            <rect key="frame" x="41" y="33.5" width="43.5" height="14"/>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="14"/>
+                            <color key="textColor" red="0.27058823529411763" green="0.6705882353" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="9L8-6i-opI" firstAttribute="leading" secondItem="b1E-7Q-2q6" secondAttribute="leading" id="6O7-1g-Lki"/>
+                        <constraint firstItem="b1E-7Q-2q6" firstAttribute="top" secondItem="c5m-5d-jw1" secondAttribute="top" constant="-3" id="Njq-oi-j5J"/>
+                        <constraint firstItem="c5m-5d-jw1" firstAttribute="top" secondItem="zHF-oW-bhC" secondAttribute="top" constant="16" id="OjR-e5-zBL"/>
+                        <constraint firstItem="9L8-6i-opI" firstAttribute="top" secondItem="b1E-7Q-2q6" secondAttribute="bottom" constant="6" id="Pvp-fo-WJn"/>
+                        <constraint firstItem="c5m-5d-jw1" firstAttribute="leading" secondItem="zHF-oW-bhC" secondAttribute="leading" id="Ym3-SO-I5n"/>
+                        <constraint firstAttribute="width" constant="120" id="gjw-nk-fU2"/>
+                        <constraint firstItem="b1E-7Q-2q6" firstAttribute="leading" secondItem="c5m-5d-jw1" secondAttribute="trailing" constant="17" id="ueh-29-jSX"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="cvL-ol-0HV" secondAttribute="leading" id="4Eg-MJ-rgA"/>
+                <constraint firstItem="zHF-oW-bhC" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="A1R-W8-9fZ"/>
+                <constraint firstItem="cvL-ol-0HV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Irf-nr-4pD"/>
+                <constraint firstItem="zHF-oW-bhC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" priority="900" constant="16" id="Vqe-uv-dbE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="zHF-oW-bhC" secondAttribute="top" id="arM-Q6-YTg"/>
+                <constraint firstItem="zHF-oW-bhC" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="76" id="kQ6-Gd-qM1"/>
+                <constraint firstAttribute="bottom" secondItem="cvL-ol-0HV" secondAttribute="bottom" id="llU-64-6eY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="71.200000000000003" y="-111.54422788605699"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RetryView" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" image="unableToLoadIcon" translatesAutoresizingMaskIntoConstraints="NO" id="5Q0-O2-TND">
+                    <rect key="frame" x="16" y="16" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="JGU-tX-88W"/>
+                        <constraint firstAttribute="width" constant="24" id="iYC-Ax-aTY"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Unable to load" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KXv-mE-lPn">
+                    <rect key="frame" x="54" y="19.5" width="238" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" red="0.78039215689999997" green="0.0" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tEQ-5V-hHt">
+                    <rect key="frame" x="306" y="14" width="53" height="28"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="12"/>
+                    <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                    <state key="normal" title="RETRY">
+                        <color key="titleColor" red="0.27058823529999998" green="0.6705882353" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.27058823529999998" green="0.6705882353" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="retryButtonTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="hfV-UC-gXL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="tEQ-5V-hHt" firstAttribute="leading" secondItem="KXv-mE-lPn" secondAttribute="trailing" constant="14" id="9x3-rp-pxP"/>
+                <constraint firstItem="KXv-mE-lPn" firstAttribute="leading" secondItem="5Q0-O2-TND" secondAttribute="trailing" constant="14" id="NTR-rh-1Jv"/>
+                <constraint firstItem="tEQ-5V-hHt" firstAttribute="centerY" secondItem="5Q0-O2-TND" secondAttribute="centerY" id="URf-y1-3FT"/>
+                <constraint firstAttribute="trailing" secondItem="tEQ-5V-hHt" secondAttribute="trailing" constant="16" id="Uod-hB-Jit"/>
+                <constraint firstItem="5Q0-O2-TND" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Z9Y-r3-x2m"/>
+                <constraint firstItem="5Q0-O2-TND" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="hVt-BE-HPb"/>
+                <constraint firstItem="KXv-mE-lPn" firstAttribute="centerY" secondItem="5Q0-O2-TND" secondAttribute="centerY" id="xYx-Ir-fJJ"/>
+                <constraint firstAttribute="bottom" secondItem="5Q0-O2-TND" secondAttribute="bottom" constant="16" id="xt3-R6-Mr6"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="retryButton" destination="tEQ-5V-hHt" id="5Tf-9O-OBS"/>
+                <outlet property="titleLabel" destination="KXv-mE-lPn" id="Vth-aK-Nah"/>
+            </connections>
+            <point key="canvasLocation" x="55" y="-236.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="unableToLoadIcon" width="24" height="24"/>
+    </resources>
+</document>

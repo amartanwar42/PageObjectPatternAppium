@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="GroupDetails" customClass="GroupDetailsViewController" customModule="GoChatSDK" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="I1c-qr-BZk" id="enQ-e7-gRO"/>
+                <outlet property="tableView" destination="fnM-kv-3yY" id="HJj-Sy-2nF"/>
+                <outlet property="view" destination="TgY-1c-jMd" id="4X8-ug-y9P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="TgY-1c-jMd" userLabel="GroupDetailsView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="fnM-kv-3yY">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="K30-iA-0qB"/>
+                        <outlet property="delegate" destination="-1" id="0o6-Kp-QC0"/>
+                    </connections>
+                </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="I1c-qr-BZk">
+                    <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnM-kv-3yY" firstAttribute="leading" secondItem="b9J-qj-30f" secondAttribute="leading" id="ETU-pF-lOS"/>
+                <constraint firstItem="b9J-qj-30f" firstAttribute="trailing" secondItem="fnM-kv-3yY" secondAttribute="trailing" id="F8G-wi-u8Q"/>
+                <constraint firstItem="b9J-qj-30f" firstAttribute="bottom" secondItem="fnM-kv-3yY" secondAttribute="bottom" id="GyT-hl-VS5"/>
+                <constraint firstItem="I1c-qr-BZk" firstAttribute="centerX" secondItem="TgY-1c-jMd" secondAttribute="centerX" id="esu-cz-rXF"/>
+                <constraint firstItem="I1c-qr-BZk" firstAttribute="centerY" secondItem="TgY-1c-jMd" secondAttribute="centerY" id="lzd-Nw-Z9H"/>
+                <constraint firstItem="fnM-kv-3yY" firstAttribute="top" secondItem="b9J-qj-30f" secondAttribute="top" id="uWd-N8-BKJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="b9J-qj-30f"/>
+            <point key="canvasLocation" x="-32" y="-181"/>
+        </view>
+    </objects>
+</document>

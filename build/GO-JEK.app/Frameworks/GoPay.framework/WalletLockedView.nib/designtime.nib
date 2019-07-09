@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WalletLockedView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="C4K-M8-YIv" id="GEl-rE-0U9"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="yIb-rx-JjS"/>
+                <outlet property="message" destination="5pH-xj-Cwy" id="FeT-Ge-gxx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pH-xj-Cwy">
+                    <rect key="frame" x="19" y="80" width="337" height="0.0"/>
+                    <accessibility key="accessibilityConfiguration" identifier="label_walletLocked_message"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4K-M8-YIv">
+                    <rect key="frame" x="136" y="96" width="102" height="0.0"/>
+                    <color key="backgroundColor" red="0.23921568627450979" green="0.75294117647058822" blue="0.3411764705882353" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" identifier="button_walletLocked_action">
+                        <bool key="isElement" value="NO"/>
+                    </accessibility>
+                    <constraints>
+                        <constraint firstAttribute="height" id="f9a-5K-fVv"/>
+                        <constraint firstAttribute="width" constant="102" id="g7h-aj-LC4"/>
+                    </constraints>
+                    <state key="normal" title="Call Us">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="CallUsButtonClicked:" destination="-1" eventType="touchUpInside" id="sCh-Il-XFn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.21568627450980393" green="0.21176470588235294" blue="0.22352941176470587" alpha="0.90000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="5pH-xj-Cwy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5GR-UX-lhC"/>
+                <constraint firstItem="C4K-M8-YIv" firstAttribute="top" secondItem="5pH-xj-Cwy" secondAttribute="bottom" constant="16" id="Aky-0y-9Kt"/>
+                <constraint firstItem="5pH-xj-Cwy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="GiF-Ey-kFD"/>
+                <constraint firstItem="C4K-M8-YIv" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="nnn-bN-xbJ"/>
+                <constraint firstItem="5pH-xj-Cwy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="u0d-Xe-WwJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

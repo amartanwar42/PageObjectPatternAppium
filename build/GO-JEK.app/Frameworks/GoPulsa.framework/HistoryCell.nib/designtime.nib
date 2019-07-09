@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HistoryCell" customModule="GoPulsa" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="70" id="O4T-kK-utH" customClass="HistoryCell" customModule="GoPulsa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O4T-kK-utH" id="cDH-vm-qpM">
+                <rect key="frame" x="0.0" y="0.0" width="341" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TDg-f6-Ond">
+                        <rect key="frame" x="20" y="0.0" width="25" height="69"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="SKY-t7-tMt"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMc-pU-U4C" userLabel="DetailsView">
+                        <rect key="frame" x="65" y="10" width="276" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Failed - 31 Nov, 11:57" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MiA-Wi-fRL" userLabel="Date">
+                                <rect key="frame" x="0.0" y="0.0" width="276" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.56862745098039214" green="0.56862745098039214" blue="0.56862745098039214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+62 857 9878 5765" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zzp-ei-A6h" userLabel="Phone">
+                                <rect key="frame" x="0.0" y="25" width="276" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="MiA-Wi-fRL" firstAttribute="top" secondItem="mMc-pU-U4C" secondAttribute="top" id="7VU-1P-qEk"/>
+                            <constraint firstAttribute="trailing" secondItem="MiA-Wi-fRL" secondAttribute="trailing" id="A2i-Rd-2ql"/>
+                            <constraint firstItem="zzp-ei-A6h" firstAttribute="height" secondItem="MiA-Wi-fRL" secondAttribute="height" id="EEI-Bj-vj9"/>
+                            <constraint firstAttribute="height" constant="50" id="K83-zE-16R"/>
+                            <constraint firstItem="zzp-ei-A6h" firstAttribute="leading" secondItem="mMc-pU-U4C" secondAttribute="leading" id="Ksv-js-qfH"/>
+                            <constraint firstItem="zzp-ei-A6h" firstAttribute="top" secondItem="MiA-Wi-fRL" secondAttribute="bottom" id="d3u-Rr-xQ3"/>
+                            <constraint firstAttribute="bottom" secondItem="zzp-ei-A6h" secondAttribute="bottom" id="gpG-RX-H1Z"/>
+                            <constraint firstItem="MiA-Wi-fRL" firstAttribute="leading" secondItem="mMc-pU-U4C" secondAttribute="leading" id="s1u-Fl-9hf"/>
+                            <constraint firstAttribute="trailing" secondItem="zzp-ei-A6h" secondAttribute="trailing" id="uS8-xk-jgD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mMc-pU-U4C" firstAttribute="leading" secondItem="TDg-f6-Ond" secondAttribute="trailing" constant="20" id="17e-bv-v0P"/>
+                    <constraint firstItem="TDg-f6-Ond" firstAttribute="leading" secondItem="cDH-vm-qpM" secondAttribute="leading" constant="20" id="9qy-AP-axR"/>
+                    <constraint firstItem="TDg-f6-Ond" firstAttribute="top" secondItem="cDH-vm-qpM" secondAttribute="top" id="CgH-fV-hD3"/>
+                    <constraint firstAttribute="bottom" secondItem="TDg-f6-Ond" secondAttribute="bottom" id="bKO-D1-baw"/>
+                    <constraint firstItem="mMc-pU-U4C" firstAttribute="centerY" secondItem="cDH-vm-qpM" secondAttribute="centerY" id="ltG-u8-kq7"/>
+                    <constraint firstAttribute="trailing" secondItem="mMc-pU-U4C" secondAttribute="trailing" id="zWs-dz-uxL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftStatusImage" destination="TDg-f6-Ond" id="j3z-dl-Gby"/>
+                <outlet property="mobileNumberLabel" destination="zzp-ei-A6h" id="U7z-aA-zvR"/>
+                <outlet property="statusAndDateLabel" destination="MiA-Wi-fRL" id="A0X-4t-puh"/>
+            </connections>
+            <point key="canvasLocation" x="307.5" y="188"/>
+        </tableViewCell>
+    </objects>
+</document>

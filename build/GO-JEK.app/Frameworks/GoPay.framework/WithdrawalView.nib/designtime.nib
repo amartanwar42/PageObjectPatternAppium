@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WithdrawalView">
+            <connections>
+                <outlet property="balanceHeaderView" destination="aX8-tM-WwN" id="52j-cy-suD"/>
+                <outlet property="submitButton" destination="xqA-A0-OMJ" id="eKL-jE-uOB"/>
+                <outlet property="tableView" destination="hZx-DU-KXz" id="K6k-MC-8YU"/>
+                <outlet property="view" destination="iN0-l3-epB" id="9tJ-Lt-Eqb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aX8-tM-WwN" customClass="GoPayBalanceHeaderView" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="108"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="108" id="HiH-Xe-TmD"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="hZx-DU-KXz">
+                    <rect key="frame" x="0.0" y="108" width="375" height="511"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="VaP-0U-hTv"/>
+                        <outlet property="delegate" destination="-1" id="iip-XR-jY2"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqA-A0-OMJ">
+                    <rect key="frame" x="0.0" y="619" width="375" height="48"/>
+                    <color key="backgroundColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" identifier="button_withdraw_enterAmount_confirm"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="FTZ-8Z-SDD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="WITHDRAW">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="submitButtonPressed:" destination="-1" eventType="touchUpInside" id="xFb-WK-he5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="xqA-A0-OMJ" secondAttribute="bottom" id="14X-Oe-SLc"/>
+                <constraint firstItem="hZx-DU-KXz" firstAttribute="top" secondItem="aX8-tM-WwN" secondAttribute="bottom" id="2Rg-se-Qx0"/>
+                <constraint firstItem="hZx-DU-KXz" firstAttribute="leading" secondItem="aX8-tM-WwN" secondAttribute="leading" id="BM9-i7-Niy"/>
+                <constraint firstItem="xqA-A0-OMJ" firstAttribute="top" secondItem="hZx-DU-KXz" secondAttribute="bottom" id="C4x-sI-cKw"/>
+                <constraint firstItem="hZx-DU-KXz" firstAttribute="trailing" secondItem="aX8-tM-WwN" secondAttribute="trailing" id="DQG-Th-IGN"/>
+                <constraint firstAttribute="trailing" secondItem="aX8-tM-WwN" secondAttribute="trailing" id="KAc-im-na5"/>
+                <constraint firstAttribute="trailing" secondItem="xqA-A0-OMJ" secondAttribute="trailing" id="KNt-gc-Sme"/>
+                <constraint firstItem="aX8-tM-WwN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aBf-RP-YNp"/>
+                <constraint firstItem="aX8-tM-WwN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="omM-QQ-ycR"/>
+                <constraint firstItem="xqA-A0-OMJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sUZ-MN-PBl"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

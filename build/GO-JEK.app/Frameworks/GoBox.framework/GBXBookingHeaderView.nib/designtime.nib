@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GBXBookingHeaderView" customModule="GoBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="329"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="R8v-ts-jqK">
+                    <rect key="frame" x="8" y="10" width="395" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="JsM-y0-DgY"/>
+                    </constraints>
+                    <segments>
+                        <segment title="First"/>
+                        <segment title="Second"/>
+                        <segment title="Third"/>
+                        <segment title="Fourth"/>
+                    </segments>
+                    <color key="tintColor" red="0.1042430116575052" green="0.70959595959595956" blue="0.19631322814018323" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="vehicleSelectorPressed:" destination="iN0-l3-epB" eventType="valueChanged" id="D0x-HY-eed"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVERS NEAR YOU" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtt-sb-mVt">
+                    <rect key="frame" x="19" y="51" width="384" height="26"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="8Ea-nx-9FA">
+                    <rect key="frame" x="8" y="85" width="395" height="244"/>
+                    <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="244" id="Wfi-uG-Feo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Qtt-sb-mVt" firstAttribute="top" secondItem="R8v-ts-jqK" secondAttribute="bottom" constant="13" id="0jg-PU-tEq"/>
+                <constraint firstItem="8Ea-nx-9FA" firstAttribute="top" secondItem="Qtt-sb-mVt" secondAttribute="bottom" constant="8" id="5gh-m7-Xj9"/>
+                <constraint firstItem="R8v-ts-jqK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="9QI-GV-b59"/>
+                <constraint firstAttribute="trailing" secondItem="R8v-ts-jqK" secondAttribute="trailing" constant="8" id="AzS-kK-R4L"/>
+                <constraint firstAttribute="trailing" secondItem="8Ea-nx-9FA" secondAttribute="trailing" constant="8" id="LDU-OK-Yua"/>
+                <constraint firstItem="R8v-ts-jqK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="TXr-Te-S6v"/>
+                <constraint firstAttribute="trailing" secondItem="Qtt-sb-mVt" secondAttribute="trailing" constant="8" id="cnN-Dc-LJR"/>
+                <constraint firstItem="Qtt-sb-mVt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="19" id="mgM-fw-aml"/>
+                <constraint firstItem="8Ea-nx-9FA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="rqd-Se-Uny"/>
+                <constraint firstAttribute="bottom" secondItem="8Ea-nx-9FA" secondAttribute="bottom" id="yUV-xf-R3w"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bookingTitle" destination="Qtt-sb-mVt" id="fj1-C0-iFk"/>
+                <outlet property="mapViewContainer" destination="8Ea-nx-9FA" id="zZR-gm-ptT"/>
+                <outlet property="vehicleSelector" destination="R8v-ts-jqK" id="Eie-Lw-V9s"/>
+            </connections>
+            <point key="canvasLocation" x="412.5" y="169.5"/>
+        </view>
+    </objects>
+</document>

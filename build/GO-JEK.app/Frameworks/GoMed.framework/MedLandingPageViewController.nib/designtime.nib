@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MedLandingPageViewController" customModule="GoMed" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomIllustration" destination="Thw-4B-0xL" id="Lqf-jw-MUN"/>
+                <outlet property="descriptionLabel" destination="lcC-wP-kUd" id="DWy-iW-mjG"/>
+                <outlet property="downloadButton" destination="P3i-kM-glO" id="M6j-nP-Z9M"/>
+                <outlet property="downloadButtonHeightConstraint" destination="LlG-K4-9Ho" id="y7D-3s-GWr"/>
+                <outlet property="halodocLogoImageView" destination="L4M-8o-kRV" id="dkn-lv-Ahh"/>
+                <outlet property="introducingLabel" destination="UYq-Ev-yI0" id="yiz-wd-iGk"/>
+                <outlet property="landingPageImageView" destination="GPP-tE-0Ok" id="Bpf-k7-pdW"/>
+                <outlet property="landingPageImageViewHeightConstraint" destination="jJX-8H-9cq" id="rbi-QT-bYx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_background_illustration_ios_signin_signup" translatesAutoresizingMaskIntoConstraints="NO" id="Thw-4B-0xL">
+                    <rect key="frame" x="0.0" y="523" width="375" height="144"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="144" id="ysX-Qt-033"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTRODUCING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYq-Ev-yI0">
+                    <rect key="frame" x="139" y="16" width="97" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="halodocLogo" translatesAutoresizingMaskIntoConstraints="NO" id="L4M-8o-kRV">
+                    <rect key="frame" x="119" y="46" width="137" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="2zs-Yl-vdg"/>
+                        <constraint firstAttribute="width" constant="137" id="su6-Kx-YO2"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="medLandingImage" translatesAutoresizingMaskIntoConstraints="NO" id="GPP-tE-0Ok">
+                    <rect key="frame" x="20" y="95" width="335" height="268"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="268" id="jJX-8H-9cq"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For a better experience, Go-Med has been moved to an awesome new app. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcC-wP-kUd">
+                    <rect key="frame" x="30" y="381" width="315" height="29"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3i-kM-glO">
+                    <rect key="frame" x="26" y="426" width="323" height="44"/>
+                    <color key="backgroundColor" red="0.27843137254901962" green="0.78431372549019607" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="LlG-K4-9Ho"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <state key="normal" title="DOWNLOAD HALODOC APP">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="downloadButtonPressed:" destination="-1" eventType="touchUpInside" id="VDu-Lb-A2S"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.31764705882352939" green="0.32156862745098036" blue="0.33725490196078434" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GPP-tE-0Ok" secondAttribute="trailing" constant="20" id="4N2-E5-rB9"/>
+                <constraint firstAttribute="trailing" secondItem="P3i-kM-glO" secondAttribute="trailing" constant="26" id="8fW-SF-lTn"/>
+                <constraint firstItem="P3i-kM-glO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="26" id="9hL-cu-nuf"/>
+                <constraint firstItem="L4M-8o-kRV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ecy-G1-WVP"/>
+                <constraint firstItem="L4M-8o-kRV" firstAttribute="top" secondItem="UYq-Ev-yI0" secondAttribute="bottom" constant="13" id="Fen-at-b0p"/>
+                <constraint firstItem="GPP-tE-0Ok" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Mpi-9O-ihB"/>
+                <constraint firstAttribute="trailing" secondItem="lcC-wP-kUd" secondAttribute="trailing" constant="30" id="Zc1-Lr-fN5"/>
+                <constraint firstItem="lcC-wP-kUd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="fgS-S1-91A"/>
+                <constraint firstItem="UYq-Ev-yI0" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="khZ-EP-VJU"/>
+                <constraint firstItem="P3i-kM-glO" firstAttribute="top" secondItem="lcC-wP-kUd" secondAttribute="bottom" constant="16" id="lAM-zj-Ptk"/>
+                <constraint firstAttribute="trailing" secondItem="Thw-4B-0xL" secondAttribute="trailing" id="m56-n6-2fL"/>
+                <constraint firstItem="lcC-wP-kUd" firstAttribute="top" secondItem="GPP-tE-0Ok" secondAttribute="bottom" constant="18" id="nen-kh-dWW"/>
+                <constraint firstItem="Thw-4B-0xL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="q88-hf-8BT"/>
+                <constraint firstItem="UYq-Ev-yI0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="16" id="sLW-vt-Vwv"/>
+                <constraint firstAttribute="bottom" secondItem="Thw-4B-0xL" secondAttribute="bottom" id="sMX-DE-e2Q"/>
+                <constraint firstItem="GPP-tE-0Ok" firstAttribute="top" secondItem="L4M-8o-kRV" secondAttribute="bottom" constant="24" id="y3J-d6-5PV"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="halodocLogo" width="137" height="26"/>
+        <image name="img_background_illustration_ios_signin_signup" width="375" height="162"/>
+        <image name="medLandingImage" width="335" height="268"/>
+    </resources>
+</document>

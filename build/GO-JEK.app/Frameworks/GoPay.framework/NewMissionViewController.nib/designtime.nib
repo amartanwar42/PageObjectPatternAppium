@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewMissionViewController" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomShadowView" destination="F2S-eN-eAY" id="v8P-4Q-kC5"/>
+                <outlet property="newMissionTableView" destination="q0v-hY-YoY" id="MDH-Op-dS4"/>
+                <outlet property="topShadowView" destination="lxq-vZ-4Rk" id="cwi-TZ-SSn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q0v-hY-YoY">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4Cr-eQ-uac"/>
+                        <outlet property="delegate" destination="-1" id="ld8-ph-jaQ"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxq-vZ-4Rk" customClass="ShadowView" customModule="Asphalt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="LDB-ys-2rR"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="shadowPosition" value="top"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="separatorStyle" value="none"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F2S-eN-eAY" customClass="ShadowView" customModule="Asphalt">
+                    <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="swR-A2-MfA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="shadowPosition" value="bottom"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="separatorStyle" value="none"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="q0v-hY-YoY" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="6BM-Sp-bws"/>
+                <constraint firstItem="q0v-hY-YoY" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Xz-6d-pt4"/>
+                <constraint firstItem="lxq-vZ-4Rk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FW6-Ho-qxf"/>
+                <constraint firstItem="lxq-vZ-4Rk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HIv-jF-qnG"/>
+                <constraint firstItem="F2S-eN-eAY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ihb-bf-Woa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="F2S-eN-eAY" secondAttribute="trailing" id="KYZ-Cs-ccG"/>
+                <constraint firstItem="q0v-hY-YoY" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cfK-Lw-rm6"/>
+                <constraint firstItem="q0v-hY-YoY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xjc-ML-lhg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="F2S-eN-eAY" secondAttribute="bottom" id="ykK-09-H9q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lxq-vZ-4Rk" secondAttribute="trailing" id="yzm-QT-WV4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

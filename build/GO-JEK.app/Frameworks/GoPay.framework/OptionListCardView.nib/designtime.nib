@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMediumPatched.ttf">
+            <string>NeoSansPro-MediumPatched</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionListCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelSearchBarButton" destination="VaT-ez-qz7" id="UJw-NG-k1B"/>
+                <outlet property="optionListTableView" destination="Vg6-KT-Cls" id="bDP-fg-4nY"/>
+                <outlet property="searchBar" destination="Sc9-Vq-DFf" id="8sp-7T-NvS"/>
+                <outlet property="searchBarButtonWidthConstraint" destination="q70-Sr-hO0" id="CuP-b9-4h0"/>
+                <outlet property="topShadowView" destination="vu2-Un-CP1" id="NhJ-yW-XmE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar clipsSubviews="YES" contentMode="redraw" horizontalHuggingPriority="253" horizontalCompressionResistancePriority="753" searchBarStyle="minimal" placeholder="Enter for name, phone number" translatesAutoresizingMaskIntoConstraints="NO" id="Sc9-Vq-DFf">
+                    <rect key="frame" x="8" y="0.0" width="294" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="O9N-74-CX7"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="cJt-Jr-3KX"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Vg6-KT-Cls">
+                    <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Hxc-ea-4Eg"/>
+                        <outlet property="delegate" destination="-1" id="Fcb-Du-u7E"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxD-DV-Sbw" userLabel="Search Bar Button View">
+                    <rect key="frame" x="302" y="0.0" width="65" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="VaT-ez-qz7">
+                            <rect key="frame" x="0.0" y="0.0" width="65" height="56"/>
+                            <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="VaT-ez-qz7" firstAttribute="top" secondItem="hxD-DV-Sbw" secondAttribute="top" id="0DN-aJ-ZKs"/>
+                        <constraint firstItem="VaT-ez-qz7" firstAttribute="leading" secondItem="hxD-DV-Sbw" secondAttribute="leading" id="8U4-Rd-uDH"/>
+                        <constraint firstAttribute="bottom" secondItem="VaT-ez-qz7" secondAttribute="bottom" id="fEl-bB-jaW"/>
+                        <constraint firstAttribute="width" constant="65" id="q70-Sr-hO0"/>
+                        <constraint firstAttribute="trailing" secondItem="VaT-ez-qz7" secondAttribute="trailing" id="vPh-0U-DbZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vu2-Un-CP1" customClass="ShadowView" customModule="Asphalt">
+                    <rect key="frame" x="0.0" y="50" width="375" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="2DE-17-aBz"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="shadowPosition" value="top"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="separatorStyle" value="none"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vg6-KT-Cls" firstAttribute="top" secondItem="vu2-Un-CP1" secondAttribute="bottom" id="7N2-oH-dnb"/>
+                <constraint firstItem="vu2-Un-CP1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="E8v-C5-KT5"/>
+                <constraint firstItem="hxD-DV-Sbw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FOg-Lu-Ppu"/>
+                <constraint firstItem="Vg6-KT-Cls" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="JYZ-ge-F7P"/>
+                <constraint firstItem="hxD-DV-Sbw" firstAttribute="leading" secondItem="Sc9-Vq-DFf" secondAttribute="trailing" id="Kzp-yr-t9a"/>
+                <constraint firstItem="Vg6-KT-Cls" firstAttribute="top" secondItem="Sc9-Vq-DFf" secondAttribute="bottom" id="PbN-pa-7VI"/>
+                <constraint firstItem="Sc9-Vq-DFf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QnE-5Y-uRD"/>
+                <constraint firstAttribute="trailing" secondItem="vu2-Un-CP1" secondAttribute="trailing" id="Qr0-eH-jh1"/>
+                <constraint firstItem="hxD-DV-Sbw" firstAttribute="height" secondItem="Sc9-Vq-DFf" secondAttribute="height" id="Wdg-lI-tQ9"/>
+                <constraint firstItem="Sc9-Vq-DFf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="dU2-Db-HRB"/>
+                <constraint firstItem="Vg6-KT-Cls" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kD6-gT-yix"/>
+                <constraint firstAttribute="trailing" secondItem="hxD-DV-Sbw" secondAttribute="trailing" constant="8" id="mjL-YY-7y5"/>
+                <constraint firstItem="Vg6-KT-Cls" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailing" id="rke-FB-gSu"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

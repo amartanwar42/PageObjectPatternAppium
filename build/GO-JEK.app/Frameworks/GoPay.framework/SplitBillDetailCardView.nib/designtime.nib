@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplitBillDetailCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="amountDistributionButtonView" destination="0LG-ay-lhB" id="hat-8d-m9V"/>
+                <outlet property="amountInputContainerView" destination="Fmj-2k-dJO" id="oOJ-WB-iR2"/>
+                <outlet property="confirmButtonView" destination="Hwo-A8-Rbj" id="8uq-X8-6ck"/>
+                <outlet property="keyboardContainerView" destination="ii3-Q6-5rm" id="ty6-H2-v9e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fmj-2k-dJO" userLabel="Amount Input Container View">
+                    <rect key="frame" x="0.0" y="20" width="375" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" placeholder="YES" id="GtL-gG-vmF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="viewType" value="amountCalculator"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isEditable" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LG-ay-lhB" userLabel="Amount Distribution Button View" customClass="AmountDistributionButton" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="415" width="375" height="56"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="OIE-VX-rLO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XvB-aW-gpJ">
+                    <rect key="frame" x="0.0" y="471" width="375" height="8"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="r5B-J2-mBP"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ii3-Q6-5rm" userLabel="Keyboard Container View">
+                    <rect key="frame" x="0.0" y="479" width="375" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="128" placeholder="YES" id="7x5-vP-85W"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hwo-A8-Rbj" userLabel="Confirm Button View">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="6fu-5F-Jwz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Hwo-A8-Rbj" firstAttribute="top" secondItem="ii3-Q6-5rm" secondAttribute="bottom" id="3jt-iS-6Na"/>
+                <constraint firstItem="ii3-Q6-5rm" firstAttribute="top" secondItem="XvB-aW-gpJ" secondAttribute="bottom" id="CZh-I5-m4P"/>
+                <constraint firstItem="XvB-aW-gpJ" firstAttribute="top" secondItem="0LG-ay-lhB" secondAttribute="bottom" id="IHT-j8-NAE"/>
+                <constraint firstItem="Hwo-A8-Rbj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IMb-eh-FWX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hwo-A8-Rbj" secondAttribute="trailing" id="KK1-Yn-ui3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="XvB-aW-gpJ" secondAttribute="leading" id="QCy-3C-Bzm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Hwo-A8-Rbj" secondAttribute="bottom" id="SsD-Kd-m0M"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ii3-Q6-5rm" secondAttribute="trailing" id="VNo-eI-Wyt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Fmj-2k-dJO" secondAttribute="trailing" id="eAo-Xt-Cuz"/>
+                <constraint firstItem="Fmj-2k-dJO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iDH-0G-aYV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XvB-aW-gpJ" secondAttribute="trailing" id="itO-JO-Fns"/>
+                <constraint firstItem="Fmj-2k-dJO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lhV-Q0-7CG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0LG-ay-lhB" secondAttribute="trailing" id="vcC-dg-tUK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="ii3-Q6-5rm" secondAttribute="leading" id="wq0-9D-5Jh"/>
+                <constraint firstItem="0LG-ay-lhB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="yDW-AA-hEX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

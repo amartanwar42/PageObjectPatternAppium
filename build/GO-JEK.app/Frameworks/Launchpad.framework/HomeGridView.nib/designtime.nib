@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView_A" customModule="Launchpad"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="HomeGridView" customModule="Launchpad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9U-o5-5Iu">
+                    <rect key="frame" x="0.0" y="60" width="375" height="543"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNs-bR-JyD">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="DB2-SU-yk0"/>
+                            </constraints>
+                        </view>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="l0a-4T-wle">
+                            <rect key="frame" x="0.0" y="120" width="375" height="358"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="358" id="k6V-lW-i14"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ahg-3N-fXP">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="WNs-bR-JyD" firstAttribute="top" secondItem="a9U-o5-5Iu" secondAttribute="top" id="CCq-ZQ-B6Y"/>
+                        <constraint firstItem="l0a-4T-wle" firstAttribute="top" secondItem="WNs-bR-JyD" secondAttribute="bottom" id="Dh6-M0-yse"/>
+                        <constraint firstAttribute="trailing" secondItem="WNs-bR-JyD" secondAttribute="trailing" id="JVM-Se-Bl3"/>
+                        <constraint firstAttribute="trailing" secondItem="l0a-4T-wle" secondAttribute="trailing" id="Vsq-We-TkC"/>
+                        <constraint firstItem="l0a-4T-wle" firstAttribute="leading" secondItem="a9U-o5-5Iu" secondAttribute="leading" id="ZsY-PC-GCY"/>
+                        <constraint firstItem="WNs-bR-JyD" firstAttribute="leading" secondItem="a9U-o5-5Iu" secondAttribute="leading" id="qGZ-Ja-R3P"/>
+                        <constraint firstItem="WNs-bR-JyD" firstAttribute="centerX" secondItem="a9U-o5-5Iu" secondAttribute="centerX" id="tdo-1s-Vks"/>
+                        <constraint firstAttribute="bottom" secondItem="l0a-4T-wle" secondAttribute="bottom" id="vDJ-KP-Ybh"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="a9U-o5-5Iu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="4Cw-Gm-jj7"/>
+                <constraint firstItem="a9U-o5-5Iu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LSb-z0-1OS"/>
+                <constraint firstAttribute="bottom" secondItem="a9U-o5-5Iu" secondAttribute="bottom" id="XjS-a9-dfY"/>
+                <constraint firstAttribute="trailing" secondItem="a9U-o5-5Iu" secondAttribute="trailing" id="po0-ua-oRg"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+            <connections>
+                <outlet property="carouselView" destination="WNs-bR-JyD" id="c5q-qF-1Iq"/>
+                <outlet property="carouselViewHeightConstraint" destination="DB2-SU-yk0" id="U3G-vp-HiP"/>
+                <outlet property="collectionView" destination="l0a-4T-wle" id="Rcl-3c-ORA"/>
+                <outlet property="collectionViewHeightConstriant" destination="k6V-lW-i14" id="IFF-zH-wDu"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

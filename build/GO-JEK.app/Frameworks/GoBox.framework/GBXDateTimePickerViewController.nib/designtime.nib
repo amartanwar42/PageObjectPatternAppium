@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GBXDateTimePickerViewController" customModule="GoBox" customModuleProvider="target">
+            <connections>
+                <outlet property="calendar" destination="Rzs-UM-Gb3" id="Ajj-M1-8Bj"/>
+                <outlet property="setButton" destination="WbD-12-W1R" id="Dhq-id-XiF"/>
+                <outlet property="timePicker" destination="7c1-kF-ceL" id="1Hi-bW-jYn"/>
+                <outlet property="view" destination="Img-KF-9vB" id="4B7-t2-lNs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Img-KF-9vB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rzs-UM-Gb3" customClass="FSCalendar">
+                    <rect key="frame" x="0.0" y="16" width="600" height="348"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="firstWeekday">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Br-LB-rAf">
+                    <rect key="frame" x="322" y="617" width="56" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.1450980392" green="0.6588235294" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchUpInside" id="SEc-xO-Nix"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WbD-12-W1R">
+                    <rect key="frame" x="235" y="617" width="30" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="Set">
+                        <color key="titleColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="set:" destination="-1" eventType="touchUpInside" id="TJj-kW-mZB"/>
+                    </connections>
+                </button>
+                <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7c1-kF-ceL">
+                    <rect key="frame" x="0.0" y="372" width="600" height="162"/>
+                    <color key="tintColor" red="0.1450980392" green="0.6588235294" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <date key="date" timeIntervalSinceReferenceDate="457337700.82757598">
+                        <!--2015-06-30 06:15:00 +0000-->
+                    </date>
+                </datePicker>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rzs-UM-Gb3" firstAttribute="top" secondItem="Img-KF-9vB" secondAttribute="top" constant="16" id="329-zS-z5G"/>
+                <constraint firstItem="Rzs-UM-Gb3" firstAttribute="leading" secondItem="Img-KF-9vB" secondAttribute="leading" id="4wH-K4-lRO"/>
+                <constraint firstAttribute="trailing" secondItem="7c1-kF-ceL" secondAttribute="trailing" id="6JR-Uy-pJP"/>
+                <constraint firstAttribute="bottom" secondItem="WbD-12-W1R" secondAttribute="bottom" constant="16" id="TKD-fb-jJk"/>
+                <constraint firstItem="WbD-12-W1R" firstAttribute="centerY" secondItem="3Br-LB-rAf" secondAttribute="centerY" id="XHp-uf-OLY"/>
+                <constraint firstItem="7c1-kF-ceL" firstAttribute="leading" secondItem="Img-KF-9vB" secondAttribute="leading" id="lye-qs-FQI"/>
+                <constraint firstItem="7c1-kF-ceL" firstAttribute="top" secondItem="Rzs-UM-Gb3" secondAttribute="bottom" constant="8" id="neo-0m-mkK"/>
+                <constraint firstAttribute="centerX" secondItem="3Br-LB-rAf" secondAttribute="centerX" constant="-50" id="tYI-P2-yBO"/>
+                <constraint firstAttribute="centerX" secondItem="WbD-12-W1R" secondAttribute="centerX" constant="50" id="ukY-aJ-pYD"/>
+                <constraint firstItem="WbD-12-W1R" firstAttribute="top" secondItem="7c1-kF-ceL" secondAttribute="bottom" constant="16" id="vnF-tP-66j"/>
+                <constraint firstAttribute="trailing" secondItem="Rzs-UM-Gb3" secondAttribute="trailing" id="zC5-HD-KaZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="157" y="58.5"/>
+        </view>
+    </objects>
+</document>

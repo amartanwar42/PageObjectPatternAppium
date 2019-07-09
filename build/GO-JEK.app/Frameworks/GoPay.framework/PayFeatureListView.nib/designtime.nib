@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMediumPatched.ttf">
+            <string>NeoSansPro-MediumPatched</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayFeatureListView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomShadowView" destination="iej-eC-qk2" id="Cux-El-VYf"/>
+                <outlet property="descriptionLabel" destination="Fc6-1R-8Aq" id="P1d-SW-8f2"/>
+                <outlet property="featureTableView" destination="eZU-kc-boR" id="2uf-qM-8TP"/>
+                <outlet property="gotItButton" destination="rIY-5g-EpO" id="8dl-ZL-ghV"/>
+                <outlet property="titleLabel" destination="5OB-gq-XFr" id="IGs-gU-ur5"/>
+                <outlet property="topShadowView" destination="eiZ-MA-1D0" id="k5A-8W-wpA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="642"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="5OB-gq-XFr">
+                    <rect key="frame" x="16" y="0.0" width="343" height="29.5"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="22"/>
+                    <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc6-1R-8Aq">
+                    <rect key="frame" x="16" y="39.5" width="343" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eZU-kc-boR">
+                    <rect key="frame" x="0.0" y="72.5" width="375" height="509.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="JlN-QN-UT9"/>
+                        <outlet property="delegate" destination="-1" id="Nez-4K-fRf"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIY-5g-EpO">
+                    <rect key="frame" x="16" y="598" width="343" height="44"/>
+                    <color key="backgroundColor" red="0.27058823529411763" green="0.6705882352941176" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="MS9-g2-YAq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="14"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="GOT IT"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iej-eC-qk2" customClass="ShadowView" customModule="Asphalt">
+                    <rect key="frame" x="0.0" y="576" width="375" height="6"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="Giv-q9-6cW"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="shadowPosition" value="bottom"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="separatorStyle" value="none"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eiZ-MA-1D0" customClass="ShadowView" customModule="Asphalt">
+                    <rect key="frame" x="0.0" y="72.5" width="375" height="6"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="aE4-6a-cKi"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="shadowPosition" value="top"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="separatorStyle" value="none"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5OB-gq-XFr" secondAttribute="trailing" constant="16" id="3kV-XA-kh8"/>
+                <constraint firstItem="iej-eC-qk2" firstAttribute="trailing" secondItem="eZU-kc-boR" secondAttribute="trailing" id="8mG-aU-LsI"/>
+                <constraint firstItem="Fc6-1R-8Aq" firstAttribute="top" secondItem="5OB-gq-XFr" secondAttribute="bottom" constant="10" id="9RN-ka-tzF"/>
+                <constraint firstItem="5OB-gq-XFr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="EXD-4I-j2g"/>
+                <constraint firstItem="eZU-kc-boR" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LkJ-uK-tbs"/>
+                <constraint firstItem="eiZ-MA-1D0" firstAttribute="top" secondItem="eZU-kc-boR" secondAttribute="top" id="MER-pX-C00"/>
+                <constraint firstAttribute="trailing" secondItem="rIY-5g-EpO" secondAttribute="trailing" constant="16" id="O0E-Py-ilv"/>
+                <constraint firstItem="eiZ-MA-1D0" firstAttribute="trailing" secondItem="eZU-kc-boR" secondAttribute="trailing" id="RAY-Hh-0yh"/>
+                <constraint firstItem="rIY-5g-EpO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Ybm-JC-9au"/>
+                <constraint firstAttribute="bottom" secondItem="rIY-5g-EpO" secondAttribute="bottom" id="ZJo-4F-435"/>
+                <constraint firstItem="Fc6-1R-8Aq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="bJW-Ge-qba"/>
+                <constraint firstItem="5OB-gq-XFr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="coK-AD-XPf"/>
+                <constraint firstItem="eiZ-MA-1D0" firstAttribute="leading" secondItem="eZU-kc-boR" secondAttribute="leading" id="khm-1e-kuk"/>
+                <constraint firstAttribute="trailing" secondItem="eZU-kc-boR" secondAttribute="trailing" id="kw9-qz-a85"/>
+                <constraint firstItem="rIY-5g-EpO" firstAttribute="top" secondItem="eZU-kc-boR" secondAttribute="bottom" constant="16" id="lWK-Cr-FIu"/>
+                <constraint firstItem="eZU-kc-boR" firstAttribute="top" secondItem="Fc6-1R-8Aq" secondAttribute="bottom" constant="16" id="qKJ-zj-RhV"/>
+                <constraint firstItem="iej-eC-qk2" firstAttribute="bottom" secondItem="eZU-kc-boR" secondAttribute="bottom" id="t4l-y1-MmE"/>
+                <constraint firstAttribute="trailing" secondItem="Fc6-1R-8Aq" secondAttribute="trailing" constant="16" id="uv7-qA-gvL"/>
+                <constraint firstItem="iej-eC-qk2" firstAttribute="leading" secondItem="eZU-kc-boR" secondAttribute="leading" id="ztG-qR-qyW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="66"/>
+        </view>
+    </objects>
+</document>

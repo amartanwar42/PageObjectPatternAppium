@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GBXBookingViewController" customModule="GoBox" customModuleProvider="target">
+            <connections>
+                <outlet property="estimatedDistanceAndPriceLabel" destination="eOa-0E-dhU" id="bvv-Ey-wGi"/>
+                <outlet property="estimationPriceView" destination="rAe-4Y-JWv" id="9UX-Zk-zva"/>
+                <outlet property="estimationPriceViewHeightConstraint" destination="tIB-5n-S8b" id="zOh-nO-j7V"/>
+                <outlet property="priceLoading" destination="Xyl-Ps-Wtj" id="hvO-u5-ZIa"/>
+                <outlet property="priceTextLabel" destination="Jsr-ds-iUW" id="Hte-8U-QUQ"/>
+                <outlet property="tableView" destination="sE8-e4-wGy" id="5Gc-dy-9j0"/>
+                <outlet property="tableViewBottomConstraint" destination="aIx-LT-onu" id="sxK-fm-gI2"/>
+                <outlet property="tableViewTopSpaceConstraint" destination="Jdz-lE-Lqh" id="D2G-Ue-Nev"/>
+                <outlet property="tapRecognizer" destination="SfU-GT-tOz" id="Ham-Tj-TcA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="sE8-e4-wGy">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAe-4Y-JWv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRICE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jsr-ds-iUW">
+                            <rect key="frame" x="20" y="11" width="65" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="XFM-ZT-2TH"/>
+                                <constraint firstAttribute="width" constant="65" id="zY2-MS-IK4"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(8.3 KM) Rp. 30.000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOa-0E-dhU">
+                            <rect key="frame" x="93" y="6" width="262" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="moA-U8-zQN"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Xyl-Ps-Wtj">
+                            <rect key="frame" x="177.5" y="10" width="20" height="20"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Jsr-ds-iUW" firstAttribute="top" secondItem="rAe-4Y-JWv" secondAttribute="top" constant="11" id="5C2-gB-dQY"/>
+                        <constraint firstItem="Jsr-ds-iUW" firstAttribute="leading" secondItem="rAe-4Y-JWv" secondAttribute="leading" constant="20" id="DTW-yt-cu4"/>
+                        <constraint firstItem="eOa-0E-dhU" firstAttribute="top" secondItem="rAe-4Y-JWv" secondAttribute="top" constant="6" id="ZWO-Wz-ucf"/>
+                        <constraint firstAttribute="centerX" secondItem="Xyl-Ps-Wtj" secondAttribute="centerX" id="cKP-UE-amv"/>
+                        <constraint firstItem="eOa-0E-dhU" firstAttribute="leading" secondItem="Jsr-ds-iUW" secondAttribute="trailing" constant="8" id="ksc-Ts-Z24"/>
+                        <constraint firstAttribute="trailing" secondItem="eOa-0E-dhU" secondAttribute="trailing" constant="20" id="oDd-1T-MHU"/>
+                        <constraint firstAttribute="height" constant="40" id="tIB-5n-S8b"/>
+                        <constraint firstAttribute="centerY" secondItem="Xyl-Ps-Wtj" secondAttribute="centerY" id="zls-PA-NOf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="rAe-4Y-JWv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="B6d-08-GhF"/>
+                <constraint firstItem="sE8-e4-wGy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Jdz-lE-Lqh" userLabel="I"/>
+                <constraint firstAttribute="trailing" secondItem="rAe-4Y-JWv" secondAttribute="trailing" id="ZEr-Uo-WBb"/>
+                <constraint firstAttribute="bottom" secondItem="sE8-e4-wGy" secondAttribute="bottom" id="aIx-LT-onu"/>
+                <constraint firstItem="sE8-e4-wGy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kRc-ye-BTZ"/>
+                <constraint firstItem="rAe-4Y-JWv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kjK-Bh-qhs"/>
+                <constraint firstAttribute="trailing" secondItem="sE8-e4-wGy" secondAttribute="trailing" id="nzy-5e-TQE"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="SfU-GT-tOz" appends="YES" id="Mp9-Jb-wHf"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="SfU-GT-tOz">
+            <connections>
+                <action selector="handleTapOnView:" destination="-1" id="73C-In-u9o"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

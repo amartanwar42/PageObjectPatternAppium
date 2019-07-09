@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="UnsupportedCell" customModule="GoChatSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="309" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="309" height="63.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNL-03-QI5" customClass="RoundedRectView" customModule="GoChatSDK" customModuleProvider="target">
+                        <rect key="frame" x="61" y="4" width="240" height="55.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cannot view content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r1E-EU-j2D">
+                                <rect key="frame" x="16" y="10" width="216" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" red="0.98039215690000003" green="0.98431372549999996" blue="0.99215686270000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This content is not supported" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GA6-z2-U6j">
+                                <rect key="frame" x="16" y="32" width="155" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.26666666666666666" green="0.6705882352941176" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="GA6-z2-U6j" firstAttribute="top" secondItem="r1E-EU-j2D" secondAttribute="bottom" constant="4" id="A1K-K1-Kmm"/>
+                            <constraint firstItem="r1E-EU-j2D" firstAttribute="leading" secondItem="vNL-03-QI5" secondAttribute="leading" constant="16" id="Lz0-8f-CMf"/>
+                            <constraint firstItem="r1E-EU-j2D" firstAttribute="top" secondItem="vNL-03-QI5" secondAttribute="top" constant="10" id="UaR-pP-QmU"/>
+                            <constraint firstAttribute="width" constant="240" id="Y48-fJ-ZFF"/>
+                            <constraint firstItem="GA6-z2-U6j" firstAttribute="leading" secondItem="r1E-EU-j2D" secondAttribute="leading" id="c2r-7k-DXy"/>
+                            <constraint firstAttribute="trailing" secondItem="r1E-EU-j2D" secondAttribute="trailing" constant="8" id="mLt-OU-dnR"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vNL-03-QI5" secondAttribute="bottom" constant="4" id="NDr-en-Bgb"/>
+                    <constraint firstAttribute="trailing" secondItem="vNL-03-QI5" secondAttribute="trailing" constant="8" id="TJF-k7-Wz2"/>
+                    <constraint firstItem="vNL-03-QI5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="cPV-Lo-MO6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bodyLabel" destination="GA6-z2-U6j" id="pyG-Zi-cKY"/>
+                <outlet property="containerView" destination="vNL-03-QI5" id="kQb-ML-CaM"/>
+                <outlet property="headerLabel" destination="r1E-EU-j2D" id="PIE-n2-z3e"/>
+                <outlet property="trailngSpace" destination="TJF-k7-Wz2" id="fdD-9v-v2H"/>
+            </connections>
+            <point key="canvasLocation" x="28.5" y="69"/>
+        </tableViewCell>
+    </objects>
+</document>

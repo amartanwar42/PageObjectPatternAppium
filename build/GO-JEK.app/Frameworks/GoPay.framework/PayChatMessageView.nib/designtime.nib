@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMediumPatched.ttf">
+            <string>NeoSansPro-MediumPatched</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayChatMessageView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="amount" destination="Ujv-3O-POG" id="uaU-YC-viH"/>
+                <outlet property="cashflowLogo" destination="MGZ-1r-Jye" id="2dD-jg-DyT"/>
+                <outlet property="chatDescriptionContainer" destination="Mdd-ol-pqQ" id="YNn-n9-emg"/>
+                <outlet property="status" destination="Q5w-Ar-eRy" id="rVg-xM-8Z7"/>
+                <outlet property="statusBackground" destination="Dp3-tz-jex" id="4H4-d4-2p1"/>
+                <outlet property="statusContainerView" destination="JVT-Ma-yJl" id="mnF-Vx-A65"/>
+                <outlet property="statusContainerViewHeightConstraint" destination="SYj-v5-8z8" id="eBU-du-x8o"/>
+                <outlet property="tapToRetry" destination="EjI-wL-Ku8" id="TgF-Zq-uAf"/>
+                <outlet property="title" destination="cTj-2x-78A" id="XmQ-Zs-Z27"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="yos-hG-0qH">
+            <rect key="frame" x="0.0" y="0.0" width="264" height="219"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardBackgroundFailed" translatesAutoresizingMaskIntoConstraints="NO" id="Dp3-tz-jex" userLabel="cardBackground">
+                    <rect key="frame" x="0.0" y="169" width="264" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="1Wd-uc-jp2"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goPayHomeLogoBlack" translatesAutoresizingMaskIntoConstraints="NO" id="KmG-15-eyg" userLabel="GoPayLogo">
+                    <rect key="frame" x="16" y="12" width="59" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="2sd-ZD-vXX"/>
+                        <constraint firstAttribute="width" constant="59" id="Ps1-OV-Nnj"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cardStatusAmountSentFailed" translatesAutoresizingMaskIntoConstraints="NO" id="MGZ-1r-Jye" userLabel="cashFlowLogo ">
+                    <rect key="frame" x="224" y="12" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="8oT-q7-bB8"/>
+                        <constraint firstAttribute="height" constant="28" id="uGv-uG-2C6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Payment failed oijqwdoij oqiwjdoijq wdoijq owidjo qiwjd oijqw doijqwdpo pco pok pokasd" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTj-2x-78A" userLabel="title">
+                    <rect key="frame" x="16" y="44" width="232" height="43"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Rp20.000.000.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ujv-3O-POG" userLabel="amount">
+                    <rect key="frame" x="16" y="91" width="232" height="43"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="32"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mdd-ol-pqQ" userLabel="notesView" customClass="ChatDescriptionView" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="134" width="232" height="11"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="JVT-Ma-yJl" userLabel="statusContainer">
+                    <rect key="frame" x="16" y="145" width="232" height="32"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to retry" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjI-wL-Ku8">
+                            <rect key="frame" x="52" y="16" width="61" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="sbe-ck-HDv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5w-Ar-eRy" userLabel="statusButton">
+                            <rect key="frame" x="0.0" y="16" width="44" height="16"/>
+                            <color key="backgroundColor" red="0.87450980392156863" green="0.19607843137254902" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="GWS-NJ-Lj1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="10"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="contentEdgeInsets" minX="6" minY="0.0" maxX="6" maxY="0.0"/>
+                            <state key="normal" title="FAILED"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Q5w-Ar-eRy" firstAttribute="leading" secondItem="JVT-Ma-yJl" secondAttribute="leading" id="54E-pZ-VqD"/>
+                        <constraint firstAttribute="bottom" secondItem="Q5w-Ar-eRy" secondAttribute="bottom" id="Cwu-HX-jp9"/>
+                        <constraint firstAttribute="bottom" secondItem="EjI-wL-Ku8" secondAttribute="bottom" id="E37-V2-aTm"/>
+                        <constraint firstAttribute="height" constant="32" id="SYj-v5-8z8"/>
+                        <constraint firstItem="EjI-wL-Ku8" firstAttribute="leading" secondItem="Q5w-Ar-eRy" secondAttribute="trailing" constant="8" id="YrH-Lp-f55"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XwM-Lh-EyE" userLabel="messageTap">
+                    <rect key="frame" x="0.0" y="0.0" width="264" height="219"/>
+                    <connections>
+                        <action selector="messageTapedWith:" destination="-1" eventType="touchUpInside" id="XRS-7Q-uTb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="JVT-Ma-yJl" firstAttribute="leading" secondItem="yos-hG-0qH" secondAttribute="leading" constant="16" id="3UO-Hk-gns"/>
+                <constraint firstItem="JVT-Ma-yJl" firstAttribute="top" secondItem="Mdd-ol-pqQ" secondAttribute="bottom" id="4ju-1f-6Ic"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ujv-3O-POG" secondAttribute="trailing" constant="16" id="A1Q-T2-CLL"/>
+                <constraint firstAttribute="trailing" secondItem="Dp3-tz-jex" secondAttribute="trailing" id="BQa-K2-bSz"/>
+                <constraint firstItem="cTj-2x-78A" firstAttribute="leading" secondItem="yos-hG-0qH" secondAttribute="leading" constant="16" id="DGc-8u-d8M"/>
+                <constraint firstAttribute="trailing" secondItem="MGZ-1r-Jye" secondAttribute="trailing" constant="12" id="GWO-I5-7J5"/>
+                <constraint firstAttribute="trailing" secondItem="cTj-2x-78A" secondAttribute="trailing" constant="16" id="ILr-cR-KPR"/>
+                <constraint firstItem="cTj-2x-78A" firstAttribute="top" secondItem="MGZ-1r-Jye" secondAttribute="bottom" constant="4" id="P39-MM-fZ9"/>
+                <constraint firstItem="Dp3-tz-jex" firstAttribute="leading" secondItem="yos-hG-0qH" secondAttribute="leading" id="Qgr-h9-QjK"/>
+                <constraint firstItem="Ujv-3O-POG" firstAttribute="leading" secondItem="yos-hG-0qH" secondAttribute="leading" constant="16" id="THN-7y-RxU"/>
+                <constraint firstItem="KmG-15-eyg" firstAttribute="top" secondItem="yos-hG-0qH" secondAttribute="top" constant="12" id="ZfB-9q-xBW"/>
+                <constraint firstItem="Mdd-ol-pqQ" firstAttribute="top" secondItem="Ujv-3O-POG" secondAttribute="bottom" id="cs1-G3-GWJ"/>
+                <constraint firstAttribute="trailing" secondItem="JVT-Ma-yJl" secondAttribute="trailing" constant="16" id="fpf-50-Zkc"/>
+                <constraint firstAttribute="bottom" secondItem="JVT-Ma-yJl" secondAttribute="bottom" constant="42" id="gmV-TY-WSe"/>
+                <constraint firstItem="KmG-15-eyg" firstAttribute="leading" secondItem="yos-hG-0qH" secondAttribute="leading" constant="16" id="hgc-lx-Xgi"/>
+                <constraint firstAttribute="trailing" secondItem="Mdd-ol-pqQ" secondAttribute="trailing" constant="16" id="imM-YV-To1"/>
+                <constraint firstAttribute="trailing" secondItem="XwM-Lh-EyE" secondAttribute="trailing" id="kGq-K3-FNt"/>
+                <constraint firstItem="XwM-Lh-EyE" firstAttribute="leading" secondItem="yos-hG-0qH" secondAttribute="leading" id="kT0-Mg-q7z"/>
+                <constraint firstItem="MGZ-1r-Jye" firstAttribute="top" secondItem="yos-hG-0qH" secondAttribute="top" constant="12" id="lLC-DI-Ejs"/>
+                <constraint firstItem="Mdd-ol-pqQ" firstAttribute="leading" secondItem="yos-hG-0qH" secondAttribute="leading" constant="16" id="m9z-Ds-08L"/>
+                <constraint firstItem="XwM-Lh-EyE" firstAttribute="top" secondItem="yos-hG-0qH" secondAttribute="top" id="o6D-Hq-I7C"/>
+                <constraint firstItem="Ujv-3O-POG" firstAttribute="top" secondItem="cTj-2x-78A" secondAttribute="bottom" constant="4" id="o8F-Yp-pey"/>
+                <constraint firstAttribute="bottom" secondItem="Dp3-tz-jex" secondAttribute="bottom" id="pQw-gW-8Qj"/>
+                <constraint firstAttribute="bottom" secondItem="XwM-Lh-EyE" secondAttribute="bottom" id="xcE-xH-Avw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-254" y="-348"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cardBackgroundFailed" width="264" height="50"/>
+        <image name="cardStatusAmountSentFailed" width="28" height="28"/>
+        <image name="goPayHomeLogoBlack" width="94" height="20"/>
+    </resources>
+</document>

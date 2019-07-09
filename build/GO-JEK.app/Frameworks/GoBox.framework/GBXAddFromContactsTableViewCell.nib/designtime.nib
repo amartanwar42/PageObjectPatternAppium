@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="80" id="KGk-i7-Jjw" customClass="GBXAddFromContactsTableViewCell" customModule="GoBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons-contactbook" translatesAutoresizingMaskIntoConstraints="NO" id="000-bx-i1s">
+                        <rect key="frame" x="18" y="25" width="30" height="30"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="7P3-cz-WcF"/>
+                            <constraint firstAttribute="width" constant="30" id="IJe-TI-pQ9"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons-arrownextback" translatesAutoresizingMaskIntoConstraints="NO" id="BSK-az-M1w">
+                        <rect key="frame" x="288" y="29" width="14" height="22"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="Dkc-i1-QTK"/>
+                            <constraint firstAttribute="height" constant="22" id="stN-ME-O6q"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LqP-Ct-xsL">
+                        <rect key="frame" x="55" y="10" width="225" height="70"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="f91-vD-TFD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <state key="normal" title="ADD FROM CONTACTS">
+                            <color key="titleColor" red="0.13905583322048187" green="0.61086845397949219" blue="0.10807134211063385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BSK-az-M1w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="21" id="1fG-WU-wwB"/>
+                    <constraint firstItem="000-bx-i1s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17" id="As1-aM-MLm"/>
+                    <constraint firstItem="BSK-az-M1w" firstAttribute="leading" secondItem="LqP-Ct-xsL" secondAttribute="trailing" constant="8" id="BZQ-hq-WdR"/>
+                    <constraint firstItem="000-bx-i1s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="PRF-Kc-2mp"/>
+                    <constraint firstItem="BSK-az-M1w" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" constant="-10" id="UxZ-oU-L5v"/>
+                    <constraint firstItem="LqP-Ct-xsL" firstAttribute="leading" secondItem="000-bx-i1s" secondAttribute="trailing" constant="7" id="bsc-wA-2Lf"/>
+                    <constraint firstItem="LqP-Ct-xsL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="yLn-K0-UXn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addContactButton" destination="LqP-Ct-xsL" id="tjE-ld-T21"/>
+            </connections>
+            <point key="canvasLocation" x="326" y="370"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icons-arrownextback" width="14" height="22"/>
+        <image name="icons-contactbook" width="30" height="30"/>
+    </resources>
+</document>

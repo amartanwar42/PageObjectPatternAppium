@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FeedbackView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="badFeedbackButtonCenterConstraint" destination="JiY-HT-Dzj" id="adx-D6-c94"/>
+                <outlet property="badFeedbackButtonCenterYConstraint" destination="IbN-1K-rlh" id="TMb-ca-2oF"/>
+                <outlet property="badFeedbackButtonLeadingConstraint" destination="zGc-sZ-pIi" id="8om-xD-twc"/>
+                <outlet property="badFeedbackButtonTrailingConstraint" destination="gKu-2z-Tso" id="PqH-u7-21O"/>
+                <outlet property="badFeedbackButtonWidthConstraint" destination="7Gj-zq-ieE" id="sJQ-rG-2Kj"/>
+                <outlet property="feedbackButtonBad" destination="Jet-xc-8Wg" id="lPz-fp-h8x"/>
+                <outlet property="feedbackButtonGood" destination="P4C-tK-0et" id="1fu-jW-wN8"/>
+                <outlet property="feedbackHeaderLabel" destination="a1Y-iU-FBL" id="NJE-68-8Aa"/>
+                <outlet property="goodFeedbackButtonCenterConstraint" destination="n4O-bW-4al" id="YJe-ZP-wGQ"/>
+                <outlet property="goodFeedbackButtonCenterYConstraint" destination="mh0-wi-xCL" id="gCE-Hm-4ug"/>
+                <outlet property="goodFeedbackButtonLeadingConstraint" destination="g9X-aP-k7r" id="qsX-bl-U4O"/>
+                <outlet property="goodFeedbackButtonWidthConstraint" destination="MGc-LA-Cx8" id="dYy-uk-INQ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="82"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW WAS YOUR PAYMENT EXPERIENCE?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1Y-iU-FBL">
+                    <rect key="frame" x="77" y="14" width="222.5" height="12"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4C-tK-0et" customClass="FeedbackButtonView" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="130" y="16" width="50" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="MGc-LA-Cx8"/>
+                        <constraint firstAttribute="height" constant="50" id="Yqn-eX-Un6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jet-xc-8Wg" customClass="FeedbackButtonView" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="196" y="16" width="50" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="7Gj-zq-ieE"/>
+                        <constraint firstAttribute="height" constant="50" id="btO-sz-YUo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.2666666667" green="0.6705882353" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="a1Y-iU-FBL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="5N2-GK-W7b"/>
+                <constraint firstItem="Jet-xc-8Wg" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="IbN-1K-rlh"/>
+                <constraint firstItem="Jet-xc-8Wg" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" priority="900" id="JiY-HT-Dzj"/>
+                <constraint firstItem="P4C-tK-0et" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" priority="900" constant="16" id="g9X-aP-k7r"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jet-xc-8Wg" secondAttribute="trailing" priority="900" constant="16" id="gKu-2z-Tso"/>
+                <constraint firstItem="a1Y-iU-FBL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="14" id="h7K-m7-QU0"/>
+                <constraint firstItem="P4C-tK-0et" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="mh0-wi-xCL"/>
+                <constraint firstItem="P4C-tK-0et" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" constant="-33" id="n4O-bW-4al"/>
+                <constraint firstItem="Jet-xc-8Wg" firstAttribute="leading" secondItem="P4C-tK-0et" secondAttribute="trailing" constant="16" id="zGc-sZ-pIi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="104" y="-91.304347826086968"/>
+        </view>
+    </objects>
+</document>

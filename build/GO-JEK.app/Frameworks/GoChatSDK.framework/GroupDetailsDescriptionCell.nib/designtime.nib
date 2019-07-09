@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+        <array key="SF-Pro-Text-Regular.ttf">
+            <string>SFProText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GroupDetailsDescriptionCell" rowHeight="96" id="IaN-4b-lm0" userLabel="GroupDetailsDescriptionCell" customClass="GroupDetailsDescriptionCell" customModule="GoChatSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IaN-4b-lm0" id="LOd-oP-90a">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbb-W8-3cR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="95.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Qr-yp-2WB" userLabel="Profile Picture View">
+                                <rect key="frame" x="0.0" y="0.0" width="95.5" height="95.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Gn-lV-2F7">
+                                        <rect key="frame" x="12" y="12" width="64" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="32"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="6Qr-yp-2WB" secondAttribute="height" multiplier="1:1" id="FJO-5B-IG7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0XH-M6-G9z" userLabel="Details View">
+                                <rect key="frame" x="95.5" y="0.0" width="279.5" height="95.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="mXG-9W-7Q5" userLabel="Labels Container">
+                                        <rect key="frame" x="0.0" y="31" width="263.5" height="33.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO-JEK Uxers" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxe-Xk-4gZ" userLabel="Title">
+                                                <rect key="frame" x="0.0" y="0.0" width="263.5" height="16"/>
+                                                <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 member" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MkO-aU-DjX" userLabel="Number">
+                                                <rect key="frame" x="0.0" y="20" width="263.5" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                                                <color key="textColor" red="0.69803921568627447" green="0.72941176470588232" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="MkO-aU-DjX" secondAttribute="bottom" id="0Eg-Z2-3dE"/>
+                                            <constraint firstItem="Jxe-Xk-4gZ" firstAttribute="leading" secondItem="mXG-9W-7Q5" secondAttribute="leading" id="5Ah-eG-TAT"/>
+                                            <constraint firstItem="Jxe-Xk-4gZ" firstAttribute="top" secondItem="mXG-9W-7Q5" secondAttribute="top" id="ANF-fi-z4f"/>
+                                            <constraint firstAttribute="trailing" secondItem="MkO-aU-DjX" secondAttribute="trailing" id="d0O-ZA-Ua3"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jxe-Xk-4gZ" secondAttribute="trailing" id="n8I-ep-QLW"/>
+                                            <constraint firstItem="MkO-aU-DjX" firstAttribute="leading" secondItem="mXG-9W-7Q5" secondAttribute="leading" id="s3X-qj-fvv"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="mXG-9W-7Q5" secondAttribute="trailing" constant="16" id="5fT-gP-IbC"/>
+                                    <constraint firstItem="mXG-9W-7Q5" firstAttribute="centerY" secondItem="0XH-M6-G9z" secondAttribute="centerY" id="lcV-jk-pa0"/>
+                                    <constraint firstItem="mXG-9W-7Q5" firstAttribute="leading" secondItem="0XH-M6-G9z" secondAttribute="leading" id="oQW-Bk-RBk"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="0XH-M6-G9z" firstAttribute="leading" secondItem="6Qr-yp-2WB" secondAttribute="trailing" id="05X-Aw-vaX"/>
+                            <constraint firstItem="6Qr-yp-2WB" firstAttribute="top" secondItem="fbb-W8-3cR" secondAttribute="top" id="6DM-dQ-6I0"/>
+                            <constraint firstAttribute="bottom" secondItem="0XH-M6-G9z" secondAttribute="bottom" id="8Jz-aj-j2g"/>
+                            <constraint firstAttribute="trailing" secondItem="0XH-M6-G9z" secondAttribute="trailing" id="RO2-vX-epY"/>
+                            <constraint firstItem="6Qr-yp-2WB" firstAttribute="leading" secondItem="fbb-W8-3cR" secondAttribute="leading" id="S3N-9W-rfY"/>
+                            <constraint firstItem="0XH-M6-G9z" firstAttribute="top" secondItem="fbb-W8-3cR" secondAttribute="top" id="f0Q-18-Bev"/>
+                            <constraint firstAttribute="bottom" secondItem="6Qr-yp-2WB" secondAttribute="bottom" id="zn3-Jv-hpK"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="fbb-W8-3cR" secondAttribute="bottom" id="Vvt-Ig-7L9"/>
+                    <constraint firstAttribute="trailing" secondItem="fbb-W8-3cR" secondAttribute="trailing" id="cgH-dD-2ky"/>
+                    <constraint firstItem="fbb-W8-3cR" firstAttribute="top" secondItem="LOd-oP-90a" secondAttribute="top" id="doP-ZO-iNI"/>
+                    <constraint firstItem="fbb-W8-3cR" firstAttribute="leading" secondItem="LOd-oP-90a" secondAttribute="leading" id="nJ2-aq-do6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="memberCountsLabel" destination="MkO-aU-DjX" id="WfL-P0-KG5"/>
+                <outlet property="profilePictureContainer" destination="4Gn-lV-2F7" id="ydX-60-6gY"/>
+                <outlet property="title" destination="Jxe-Xk-4gZ" id="IeH-Mf-bO4"/>
+            </connections>
+            <point key="canvasLocation" x="-348" y="-746"/>
+        </tableViewCell>
+    </objects>
+</document>

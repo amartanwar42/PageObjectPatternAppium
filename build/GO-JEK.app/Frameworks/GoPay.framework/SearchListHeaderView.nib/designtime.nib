@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchListHeaderView" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vV-r1-8Y8" customClass="SectionHeaderView" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ecw-bJ-qDU"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nV5-E0-b55">
+                    <rect key="frame" x="0.0" y="40" width="375" height="56"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectedProvince" translatesAutoresizingMaskIntoConstraints="NO" id="On3-sA-Bba">
+                            <rect key="frame" x="16" y="12" width="32" height="32"/>
+                            <accessibility key="accessibilityConfiguration" identifier="image_searchCard_header"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="LVC-IM-sWS"/>
+                                <constraint firstAttribute="height" constant="32" id="mhN-vN-s3w"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="East Java" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRy-ax-ZjR">
+                            <rect key="frame" x="60" y="21" width="58.5" height="14"/>
+                            <accessibility key="accessibilityConfiguration" identifier="label_searchCard_header_title"/>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="14"/>
+                            <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKg-M7-j58">
+                            <rect key="frame" x="317" y="0.0" width="42" height="56"/>
+                            <accessibility key="accessibilityConfiguration" identifier="button_searchCard_header_change"/>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="12"/>
+                            <state key="normal" title="Change">
+                                <color key="titleColor" red="0.27058823529411763" green="0.6705882352941176" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="0Fl-A4-sbY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="On3-sA-Bba" firstAttribute="top" secondItem="nV5-E0-b55" secondAttribute="top" constant="12" id="8Bd-l8-n8C"/>
+                        <constraint firstAttribute="bottom" secondItem="On3-sA-Bba" secondAttribute="bottom" constant="12" id="DYp-b7-R78"/>
+                        <constraint firstItem="On3-sA-Bba" firstAttribute="leading" secondItem="nV5-E0-b55" secondAttribute="leading" constant="16" id="MJj-uj-Ihf"/>
+                        <constraint firstItem="FRy-ax-ZjR" firstAttribute="centerY" secondItem="On3-sA-Bba" secondAttribute="centerY" id="O9w-oi-KRl"/>
+                        <constraint firstItem="VKg-M7-j58" firstAttribute="top" secondItem="nV5-E0-b55" secondAttribute="top" id="VnH-hi-vrR"/>
+                        <constraint firstItem="VKg-M7-j58" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="FRy-ax-ZjR" secondAttribute="trailing" constant="12" id="bGh-WZ-pc2"/>
+                        <constraint firstAttribute="trailing" secondItem="VKg-M7-j58" secondAttribute="trailing" constant="16" id="dYE-fg-2aL"/>
+                        <constraint firstAttribute="bottom" secondItem="VKg-M7-j58" secondAttribute="bottom" id="fJ5-fY-Sw4"/>
+                        <constraint firstItem="FRy-ax-ZjR" firstAttribute="leading" secondItem="On3-sA-Bba" secondAttribute="trailing" constant="12" id="zc7-A2-BtA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="nV5-E0-b55" secondAttribute="bottom" id="3n4-8x-x9T"/>
+                <constraint firstItem="3vV-r1-8Y8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Pr2-Cq-Y1U"/>
+                <constraint firstAttribute="trailing" secondItem="nV5-E0-b55" secondAttribute="trailing" id="Rqj-Ds-hhC"/>
+                <constraint firstItem="nV5-E0-b55" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WBu-UZ-Vc3"/>
+                <constraint firstAttribute="trailing" secondItem="3vV-r1-8Y8" secondAttribute="trailing" id="d8I-oX-2ps"/>
+                <constraint firstItem="3vV-r1-8Y8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="dPt-Mr-SDF"/>
+                <constraint firstItem="nV5-E0-b55" firstAttribute="top" secondItem="3vV-r1-8Y8" secondAttribute="bottom" id="vj4-tv-mhY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionButton" destination="VKg-M7-j58" id="Tzd-RN-ZKx"/>
+                <outlet property="headerView" destination="3vV-r1-8Y8" id="euS-tX-s85"/>
+                <outlet property="titleLabel" destination="FRy-ax-ZjR" id="Iig-6R-JVZ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="selectedProvince" width="32" height="32"/>
+    </resources>
+</document>

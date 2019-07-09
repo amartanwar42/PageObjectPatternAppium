@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileImage" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="32r-En-7Yc" id="yif-nf-s6e"/>
+                <outlet property="label" destination="1PG-Ca-hJ4" id="VgS-on-R7t"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="159" height="115"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="32r-En-7Yc">
+                    <rect key="frame" x="0.0" y="0.0" width="159" height="115"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1PG-Ca-hJ4" userLabel="Label for Initials">
+                    <rect key="frame" x="68.5" y="49" width="22" height="17"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1PG-Ca-hJ4" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="2p5-CC-pfg"/>
+                <constraint firstItem="1PG-Ca-hJ4" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="COc-Pk-inK"/>
+                <constraint firstItem="32r-En-7Yc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Pj4-nR-5zR"/>
+                <constraint firstItem="32r-En-7Yc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ggJ-Vy-YrV"/>
+                <constraint firstItem="32r-En-7Yc" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="qQA-ya-r2r"/>
+                <constraint firstAttribute="trailing" secondItem="32r-En-7Yc" secondAttribute="trailing" id="s4Z-z4-dbD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-119.2" y="-200.14992503748127"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="138" id="JE5-vQ-wns" customClass="AdminMessageCell" customModule="GoChatSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JE5-vQ-wns" id="ofR-3O-OaT">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="137.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3vj-9k-EGP" customClass="RoundedRectView" customModule="GoChatSDK" customModuleProvider="target">
+                        <rect key="frame" x="148.5" y="4" width="100" height="130"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Long text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aoL-pA-sjJ">
+                                <rect key="frame" x="8" y="4" width="84" height="122"/>
+                                <color key="backgroundColor" red="0.97647058819999999" green="0.92156862750000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.92156862750000001" blue="0.76862745099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="aoL-pA-sjJ" secondAttribute="bottom" constant="4" id="JC2-Ll-fG1"/>
+                            <constraint firstAttribute="width" constant="100" id="WH1-aZ-L2L"/>
+                            <constraint firstAttribute="trailing" secondItem="aoL-pA-sjJ" secondAttribute="trailing" constant="8" id="ua2-u9-zzO"/>
+                            <constraint firstItem="aoL-pA-sjJ" firstAttribute="top" secondItem="3vj-9k-EGP" secondAttribute="top" constant="4" id="vP9-n8-EhG"/>
+                            <constraint firstItem="aoL-pA-sjJ" firstAttribute="leading" secondItem="3vj-9k-EGP" secondAttribute="leading" constant="8" id="w0Q-XL-z69"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="3vj-9k-EGP" firstAttribute="top" secondItem="ick-C0-pjf" secondAttribute="top" constant="4" id="36k-XA-684"/>
+                <constraint firstItem="ick-C0-pjf" firstAttribute="bottom" secondItem="3vj-9k-EGP" secondAttribute="bottom" constant="4" id="AcJ-0P-aPK"/>
+                <constraint firstItem="3vj-9k-EGP" firstAttribute="centerX" secondItem="ick-C0-pjf" secondAttribute="centerX" id="ONt-ea-KPn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ick-C0-pjf"/>
+            <connections>
+                <outlet property="cellWidth" destination="WH1-aZ-L2L" id="eY5-Ht-4Sq"/>
+                <outlet property="label" destination="aoL-pA-sjJ" id="0Jr-Ae-oY8"/>
+                <outlet property="roundedRect" destination="3vj-9k-EGP" id="7R4-Gu-Ohf"/>
+            </connections>
+            <point key="canvasLocation" x="-49" y="-43"/>
+        </tableViewCell>
+    </objects>
+</document>

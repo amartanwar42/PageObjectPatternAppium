@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrentAddressViewController" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="addressTableView" destination="0F9-C0-8lL" id="wwx-PI-tZE"/>
+                <outlet property="bottomShadowView" destination="aez-St-8mb" id="Rwr-PD-LOE"/>
+                <outlet property="submitButton" destination="xbu-ZM-Guw" id="czd-I5-lCC"/>
+                <outlet property="submitButtonBottomConstraint" destination="FHG-5H-eJp" id="uSN-A5-fpj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0F9-C0-8lL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.89803921568627454" green="0.90196078431372551" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="NTa-M6-YU3"/>
+                        <outlet property="delegate" destination="-1" id="iQ3-jv-hRk"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbu-ZM-Guw">
+                    <rect key="frame" x="16" y="607" width="343" height="44"/>
+                    <color key="backgroundColor" red="0.27058823529411763" green="0.6705882352941176" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" identifier="button_kyc_currentAddress_cubmit"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="90U-cD-vJR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="14"/>
+                    <state key="normal" title="SUBMIT">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="submitButtonTap:" destination="-1" eventType="touchUpInside" id="9bx-l0-VVs"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aez-St-8mb" customClass="ShadowView" customModule="Asphalt">
+                    <rect key="frame" x="0.0" y="585" width="375" height="6"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="u2N-DY-Mcr"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="shadowPosition" value="bottom"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="separatorStyle" value="none"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aez-St-8mb" firstAttribute="trailing" secondItem="0F9-C0-8lL" secondAttribute="trailing" id="410-fD-WZS"/>
+                <constraint firstItem="aez-St-8mb" firstAttribute="leading" secondItem="0F9-C0-8lL" secondAttribute="leading" id="9be-2L-Ks5"/>
+                <constraint firstItem="0F9-C0-8lL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DCm-Og-Lco"/>
+                <constraint firstItem="0F9-C0-8lL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Eo9-R3-vl9"/>
+                <constraint firstAttribute="bottom" secondItem="xbu-ZM-Guw" secondAttribute="bottom" constant="16" id="FHG-5H-eJp"/>
+                <constraint firstAttribute="trailing" secondItem="xbu-ZM-Guw" secondAttribute="trailing" constant="16" id="MFv-3L-awz"/>
+                <constraint firstItem="xbu-ZM-Guw" firstAttribute="top" secondItem="0F9-C0-8lL" secondAttribute="bottom" constant="16" id="Oyu-wY-FVA"/>
+                <constraint firstItem="xbu-ZM-Guw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="bOG-Ne-JR3"/>
+                <constraint firstAttribute="trailing" secondItem="0F9-C0-8lL" secondAttribute="trailing" id="v31-N3-ePI"/>
+                <constraint firstItem="aez-St-8mb" firstAttribute="bottom" secondItem="0F9-C0-8lL" secondAttribute="bottom" id="w7L-i1-6i4"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

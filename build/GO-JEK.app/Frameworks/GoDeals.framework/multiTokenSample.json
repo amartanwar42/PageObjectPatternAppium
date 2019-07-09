@@ -1,0 +1,25 @@
+{
+    "success":true,
+    "allocated_points":60,
+    "play_tokens_request_id":"201809280718257820000000420",
+    "points_tokens":[
+                     {
+                     "points_token_id": "some_id",
+                     "points":20,
+                     "service_type":"GO-CAR",
+                     "payment_type":"GOPAY"
+                     },
+                     {
+                     "points_token_id": "some_id",
+                     "points":10,
+                     "service_type":"GO-RIDE",
+                     "payment_type":"GOPAY"
+                     },
+                     {
+                     "points_token_id": "some_id",
+                     "points":30,
+                     "service_type":"GO-FOOD",
+                     "payment_type":"GOPAY"
+                     }
+                     ]
+}

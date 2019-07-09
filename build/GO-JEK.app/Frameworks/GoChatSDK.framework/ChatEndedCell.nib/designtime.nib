@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChatEndedCell" customModule="GoChatSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vo4-dk-H7K">
+                        <rect key="frame" x="22" y="21" width="276.5" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are no longer a participant of this chat." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vXk-qi-xO5">
+                                <rect key="frame" x="16" y="8" width="244.5" height="22"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vXk-qi-xO5" secondAttribute="bottom" constant="8" id="6uH-PG-YHO"/>
+                            <constraint firstItem="vXk-qi-xO5" firstAttribute="top" secondItem="vo4-dk-H7K" secondAttribute="top" constant="8" id="D8C-sL-7qA"/>
+                            <constraint firstItem="vXk-qi-xO5" firstAttribute="leading" secondItem="vo4-dk-H7K" secondAttribute="leading" constant="16" id="HWC-Ue-3Hv"/>
+                            <constraint firstAttribute="trailing" secondItem="vXk-qi-xO5" secondAttribute="trailing" constant="16" id="cUw-hA-w9v"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vo4-dk-H7K" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="69h-T2-3Ot"/>
+                    <constraint firstAttribute="bottom" secondItem="vo4-dk-H7K" secondAttribute="bottom" constant="20.5" id="csM-dr-OC9"/>
+                    <constraint firstItem="vo4-dk-H7K" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="n64-LK-PN4"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vo4-dk-H7K" secondAttribute="trailing" constant="12" id="nrW-Ji-YPb"/>
+                    <constraint firstItem="vo4-dk-H7K" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="yk0-R0-7g5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bubbleView" destination="vo4-dk-H7K" id="iha-je-oQu"/>
+                <outlet property="errorMessageLabel" destination="vXk-qi-xO5" id="qKC-sA-0ys"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

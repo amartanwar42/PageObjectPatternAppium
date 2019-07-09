@@ -1,7 +1,5 @@
 package com.appium.config;
 
-import com.appium.pages.AccountsPage;
-import com.appium.pages.LoginPage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
@@ -37,9 +35,9 @@ public class Utils {
     public static Properties prop = new Properties();
     static InputStream input = null;
 
-    LoginPage loginPage;
-    AccountsPage accountsPage;
-    UserCredentials credentials;
+//    LoginPageWordPress loginPageWordPress;
+//    AccountsPage accountsPage;
+//    UserCredentials credentials;
 
     @BeforeClass public AppiumDriver<MobileElement> getDriver() throws IOException {
         input = new FileInputStream("property/android.properties");
@@ -81,12 +79,12 @@ public class Utils {
 
     //test case to be debugged individually
     @Test public void loginWithValidUser() throws InterruptedException, IOException {
-        loginPage = new LoginPage(driver);
-        credentials = new UserCredentials("vodqa@gmail.com", "Hello12345678");
-        boolean userNameLoggedIn =
-            loginPage.login(credentials)
-                .waitForWelcomePage().verifyUserIsLoggedIn();
-        Assert.assertTrue(userNameLoggedIn);
+//        loginPageWordPress = new LoginPageWordPress(driver);
+//        credentials = new UserCredentials("vodqa@gmail.com", "Hello12345678");
+//        boolean userNameLoggedIn =
+//            loginPageWordPress.login(credentials)
+//                .waitForWelcomePage().verifyUserIsLoggedIn();
+//        Assert.assertTrue(userNameLoggedIn);
 
     }
 }

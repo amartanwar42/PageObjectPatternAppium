@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ParticipantListView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomShadowView" destination="NoC-w0-U0r" id="Vq6-0i-JFh"/>
+                <outlet property="payButtonView" destination="IVQ-Mx-BkA" id="znX-yI-KoN"/>
+                <outlet property="payButtonViewHeightConstraint" destination="Q7K-hO-uYF" id="eOz-FX-9hR"/>
+                <outlet property="tableView" destination="c6h-cA-5l3" id="Wpl-YH-JZq"/>
+                <outlet property="titleLabel" destination="Kwv-NK-5Dl" id="F0S-fO-5qp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwv-NK-5Dl">
+                    <rect key="frame" x="16" y="8" width="343" height="22"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="22"/>
+                    <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c6h-cA-5l3">
+                    <rect key="frame" x="0.0" y="54" width="375" height="537"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ATc-p0-kaC"/>
+                        <outlet property="delegate" destination="-1" id="x6l-JG-Qal"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IVQ-Mx-BkA" userLabel="Pay Button View">
+                    <rect key="frame" x="0.0" y="591" width="375" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="Q7K-hO-uYF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NoC-w0-U0r" userLabel="Bottom Shadow View" customClass="ShadowView" customModule="Asphalt">
+                    <rect key="frame" x="0.0" y="585" width="375" height="6"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="BT6-1X-t0o"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="separatorLeftInset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="shadowPosition" value="bottom"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="separatorStyle" value="none"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IVQ-Mx-BkA" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="15i-nF-Lpg"/>
+                <constraint firstItem="Kwv-NK-5Dl" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="2Ty-6p-375"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="c6h-cA-5l3" secondAttribute="trailing" id="BY5-EB-iAa"/>
+                <constraint firstItem="IVQ-Mx-BkA" firstAttribute="top" secondItem="c6h-cA-5l3" secondAttribute="bottom" id="FrQ-ZL-EOG"/>
+                <constraint firstItem="IVQ-Mx-BkA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="GEl-WV-R9B"/>
+                <constraint firstItem="c6h-cA-5l3" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IRs-MY-5OO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Kwv-NK-5Dl" secondAttribute="trailing" constant="16" id="JEA-Yi-8hE"/>
+                <constraint firstItem="NoC-w0-U0r" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OKo-eB-R5X"/>
+                <constraint firstAttribute="trailing" secondItem="NoC-w0-U0r" secondAttribute="trailing" id="Pgt-Jh-bYy"/>
+                <constraint firstItem="c6h-cA-5l3" firstAttribute="top" secondItem="Kwv-NK-5Dl" secondAttribute="bottom" constant="24" id="X0w-ws-kqC"/>
+                <constraint firstAttribute="bottom" secondItem="IVQ-Mx-BkA" secondAttribute="bottom" id="Yfu-nf-lhd"/>
+                <constraint firstItem="NoC-w0-U0r" firstAttribute="top" secondItem="IVQ-Mx-BkA" secondAttribute="top" constant="-6" id="k5r-do-6Li"/>
+                <constraint firstItem="Kwv-NK-5Dl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="l5I-kt-2Co"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="153.37331334332833"/>
+        </view>
+    </objects>
+</document>

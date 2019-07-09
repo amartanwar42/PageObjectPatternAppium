@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SelectMemberCollectionViewCell" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="113"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAg-jw-CfI" userLabel="Profile Image" customClass="ProfileImage" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="16" width="64" height="64"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="cy0-8Y-0wh"/>
+                        <constraint firstAttribute="width" constant="64" id="qHN-oQ-iZ0"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXM-RD-PZW" userLabel="Delete Button">
+                    <rect key="frame" x="64" y="64" width="16" height="16"/>
+                    <color key="backgroundColor" red="0.85098039215686272" green="0.24705882352941178" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="16" id="Xu1-Jw-gzS"/>
+                        <constraint firstAttribute="height" constant="16" id="cyr-py-CUx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="10"/>
+                    <state key="normal" title="x">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GlX-gR-FnO" userLabel="Name Label">
+                    <rect key="frame" x="16" y="88" width="64" height="12"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="12"/>
+                    <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="dAg-jw-CfI" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="1qr-R9-oEf"/>
+                <constraint firstItem="GlX-gR-FnO" firstAttribute="top" secondItem="dAg-jw-CfI" secondAttribute="bottom" constant="8" id="2wx-QZ-Fnf"/>
+                <constraint firstItem="GlX-gR-FnO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="G78-Jm-b3O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GlX-gR-FnO" secondAttribute="trailing" constant="16" id="O92-b4-cTh"/>
+                <constraint firstItem="dXM-RD-PZW" firstAttribute="trailing" secondItem="dAg-jw-CfI" secondAttribute="trailing" id="RYy-BE-okf"/>
+                <constraint firstItem="dXM-RD-PZW" firstAttribute="bottom" secondItem="dAg-jw-CfI" secondAttribute="bottom" id="ew4-Rj-0iJ"/>
+                <constraint firstItem="dAg-jw-CfI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="gHD-pe-7z6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="deleteButton" destination="dXM-RD-PZW" id="VfN-vI-oS7"/>
+                <outlet property="nameLabel" destination="GlX-gR-FnO" id="kNH-3h-L5u"/>
+                <outlet property="profileImage" destination="dAg-jw-CfI" id="Okf-d7-8cv"/>
+            </connections>
+            <point key="canvasLocation" x="-41.600000000000001" y="-104.7976011994003"/>
+        </view>
+    </objects>
+</document>

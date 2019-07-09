@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="amountCollectionCellIdentifier" id="gTV-IL-0wX" customClass="AmountCollectionViewCell" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="72" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="72" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rx4-8L-OyZ">
+                        <rect key="frame" x="8" y="8" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="Zww-b9-Xc0"/>
+                            <constraint firstAttribute="height" constant="56" id="vpt-sO-mj3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VJX-OO-btJ">
+                        <rect key="frame" x="2" y="76" width="68" height="17"/>
+                        <accessibility key="accessibilityConfiguration" identifier="directDebit_popularAmount_label"/>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G4T-qZ-VD9">
+                        <rect key="frame" x="54" y="54" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="bTQ-SZ-Wsw"/>
+                            <constraint firstAttribute="width" constant="20" id="ouK-K2-LGI"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="rx4-8L-OyZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="BDO-d6-kvF"/>
+                <constraint firstAttribute="trailing" secondItem="VJX-OO-btJ" secondAttribute="trailing" constant="2" id="KUu-Lr-Ucn"/>
+                <constraint firstItem="VJX-OO-btJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="PcN-gK-AxU"/>
+                <constraint firstAttribute="trailing" secondItem="rx4-8L-OyZ" secondAttribute="trailing" constant="8" id="ULI-Gf-daw"/>
+                <constraint firstItem="G4T-qZ-VD9" firstAttribute="trailing" secondItem="rx4-8L-OyZ" secondAttribute="trailing" constant="10" id="Vgu-Nw-db6"/>
+                <constraint firstItem="VJX-OO-btJ" firstAttribute="top" secondItem="rx4-8L-OyZ" secondAttribute="bottom" constant="12" id="cGM-Tj-E4e"/>
+                <constraint firstAttribute="bottom" secondItem="VJX-OO-btJ" secondAttribute="bottom" constant="7" id="fOa-WB-dID"/>
+                <constraint firstItem="G4T-qZ-VD9" firstAttribute="bottom" secondItem="rx4-8L-OyZ" secondAttribute="bottom" constant="10" id="jJj-SU-tgg"/>
+                <constraint firstItem="rx4-8L-OyZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="qtV-ro-Val"/>
+            </constraints>
+            <connections>
+                <outlet property="amountLabel" destination="VJX-OO-btJ" id="1Pj-cb-a3k"/>
+                <outlet property="checkmarkIcon" destination="G4T-qZ-VD9" id="nAO-0L-7cb"/>
+                <outlet property="titleImageView" destination="rx4-8L-OyZ" id="ApK-4P-L3R"/>
+            </connections>
+            <point key="canvasLocation" x="-225" y="-69"/>
+        </collectionViewCell>
+    </objects>
+</document>

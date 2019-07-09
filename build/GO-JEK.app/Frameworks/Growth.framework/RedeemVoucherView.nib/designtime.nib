@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RedeemVoucherView" customModule="Growth" customModuleProvider="target">
+            <connections>
+                <outlet property="checkMark" destination="vK1-ii-bny" id="fJw-G7-UtR"/>
+                <outlet property="headerLabel" destination="2nN-3b-bpc" id="O7G-PO-Cc6"/>
+                <outlet property="promoTextField" destination="Md0-RL-SMM" id="5Tt-sg-t9W"/>
+                <outlet property="redeemVocher" destination="zR9-OD-fZs" id="oLj-we-CID"/>
+                <outlet property="secondaryHeaderLabel" destination="gUz-cs-QOb" id="wLM-An-pQS"/>
+                <outlet property="separator" destination="67u-Ri-cL6" id="LVx-Fb-7dv"/>
+                <outlet property="separatorHeightConstraint" destination="qeD-7j-bmd" id="0dn-Oy-x7a"/>
+                <outlet property="statusLabel" destination="RBK-Nt-8nS" id="iHw-m5-h1P"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="growth_promo_hero" translatesAutoresizingMaskIntoConstraints="NO" id="zR9-OD-fZs">
+                    <rect key="frame" x="16" y="3" width="113" height="71"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="71" id="9ec-MA-Xlt"/>
+                        <constraint firstAttribute="width" constant="113" id="RN9-rR-gf9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Redeem your promo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nN-3b-bpc">
+                    <rect key="frame" x="16" y="85" width="343" height="26.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                    <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the promo code here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUz-cs-QOb">
+                    <rect key="frame" x="16" y="120.5" width="343" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="18" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Md0-RL-SMM">
+                    <rect key="frame" x="16" y="152.5" width="343" height="22"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBK-Nt-8nS">
+                    <rect key="frame" x="16" y="188.5" width="343" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67u-Ri-cL6">
+                    <rect key="frame" x="16" y="179.5" width="343" height="1"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.90196078431372551" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="qeD-7j-bmd"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="growth_promo_check" translatesAutoresizingMaskIntoConstraints="NO" id="vK1-ii-bny">
+                    <rect key="frame" x="336" y="155.5" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Pp2-wj-kvg"/>
+                        <constraint firstAttribute="width" constant="16" id="eqK-db-9HT"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="RBK-Nt-8nS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="IBS-MG-FqE"/>
+                <constraint firstAttribute="trailing" secondItem="67u-Ri-cL6" secondAttribute="trailing" constant="16" id="KFw-h2-hzo"/>
+                <constraint firstItem="Md0-RL-SMM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Lgh-Gz-XYs"/>
+                <constraint firstItem="gUz-cs-QOb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="M4a-M5-yO1"/>
+                <constraint firstItem="RBK-Nt-8nS" firstAttribute="top" secondItem="67u-Ri-cL6" secondAttribute="bottom" constant="8" id="No1-aW-Ywx"/>
+                <constraint firstItem="Md0-RL-SMM" firstAttribute="top" secondItem="gUz-cs-QOb" secondAttribute="bottom" constant="15" id="RSW-N3-KFK"/>
+                <constraint firstItem="2nN-3b-bpc" firstAttribute="top" secondItem="zR9-OD-fZs" secondAttribute="bottom" constant="11" id="Shd-du-I1S"/>
+                <constraint firstItem="zR9-OD-fZs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="3" id="TFB-Ma-yVZ"/>
+                <constraint firstItem="67u-Ri-cL6" firstAttribute="top" secondItem="Md0-RL-SMM" secondAttribute="bottom" constant="5" id="UMI-i8-ZNp"/>
+                <constraint firstItem="2nN-3b-bpc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="VWm-tX-c7C"/>
+                <constraint firstAttribute="trailing" secondItem="gUz-cs-QOb" secondAttribute="trailing" constant="16" id="Vu1-sf-545"/>
+                <constraint firstItem="gUz-cs-QOb" firstAttribute="top" secondItem="2nN-3b-bpc" secondAttribute="bottom" constant="9" id="WLf-Va-Ap6"/>
+                <constraint firstAttribute="trailing" secondItem="Md0-RL-SMM" secondAttribute="trailing" constant="16" id="bBP-R7-WBr"/>
+                <constraint firstItem="zR9-OD-fZs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="bb2-S1-zai"/>
+                <constraint firstItem="vK1-ii-bny" firstAttribute="centerY" secondItem="Md0-RL-SMM" secondAttribute="centerY" id="crF-7d-OaY"/>
+                <constraint firstAttribute="trailing" secondItem="vK1-ii-bny" secondAttribute="trailing" constant="23" id="gOx-vP-h4n"/>
+                <constraint firstItem="67u-Ri-cL6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="hG8-Q9-D4d"/>
+                <constraint firstAttribute="trailing" secondItem="2nN-3b-bpc" secondAttribute="trailing" constant="16" id="vXe-D1-I9v"/>
+                <constraint firstAttribute="trailing" secondItem="RBK-Nt-8nS" secondAttribute="trailing" constant="16" id="y4O-qG-jke"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="growth_promo_check" width="18" height="18"/>
+        <image name="growth_promo_hero" width="113" height="71"/>
+    </resources>
+</document>

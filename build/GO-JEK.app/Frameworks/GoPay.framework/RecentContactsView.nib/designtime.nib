@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecentContactsView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionTopConstraint" destination="62m-Hv-MYv" id="Fx5-NM-05Y"/>
+                <outlet property="collectionView" destination="Dyg-x8-4a5" id="pwM-cT-gR1"/>
+                <outlet property="headerLabel" destination="74A-eX-qzq" id="bDq-wy-F60"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="161"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Dyg-x8-4a5">
+                    <rect key="frame" x="0.0" y="40" width="375" height="113"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="113" id="hxz-5B-lkK"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mBc-Nf-DCq">
+                        <size key="itemSize" width="96" height="113"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="gUX-Yr-9dp"/>
+                        <outlet property="delegate" destination="-1" id="T0v-Qg-y5O"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="74A-eX-qzq" userLabel="recentHeader" customClass="SectionHeaderView" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" placeholder="YES" id="Snz-os-BLJ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="title" value="Recent Contacts"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Dyg-x8-4a5" firstAttribute="top" secondItem="74A-eX-qzq" secondAttribute="bottom" id="62m-Hv-MYv"/>
+                <constraint firstAttribute="trailing" secondItem="74A-eX-qzq" secondAttribute="trailing" id="HD7-Gv-Bui"/>
+                <constraint firstItem="Dyg-x8-4a5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WRj-fZ-skG"/>
+                <constraint firstAttribute="trailing" secondItem="Dyg-x8-4a5" secondAttribute="trailing" id="Zle-zM-gQ1"/>
+                <constraint firstItem="74A-eX-qzq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qy9-YL-9K9"/>
+                <constraint firstAttribute="bottom" secondItem="Dyg-x8-4a5" secondAttribute="bottom" constant="8" id="tqW-ot-dkL"/>
+                <constraint firstItem="74A-eX-qzq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="tvs-nu-XfT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33.5" y="39.5"/>
+        </view>
+    </objects>
+</document>

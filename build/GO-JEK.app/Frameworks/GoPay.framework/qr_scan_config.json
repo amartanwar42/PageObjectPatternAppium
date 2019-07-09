@@ -1,0 +1,17 @@
+{
+    "activities": [
+                   {
+                   "name": "GP:MT",
+                   "data": "gopay/merchanttransfer"
+                   },
+                   {
+                   "name": "GP:RR",
+                   "data": "gopay/merchanttransfer"
+                   },
+                   {
+                   "name": "GP:GC",
+                   "data": "gocharge/home"
+                   }
+                ],
+    "timestamp": "201720121200123"
+}

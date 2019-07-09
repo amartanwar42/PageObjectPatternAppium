@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MerchantReviewCardView">
+            <connections>
+                <outlet property="buttonContainerHeightConstraint" destination="GdK-Pf-yyr" id="cfI-k3-4wC"/>
+                <outlet property="payButtonContainerView" destination="hQ8-Lu-dxc" id="V0y-Vc-eUZ"/>
+                <outlet property="reviewTableView" destination="9oK-Fw-MUS" id="PvC-bI-gvD"/>
+                <outlet property="termsContainerView" destination="szs-tZ-Uyy" id="9ng-Yc-w5F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hQ8-Lu-dxc">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="GdK-Pf-yyr"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="343" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="szs-tZ-Uyy" customClass="InfoLinkView" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="599" width="343" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9oK-Fw-MUS">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="599"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wNv-nO-vcH"/>
+                        <outlet property="delegate" destination="-1" id="Ixn-SR-h9P"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hQ8-Lu-dxc" secondAttribute="trailing" id="1d8-X5-PIf"/>
+                <constraint firstItem="szs-tZ-Uyy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="5EX-KB-klk"/>
+                <constraint firstAttribute="trailing" secondItem="szs-tZ-Uyy" secondAttribute="trailing" constant="16" id="ClG-FQ-Lmj"/>
+                <constraint firstAttribute="trailing" secondItem="9oK-Fw-MUS" secondAttribute="trailing" id="Jvj-CM-zts"/>
+                <constraint firstItem="9oK-Fw-MUS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NQj-Y7-dva"/>
+                <constraint firstItem="hQ8-Lu-dxc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UbO-bE-FLX"/>
+                <constraint firstItem="szs-tZ-Uyy" firstAttribute="top" secondItem="9oK-Fw-MUS" secondAttribute="bottom" id="cX0-ur-T7l"/>
+                <constraint firstItem="9oK-Fw-MUS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sxb-AE-9lY"/>
+                <constraint firstItem="hQ8-Lu-dxc" firstAttribute="top" secondItem="szs-tZ-Uyy" secondAttribute="bottom" constant="8" id="vGr-ws-8b1"/>
+                <constraint firstAttribute="bottom" secondItem="hQ8-Lu-dxc" secondAttribute="bottom" id="wgN-Wg-Ojv"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

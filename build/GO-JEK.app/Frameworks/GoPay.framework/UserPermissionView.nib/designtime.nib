@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMediumPatched.ttf">
+            <string>NeoSansPro-MediumPatched</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="UserPermissionView" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="190"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kJU-CP-ggS">
+                    <rect key="frame" x="151.5" y="0.0" width="72" height="72"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="72" id="5Pb-Tz-tGF"/>
+                        <constraint firstAttribute="width" constant="72" id="voI-z5-BGV"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZs-hz-1VU">
+                    <rect key="frame" x="16" y="87" width="343" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="WLt-ey-uUo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueK-3F-Pk6">
+                    <rect key="frame" x="16" y="116" width="343" height="32"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnB-U0-MoV">
+                    <rect key="frame" x="127" y="163" width="120" height="27"/>
+                    <color key="backgroundColor" red="0.26666666666666666" green="0.6705882352941176" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="jWj-Sj-KK5"/>
+                        <constraint firstAttribute="height" constant="27" id="lBd-yN-f9Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="12"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="vZs-hz-1VU" secondAttribute="trailing" constant="16" id="AKt-Tt-Fa3"/>
+                <constraint firstAttribute="bottom" secondItem="xnB-U0-MoV" secondAttribute="bottom" id="CnC-DA-nol"/>
+                <constraint firstItem="vZs-hz-1VU" firstAttribute="top" secondItem="kJU-CP-ggS" secondAttribute="bottom" constant="15" id="Dbc-cE-iP0"/>
+                <constraint firstItem="ueK-3F-Pk6" firstAttribute="top" secondItem="vZs-hz-1VU" secondAttribute="bottom" constant="9" id="JSy-4o-Y7G"/>
+                <constraint firstItem="vZs-hz-1VU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Lui-M2-bTh"/>
+                <constraint firstAttribute="trailing" secondItem="ueK-3F-Pk6" secondAttribute="trailing" constant="16" id="TKv-d1-l6y"/>
+                <constraint firstItem="kJU-CP-ggS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Xf9-lh-m9C"/>
+                <constraint firstItem="xnB-U0-MoV" firstAttribute="top" secondItem="ueK-3F-Pk6" secondAttribute="bottom" constant="15" id="bNs-wG-jBT"/>
+                <constraint firstItem="kJU-CP-ggS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ogJ-9v-SKp"/>
+                <constraint firstItem="ueK-3F-Pk6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="vta-rk-mnH"/>
+                <constraint firstItem="xnB-U0-MoV" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wuv-oF-722"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="confirmButton" destination="xnB-U0-MoV" id="Edq-2r-dA3"/>
+                <outlet property="descriptionLabel" destination="ueK-3F-Pk6" id="IwI-ku-hPW"/>
+                <outlet property="headerImageView" destination="kJU-CP-ggS" id="qWo-04-XB2"/>
+                <outlet property="titleLabel" destination="vZs-hz-1VU" id="TOU-Ja-YFs"/>
+            </connections>
+            <point key="canvasLocation" x="30" y="-60"/>
+        </view>
+    </objects>
+</document>

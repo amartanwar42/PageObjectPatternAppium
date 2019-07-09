@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMediumPatched.ttf">
+            <string>NeoSansPro-MediumPatched</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegionSwitcherCard" customModule="Launchpad" customModuleProvider="target">
+            <connections>
+                <outlet property="ctaButton" destination="5XA-51-80r" id="NVP-1l-6Pu"/>
+                <outlet property="descriptionLabel" destination="22X-X5-E2z" id="btg-Xo-xda"/>
+                <outlet property="imageView" destination="8ls-Iz-Hah" id="3Rc-Yo-4n1"/>
+                <outlet property="infoView" destination="iN0-l3-epB" id="pYv-Rz-c7X"/>
+                <outlet property="titleLabel" destination="3MU-QZ-hdp" id="oae-zv-pBw"/>
+                <outlet property="tncTextView" destination="hd5-Fl-AaS" id="ecg-8V-GTW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="346"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spotHeroSwitchRegionIndonesia" translatesAutoresizingMaskIntoConstraints="NO" id="8ls-Iz-Hah">
+                    <rect key="frame" x="50.5" y="24" width="274" height="168"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3MU-QZ-hdp">
+                    <rect key="frame" x="16" y="208" width="343" height="29.5"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="22"/>
+                    <color key="textColor" red="0.14509803921568626" green="0.15686274509803921" blue="0.16862745098039217" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="22X-X5-E2z">
+                    <rect key="frame" x="16" y="241.5" width="343" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.32156862745098036" green="0.3411764705882353" blue="0.36078431372549019" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Taq-43-MY7">
+                    <rect key="frame" x="16" y="274.5" width="343" height="20"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info_icon" translatesAutoresizingMaskIntoConstraints="NO" id="lYC-aW-zff">
+                            <rect key="frame" x="2" y="0.0" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="2gV-sf-rhK"/>
+                                <constraint firstAttribute="height" constant="20" id="WD9-4Q-qdr"/>
+                            </constraints>
+                        </imageView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hd5-Fl-AaS">
+                            <rect key="frame" x="26" y="-8" width="317" height="28"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.27058823529411763" green="0.6705882352941176" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" placeholder="YES" id="dIu-G8-RpJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="xbB-pu-AKf"/>
+                            </connections>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="lYC-aW-zff" secondAttribute="bottom" id="FfQ-Vq-rdy"/>
+                        <constraint firstAttribute="bottom" secondItem="hd5-Fl-AaS" secondAttribute="bottom" id="W4y-vR-3Hj"/>
+                        <constraint firstItem="lYC-aW-zff" firstAttribute="top" secondItem="Taq-43-MY7" secondAttribute="top" id="ce5-Hk-7yk"/>
+                        <constraint firstAttribute="trailing" secondItem="hd5-Fl-AaS" secondAttribute="trailing" id="ivQ-d5-nAZ"/>
+                        <constraint firstItem="lYC-aW-zff" firstAttribute="leading" secondItem="Taq-43-MY7" secondAttribute="leading" constant="2" id="k2F-5V-Qml"/>
+                        <constraint firstItem="hd5-Fl-AaS" firstAttribute="leading" secondItem="lYC-aW-zff" secondAttribute="trailing" constant="4" id="kBA-NV-SUs"/>
+                        <constraint firstItem="hd5-Fl-AaS" firstAttribute="top" secondItem="Taq-43-MY7" secondAttribute="top" constant="-8" id="zdB-7P-QgS"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5XA-51-80r" customClass="TextButton" customModule="Asphalt">
+                    <rect key="frame" x="16" y="302.5" width="343" height="43.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43.5" id="Dns-qs-6eA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="buttonType" value="primary"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="ctaButtonTap:" destination="-1" eventType="touchUpInside" id="eq3-jc-47o"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Taq-43-MY7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="5Xm-v0-x1b"/>
+                <constraint firstItem="Taq-43-MY7" firstAttribute="top" secondItem="22X-X5-E2z" secondAttribute="bottom" constant="16" id="9xW-Wm-WkO"/>
+                <constraint firstAttribute="trailing" secondItem="Taq-43-MY7" secondAttribute="trailing" constant="16" id="DNU-PT-Dik"/>
+                <constraint firstItem="3MU-QZ-hdp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="Ie7-D6-Nid"/>
+                <constraint firstAttribute="trailing" secondItem="5XA-51-80r" secondAttribute="trailing" constant="16" id="JnE-b0-Lwi"/>
+                <constraint firstItem="5XA-51-80r" firstAttribute="top" secondItem="Taq-43-MY7" secondAttribute="bottom" constant="8" id="K1c-nF-Pn5"/>
+                <constraint firstItem="5XA-51-80r" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="SQl-qK-hz6"/>
+                <constraint firstAttribute="trailing" secondItem="22X-X5-E2z" secondAttribute="trailing" constant="16" id="aVJ-zn-uC0"/>
+                <constraint firstItem="8ls-Iz-Hah" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="cFB-wY-CVP"/>
+                <constraint firstItem="3MU-QZ-hdp" firstAttribute="top" secondItem="8ls-Iz-Hah" secondAttribute="bottom" constant="16" id="ehd-rU-1Zq"/>
+                <constraint firstAttribute="bottom" secondItem="5XA-51-80r" secondAttribute="bottom" id="jum-Ik-AXi"/>
+                <constraint firstItem="8ls-Iz-Hah" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="24" id="vJH-sL-KeM"/>
+                <constraint firstItem="22X-X5-E2z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="xAK-Cl-r7t"/>
+                <constraint firstAttribute="trailing" secondItem="3MU-QZ-hdp" secondAttribute="trailing" constant="16" id="xJy-Yd-mB1"/>
+                <constraint firstItem="22X-X5-E2z" firstAttribute="top" secondItem="3MU-QZ-hdp" secondAttribute="bottom" constant="4" id="yMq-KU-iaH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="info_icon" width="24" height="24"/>
+        <image name="spotHeroSwitchRegionIndonesia" width="274" height="168"/>
+    </resources>
+</document>

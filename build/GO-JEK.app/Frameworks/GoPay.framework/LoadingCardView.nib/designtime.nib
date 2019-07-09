@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="amountLabel" destination="h5j-RR-cEX" id="ERc-ud-bJd"/>
+                <outlet property="detailsLabel" destination="Jbk-Dt-Pcx" id="J6B-QI-khQ"/>
+                <outlet property="loadingView" destination="YbU-YP-mnf" id="O5r-qy-lev"/>
+                <outlet property="titleLabel" destination="BFM-Qi-Lcj" id="qlK-YW-D8H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BFM-Qi-Lcj">
+                    <rect key="frame" x="16" y="16" width="343" height="22"/>
+                    <accessibility key="accessibilityConfiguration" identifier="label_directDebit_processingPayment_title"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="22"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbk-Dt-Pcx">
+                    <rect key="frame" x="16" y="75" width="98" height="17"/>
+                    <accessibility key="accessibilityConfiguration" identifier="label_directDebit_totalPayment_title"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rp250.000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h5j-RR-cEX">
+                    <rect key="frame" x="281" y="75" width="78" height="17"/>
+                    <accessibility key="accessibilityConfiguration" identifier="label_directDebit_totalPaymentAmount"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbU-YP-mnf">
+                    <rect key="frame" x="16" y="65" width="343" height="2"/>
+                    <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="XyP-Sc-d3J"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="YbU-YP-mnf" secondAttribute="trailing" constant="16" id="0zw-94-mA7"/>
+                <constraint firstItem="Jbk-Dt-Pcx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="6jc-E6-vIC"/>
+                <constraint firstItem="BFM-Qi-Lcj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="Hzr-pA-1bc"/>
+                <constraint firstAttribute="trailing" secondItem="BFM-Qi-Lcj" secondAttribute="trailing" constant="16" id="Ke8-5y-HOu"/>
+                <constraint firstAttribute="bottom" secondItem="YbU-YP-mnf" secondAttribute="bottom" constant="35" id="aWt-P9-AnU"/>
+                <constraint firstItem="YbU-YP-mnf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="atj-Vb-28J"/>
+                <constraint firstAttribute="bottom" secondItem="h5j-RR-cEX" secondAttribute="bottom" constant="10" id="cK0-U1-gVT"/>
+                <constraint firstItem="BFM-Qi-Lcj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="com-qA-LV5"/>
+                <constraint firstAttribute="bottom" secondItem="Jbk-Dt-Pcx" secondAttribute="bottom" constant="10" id="jIs-rN-8nF"/>
+                <constraint firstItem="h5j-RR-cEX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Jbk-Dt-Pcx" secondAttribute="trailing" constant="16" id="y3N-K0-eUA"/>
+                <constraint firstAttribute="trailing" secondItem="h5j-RR-cEX" secondAttribute="trailing" constant="16" id="y5w-Xn-Bf6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="34.5" y="-110"/>
+        </view>
+    </objects>
+</document>

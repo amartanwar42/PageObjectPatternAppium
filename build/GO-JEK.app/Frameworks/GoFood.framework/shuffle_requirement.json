@@ -1,0 +1,6 @@
+{
+    "minimum_card":3,
+    "required_card":[
+        "gofood:platter:shortcut"
+    ]
+}

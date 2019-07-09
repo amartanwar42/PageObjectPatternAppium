@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddMoreTableViewCell" id="KGk-i7-Jjw" customClass="AddMoreTableViewCell" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Another Bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEZ-7C-PC1">
+                        <rect key="frame" x="101.5" y="13" width="117.5" height="17"/>
+                        <accessibility key="accessibilityConfiguration" identifier="label_withdraw_addBank"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.23921568627450979" green="0.75294117647058822" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E9g-bn-WEd" userLabel="seperator">
+                        <rect key="frame" x="0.0" y="42.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.7843137255" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="erd-Tn-KnT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EEZ-7C-PC1" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3uc-pQ-lHF"/>
+                    <constraint firstAttribute="bottom" secondItem="E9g-bn-WEd" secondAttribute="bottom" id="6TC-LO-1eB"/>
+                    <constraint firstAttribute="trailing" secondItem="E9g-bn-WEd" secondAttribute="trailing" id="9us-ZJ-MFl"/>
+                    <constraint firstAttribute="leading" secondItem="E9g-bn-WEd" secondAttribute="leading" id="ts7-lv-bb2"/>
+                    <constraint firstItem="EEZ-7C-PC1" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="vvK-4C-KWw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addAnotherBankLabel" destination="EEZ-7C-PC1" id="3lR-EW-pUy"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

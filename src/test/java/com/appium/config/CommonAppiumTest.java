@@ -6,16 +6,18 @@ import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
+import org.junit.Assert;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 
 import java.time.Duration;
 import java.util.List;
 import java.util.Set;
+
+import static io.appium.java_client.touch.WaitOptions.waitOptions;
+import static io.appium.java_client.touch.offset.PointOption.point;
 
 public class CommonAppiumTest {
     public AppiumDriver driver;
@@ -25,23 +27,52 @@ public class CommonAppiumTest {
         this.driver = driver;
     }
 
-    public void waitForPageToLoad(WebElement id) {
+    public WebElement waitForElementToBeClickable(WebElement id) {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.elementToBeClickable(id));
+        return id;
     }
+
+    public WebElement waitForElementToBeClickable(WebElement id, int timeout) {
+        WebDriverWait wait = new WebDriverWait(driver, timeout);
+        wait.until(ExpectedConditions.elementToBeClickable(id));
+        return id;
+    }
+
+    public boolean isAndroid(){
+        return driver.getPlatformName().equalsIgnoreCase("Android");}
 
     public void waitForElementToDisAppear(String id) {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id(id)));
     }
 
+    public void handleAlertIfPresent(){
+        try {
+            WebDriverWait alertWait= new WebDriverWait(driver,20);
+            alertWait.until(ExpectedConditions.alertIsPresent()).dismiss();
+        }catch (Exception e){
+            System.out.println("No alert found");
+        }
+    }
     public void waitForElementsToAppear(List<WebElement> id) {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.visibilityOfAllElements(id));
     }
 
+    public WebElement waitForElementToBeVisible(WebElement id) {
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.visibilityOfAllElements(id));
+        return id;
+    }
+    public WebElement waitForElementToBeVisible(WebElement id,int timeout) {
+        WebDriverWait wait = new WebDriverWait(driver, 15);
+        wait.until(ExpectedConditions.visibilityOfAllElements(id));
+        return id;
+    }
+
     public WebElement waitForElement(WebElement arg) {
-        waitForPageToLoad(arg);
+        waitForElementToBeClickable(arg);
         WebElement el = arg;
         return el;
     }
@@ -88,6 +119,20 @@ public class CommonAppiumTest {
                 .moveTo(PointOption.point(endx,starty)).release();
     }
 
+    public void scrollUp() {
+        int height = driver.manage().window().getSize().getHeight();
+        int width = driver.manage().window().getSize().getWidth();
+        swipe(width / 2, height / 3, width / 2, height * 2 / 3, 1000);
+    }
+
+    public void swipe(int startX, int startY, int endX, int endY, int durationInMilliSeconds) {
+        new TouchAction(driver)
+                .press(point(startX, startY))
+                .waitAction(waitOptions(Duration.ofMillis(durationInMilliSeconds)))
+                .moveTo(point(endX, endY)).release().perform();
+        Reporter.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Swipe done",true);
+    }
+
     /**
      * method to set the context to required view.
      *
@@ -108,9 +153,35 @@ public class CommonAppiumTest {
         logger.info("Current context" + driver.getContext());
     }
 
+    public void hideKeyboard() {
+        try {
+            driver.hideKeyboard();
+        } catch (WebDriverException e) {
+            // ignore exception
+        }
+    }
     public void clickBackButton() {
         driver.navigate().back(); //Closes keyboard
         //driver.navigate().back(); //Comes out of edit mode
+    }
+
+    public void scrollDownTo(By byOfElementToBeFound) {
+        hideKeyboard();
+        for (int i = 0; i < 20; i++) {
+            if (driver.findElements(byOfElementToBeFound).size() > 0)
+
+                return;
+            scrollDown();
+        }
+        Assert.fail("Did not find : " + byOfElementToBeFound.toString());
+    }
+
+    public void scrollDown() {
+        int height = driver.manage().window().getSize().getHeight();
+        int width = driver.manage().window().getSize().getWidth();
+        Reporter.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Swipe started",true);
+        swipe(width / 2, height * 2 / 3, width / 2, height / 3, 1000);
+
     }
 
 

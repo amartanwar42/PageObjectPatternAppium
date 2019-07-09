@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowHelpInfoCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingIndicator" destination="WeZ-hw-EdP" id="Cnj-9T-m5S"/>
+                <outlet property="optionInfoTableView" destination="dbG-cR-B2f" id="Tgj-D7-YEK"/>
+                <outlet property="topShadowView" destination="Igc-UO-RMW" id="B4f-dU-3f4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9qG-dg-IqC">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dbG-cR-B2f">
+                    <rect key="frame" x="0.0" y="8" width="375" height="659"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5Dt-SE-gge"/>
+                        <outlet property="delegate" destination="-1" id="MNh-Gf-Rpa"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Igc-UO-RMW" customClass="ShadowView" customModule="Asphalt">
+                    <rect key="frame" x="0.0" y="2" width="375" height="6"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="X08-RH-htw"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="shadowPosition" value="top"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="separatorStyle" value="none"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="WeZ-hw-EdP">
+                    <rect key="frame" x="177.5" y="48" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="TOK-6V-LkS"/>
+                        <constraint firstAttribute="width" constant="20" id="Tuf-EM-n0E"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="WeZ-hw-EdP" firstAttribute="top" secondItem="Igc-UO-RMW" secondAttribute="bottom" constant="40" id="23W-ad-X5y"/>
+                <constraint firstAttribute="trailing" secondItem="dbG-cR-B2f" secondAttribute="trailing" id="6cr-pD-zWl"/>
+                <constraint firstItem="Igc-UO-RMW" firstAttribute="leading" secondItem="9qG-dg-IqC" secondAttribute="leading" id="G2D-DK-lNh"/>
+                <constraint firstItem="WeZ-hw-EdP" firstAttribute="centerX" secondItem="9qG-dg-IqC" secondAttribute="centerX" id="OkJ-oG-3dB"/>
+                <constraint firstAttribute="trailing" secondItem="Igc-UO-RMW" secondAttribute="trailing" id="R3b-o6-gWR"/>
+                <constraint firstItem="dbG-cR-B2f" firstAttribute="leading" secondItem="9qG-dg-IqC" secondAttribute="leading" id="YLe-bB-TsW"/>
+                <constraint firstAttribute="bottom" secondItem="dbG-cR-B2f" secondAttribute="bottom" id="ZcO-Zy-zJU"/>
+                <constraint firstItem="dbG-cR-B2f" firstAttribute="top" secondItem="9qG-dg-IqC" secondAttribute="top" constant="8" id="fct-rF-6PL"/>
+                <constraint firstItem="Igc-UO-RMW" firstAttribute="top" secondItem="9qG-dg-IqC" secondAttribute="top" constant="2" id="sx0-a6-ASW"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransactionFailedCard" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomStackView" destination="r6f-5b-3vl" id="7DP-rH-zbm"/>
+                <outlet property="feedbackView" destination="cuf-8t-0Nn" id="mp1-2r-HHl"/>
+                <outlet property="imageView" destination="8Se-6E-K0X" id="FXA-Kx-cmp"/>
+                <outlet property="subTitleLabel" destination="EJ6-Ug-bRc" id="K1f-eD-fy8"/>
+                <outlet property="titleLabel" destination="TqM-KZ-Rtk" id="xer-4J-MiC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="418" height="496"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="5cN-kw-lw4" userLabel="Content Stack View">
+                    <rect key="frame" x="16" y="0.0" width="386" height="496"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8Se-6E-K0X">
+                            <rect key="frame" x="0.0" y="0.0" width="386" height="88.5"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vXS-er-aqc" userLabel="Labels Stack View">
+                            <rect key="frame" x="0.0" y="104.5" width="386" height="235.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqM-KZ-Rtk">
+                                    <rect key="frame" x="0.0" y="0.0" width="386" height="210.5"/>
+                                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="22"/>
+                                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJ6-Ug-bRc">
+                                    <rect key="frame" x="0.0" y="218.5" width="386" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuf-8t-0Nn" userLabel="Feedback View" customClass="FeedbackView" customModule="GoPay" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="356" width="386" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="9qK-ln-mbt"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--------------------------------------------------------------------------------------------" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5W-YH-i88" userLabel="Separator">
+                            <rect key="frame" x="0.0" y="432" width="386" height="3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="3" id="GQj-3B-XVO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="r6f-5b-3vl" userLabel="Bottom Stack View">
+                            <rect key="frame" x="0.0" y="451" width="386" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="ijJ-GA-YpJ"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5cN-kw-lw4" secondAttribute="bottom" id="02y-4L-yvp"/>
+                <constraint firstAttribute="trailing" secondItem="5cN-kw-lw4" secondAttribute="trailing" constant="16" id="DXj-jT-GZp"/>
+                <constraint firstItem="5cN-kw-lw4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="TgZ-2b-izp"/>
+                <constraint firstAttribute="top" secondItem="5cN-kw-lw4" secondAttribute="top" id="k0n-ZB-dkR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-21" y="57"/>
+        </view>
+    </objects>
+</document>

@@ -7,15 +7,15 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-    public class Runner {
+public class Runner {
 
-        @Test public void testRunner() throws Exception {
-            ATDRunner parallelThread = new ATDRunner();
-            List<String> test = new ArrayList<String>();
-            test.add("LoginTest");
-            boolean runner = parallelThread.runner("com.appium.tests");
-            System.out.println(runner);
-            Assert.assertFalse(runner);
-        }
-
+    @Test
+    public void testRunner() throws Exception {
+        ATDRunner parallelThread = new ATDRunner();
+        List<String> test = new ArrayList<String>();
+        test.add("LoginTest");
+        boolean runner = parallelThread.runner("com.appium.tests");
+        System.out.println(runner);
+        Assert.assertFalse(runner);
+    }
 }

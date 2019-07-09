@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BarCodeFullScreenViewController" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="closeButton" destination="y5V-v0-4Uz" id="f9q-4t-xCW"/>
+                <outlet property="codeExpiredView" destination="gJA-DS-03c" id="PM9-gD-OGH"/>
+                <outlet property="headerBar" destination="PmX-8p-DKd" id="fEj-BG-ufd"/>
+                <outlet property="headerBarTopConstraint" destination="ZMy-tW-3VQ" id="IrO-bB-XT9"/>
+                <outlet property="pagingControl" destination="PoX-Oa-03p" id="O1T-n8-mU2"/>
+                <outlet property="scrollView" destination="cfe-IK-luA" id="DaT-qt-VVz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmX-8p-DKd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5V-v0-4Uz">
+                            <rect key="frame" x="0.0" y="4" width="55" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="4fK-9Z-s6Q"/>
+                                <constraint firstAttribute="width" constant="55" id="USX-PR-hCb"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="12" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" image="closeIcon">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="closeButtonTappedWithSender:" destination="-1" eventType="touchUpInside" id="plQ-br-t5Q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="y5V-v0-4Uz" secondAttribute="bottom" id="2I5-bL-KVf"/>
+                        <constraint firstItem="y5V-v0-4Uz" firstAttribute="top" secondItem="PmX-8p-DKd" secondAttribute="top" constant="4" id="XvX-af-GlW"/>
+                        <constraint firstItem="y5V-v0-4Uz" firstAttribute="leading" secondItem="PmX-8p-DKd" secondAttribute="leading" id="Zxv-AC-nVZ"/>
+                        <constraint firstAttribute="height" constant="44" id="tfM-Mm-4yQ"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="xI5-2U-bPc"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gJA-DS-03c">
+                    <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="characterWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0sS-G8-lRF">
+                            <rect key="frame" x="16" y="36" width="343" height="5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="5" id="0eB-9I-Xir"/>
+                                <constraint firstAttribute="height" constant="5" id="X77-6f-q0K"/>
+                            </constraints>
+                            <string key="text">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="5"/>
+                            <color key="textColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="0sS-G8-lRF" secondAttribute="bottom" constant="3" id="0KY-Ex-wyL"/>
+                        <constraint firstAttribute="height" constant="44" id="BpC-AF-yCE"/>
+                        <constraint firstItem="0sS-G8-lRF" firstAttribute="leading" secondItem="gJA-DS-03c" secondAttribute="leading" constant="16" id="RBK-MU-3ow"/>
+                        <constraint firstAttribute="trailing" secondItem="0sS-G8-lRF" secondAttribute="trailing" constant="16" id="Z9W-fP-aFb"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfe-IK-luA">
+                    <rect key="frame" x="0.0" y="88" width="375" height="579"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="QkH-ql-R9Z"/>
+                    </connections>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="PoX-Oa-03p">
+                    <rect key="frame" x="16" y="614" width="343" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="GgY-F9-wY2"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" red="0.79215686269999996" green="0.79215686269999996" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.3921568627" green="0.62352941179999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="pagingClicked" destination="-1" eventType="valueChanged" id="hvZ-kv-FID"/>
+                    </connections>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gJA-DS-03c" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="08G-db-efA"/>
+                <constraint firstItem="gJA-DS-03c" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="3jg-30-Sn7"/>
+                <constraint firstItem="cfe-IK-luA" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="Fml-GR-tOS"/>
+                <constraint firstItem="cfe-IK-luA" firstAttribute="top" secondItem="gJA-DS-03c" secondAttribute="bottom" id="LeC-ig-m3N"/>
+                <constraint firstItem="PmX-8p-DKd" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RQB-zS-8Tf"/>
+                <constraint firstItem="PmX-8p-DKd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZMy-tW-3VQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="PoX-Oa-03p" secondAttribute="trailing" constant="16" id="auX-xi-CpL"/>
+                <constraint firstItem="PmX-8p-DKd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="cLi-hB-eXH"/>
+                <constraint firstItem="gJA-DS-03c" firstAttribute="top" secondItem="PmX-8p-DKd" secondAttribute="bottom" id="eGb-3n-pQZ"/>
+                <constraint firstItem="PoX-Oa-03p" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hGy-1G-qIU"/>
+                <constraint firstItem="cfe-IK-luA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="iWw-5L-qfv"/>
+                <constraint firstItem="cfe-IK-luA" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ins-2K-Vud"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="PoX-Oa-03p" secondAttribute="bottom" constant="16" id="qkF-I8-7Ye"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="152.47376311844079"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeIcon" width="24" height="24"/>
+    </resources>
+</document>

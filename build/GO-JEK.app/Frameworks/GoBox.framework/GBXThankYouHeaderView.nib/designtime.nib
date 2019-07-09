@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" id="iN0-l3-epB" customClass="GBXThankYouHeaderView" customModule="GoBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="391"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="lKo-le-Cdq">
+                    <rect key="frame" x="8" y="8" width="584" height="294"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="THANKS FOR USING GO-JEK!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUb-Ag-gYL">
+                            <rect key="frame" x="0.0" y="8" width="584" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Driver" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfg-U8-IAz">
+                            <rect key="frame" x="271" y="172" width="42" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="Nec-5G-V7F"/>
+                                <constraint firstAttribute="height" constant="21" id="gAi-zq-g6C"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="gAi-zq-g6C"/>
+                                </mask>
+                            </variation>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="NAMA DRIVER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aaz-eS-uWA">
+                            <rect key="frame" x="239" y="190" width="107" height="26"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Vehicle" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ZC-GI-EgO">
+                            <rect key="frame" x="268" y="224" width="48" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="TIPE KENDARAAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Rs-ir-f4Y">
+                            <rect key="frame" x="227" y="268" width="130" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="driver-photo-default" translatesAutoresizingMaskIntoConstraints="NO" id="IgW-T2-NKt">
+                            <rect key="frame" x="233" y="46" width="118" height="118"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="999" constant="118" id="0kl-md-poi"/>
+                                <constraint firstAttribute="width" constant="118" id="Fue-th-Fiq"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="NOMOR KENDARAAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8j-ZC-fy9">
+                            <rect key="frame" x="216" y="242" width="152" height="26"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="IgW-T2-NKt" firstAttribute="top" secondItem="GUb-Ag-gYL" secondAttribute="bottom" constant="8" id="C7u-uL-yMN"/>
+                        <constraint firstItem="Bfg-U8-IAz" firstAttribute="top" secondItem="IgW-T2-NKt" secondAttribute="bottom" constant="8" id="CzG-QY-M2B"/>
+                        <constraint firstAttribute="centerX" secondItem="GUb-Ag-gYL" secondAttribute="centerX" id="Dyz-5Z-u6b"/>
+                        <constraint firstAttribute="centerX" secondItem="0ZC-GI-EgO" secondAttribute="centerX" id="Fao-21-cq6"/>
+                        <constraint firstAttribute="centerX" secondItem="Aaz-eS-uWA" secondAttribute="centerX" id="IQQ-tl-ciI"/>
+                        <constraint firstItem="Aaz-eS-uWA" firstAttribute="top" secondItem="Bfg-U8-IAz" secondAttribute="bottom" id="JAs-lI-bPg"/>
+                        <constraint firstAttribute="centerX" secondItem="IgW-T2-NKt" secondAttribute="centerX" id="Jr9-uc-o6Z"/>
+                        <constraint firstAttribute="bottom" secondItem="7Rs-ir-f4Y" secondAttribute="bottom" id="K9P-fi-0dp"/>
+                        <constraint firstItem="u8j-ZC-fy9" firstAttribute="top" secondItem="0ZC-GI-EgO" secondAttribute="bottom" id="MRQ-SM-5hN"/>
+                        <constraint firstItem="0ZC-GI-EgO" firstAttribute="top" secondItem="Aaz-eS-uWA" secondAttribute="bottom" constant="8" id="QE1-9l-2Sp"/>
+                        <constraint firstItem="7Rs-ir-f4Y" firstAttribute="top" secondItem="u8j-ZC-fy9" secondAttribute="bottom" id="UfY-6p-VLg"/>
+                        <constraint firstItem="GUb-Ag-gYL" firstAttribute="width" secondItem="lKo-le-Cdq" secondAttribute="width" id="ZAE-AI-CC4"/>
+                        <constraint firstAttribute="centerX" secondItem="7Rs-ir-f4Y" secondAttribute="centerX" id="a2e-rJ-0XJ"/>
+                        <constraint firstItem="GUb-Ag-gYL" firstAttribute="top" secondItem="lKo-le-Cdq" secondAttribute="top" constant="8" id="ncN-Dc-Sap"/>
+                        <constraint firstAttribute="centerX" secondItem="Bfg-U8-IAz" secondAttribute="centerX" id="tuG-Rl-jCL"/>
+                        <constraint firstAttribute="centerX" secondItem="u8j-ZC-fy9" secondAttribute="centerX" id="yje-V9-Ka0"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hl-Gc-I5d">
+                    <rect key="frame" x="271" y="310" width="58" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="oRr-9j-5qc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ORDER ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8R-9K-xb2">
+                    <rect key="frame" x="264.5" y="339" width="72.5" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="FT6-Sz-y7P"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="o8R-9K-xb2" firstAttribute="top" secondItem="9Hl-Gc-I5d" secondAttribute="bottom" constant="8" id="3Dx-dS-iqN"/>
+                <constraint firstAttribute="trailing" secondItem="lKo-le-Cdq" secondAttribute="trailing" constant="8" id="8YW-mb-1w7"/>
+                <constraint firstItem="lKo-le-Cdq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Ajs-Cx-D81"/>
+                <constraint firstItem="9Hl-Gc-I5d" firstAttribute="centerX" secondItem="lKo-le-Cdq" secondAttribute="centerX" id="QLG-kz-3PT"/>
+                <constraint firstAttribute="bottom" secondItem="lKo-le-Cdq" secondAttribute="bottom" constant="89" id="SZO-Zl-Yk3"/>
+                <constraint firstItem="o8R-9K-xb2" firstAttribute="centerX" secondItem="9Hl-Gc-I5d" secondAttribute="centerX" id="ayL-TF-Ecj"/>
+                <constraint firstItem="lKo-le-Cdq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="i2r-PW-W4h"/>
+                <constraint firstItem="9Hl-Gc-I5d" firstAttribute="top" secondItem="lKo-le-Cdq" secondAttribute="bottom" constant="8" symbolic="YES" id="keG-eo-z3Z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomDistanceConstraint" destination="SZO-Zl-Yk3" id="VtA-0F-J6D"/>
+                <outlet property="carNumberLabel" destination="u8j-ZC-fy9" id="aUq-h9-X55"/>
+                <outlet property="carTypeLabel" destination="7Rs-ir-f4Y" id="F7q-Sp-Pxk"/>
+                <outlet property="containerView" destination="lKo-le-Cdq" id="q7i-sB-wMN"/>
+                <outlet property="driverImageView" destination="IgW-T2-NKt" id="hgs-21-pko"/>
+                <outlet property="driverNameLabel" destination="Aaz-eS-uWA" id="Tca-gH-bjU"/>
+                <outlet property="driverTitle" destination="Bfg-U8-IAz" id="CU9-kV-NIj"/>
+                <outlet property="orderId" destination="9Hl-Gc-I5d" id="7PD-rm-1le"/>
+                <outlet property="orderIdLabel" destination="o8R-9K-xb2" id="GNy-pJ-X1r"/>
+                <outlet property="thanksTitle" destination="GUb-Ag-gYL" id="fxv-x2-pwU"/>
+                <outlet property="topDistanceConstraint" destination="Ajs-Cx-D81" id="A4Q-Pv-EgP"/>
+                <outlet property="vehicleTitle" destination="0ZC-GI-EgO" id="CS8-V4-RpM"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="419.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="driver-photo-default" width="118" height="118"/>
+    </resources>
+</document>

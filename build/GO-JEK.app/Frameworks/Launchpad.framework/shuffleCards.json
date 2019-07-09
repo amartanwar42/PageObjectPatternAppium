@@ -1,0 +1,71 @@
+{
+    "data": {
+        "cards": [
+                  {
+                  "card_id": "hcd:ridecard:01",
+                  "card_type": 3,
+                  "start_time": 1451606400,
+                  "end_time": 4102444800,
+                  "priority": 0.1,
+                  "source": "hard coded",
+                  "service_type": 1,
+                  "content": {
+                  "title": "Jalanan macet?",
+                  "image_url": "http://gojek-splash.imgix.net/app/shuffle/GoRide-card-new-logo@3x.png",
+                  "image_width": 623,
+                  "image_height": 416,
+                  "actions": [
+                              {
+                              "description": "PESAN SEKARANG ",
+                              "deep_link": "gojek://goride"
+                              }
+                              ]
+                  }
+                  },
+                  {
+                  "card_id": "hcd:foodcard:01",
+                  "card_type": 3,
+                  "start_time": 1451606400,
+                  "end_time": 4102444800,
+                  "priority": 0.2,
+                  "source": "hard coded",
+                  "service_type": 5,
+                  "content": {
+                  "title": "Lapar? Cek makanan yang lagi hits",
+                  "image_url": "http://gojek-splash.imgix.net/app/shuffle/GoFood-card-new-logo@3x.png",
+                  "image_width": 600,
+                  "image_height": 400,
+                  "actions": [
+                              {
+                              "description": "PESAN SEKARANG",
+                              "deep_link": "gojek://gofood/merchant/category/BEST_SELLER/category_name_id/Best%20Seller/category_name_en/Best%20Seller"
+                              }
+                              ]
+                  }
+                  },
+                  {
+                  "card_id": "hcd:paycard:01",
+                  "card_type": 3,
+                  "start_time": 1451606400,
+                  "end_time": 4102444800,
+                  "priority": 0.3,
+                  "source": "hard coded",
+                  "service_type": 99,
+                  "content": {
+                  "title": "Lebih hemat dengan GO-PAY",
+                  "image_url": "http://gopoints.imgix.net/GoPay-card-old-logo@3x.png",
+                  "image_width": 600,
+                  "image_height": 400,
+                  "actions": [
+                              {
+                              "description": "ISI SALDO",
+                              "deep_link": "gojek://gopay/topup"
+                              }
+                              ]
+                  }
+                  }
+                  ]
+    },
+    "success": true,
+    "errors": []
+}

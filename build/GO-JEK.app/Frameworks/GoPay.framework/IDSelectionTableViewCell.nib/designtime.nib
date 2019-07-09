@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="IDSelectionTableViewCell" id="KGk-i7-Jjw" customClass="IDSelectionTableViewCell" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nPN-nv-MRu">
+                        <rect key="frame" x="16" y="16" width="40" height="40"/>
+                        <accessibility key="accessibilityConfiguration" identifier="image_kyc_idSelection_idIcon"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Zns-hh-wYv"/>
+                            <constraint firstAttribute="width" constant="40" id="xqy-Lq-LI7"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rah-lg-buT">
+                        <rect key="frame" x="335" y="24" width="24" height="24"/>
+                        <accessibility key="accessibilityConfiguration" identifier="image_kyc_idSelection_checkMark"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="EnU-dH-yOe"/>
+                            <constraint firstAttribute="height" constant="24" id="cgG-IB-Yca"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kartu Tanda Penduduk (KTP)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwh-CU-G9j">
+                        <rect key="frame" x="72" y="27.5" width="212" height="16"/>
+                        <accessibility key="accessibilityConfiguration" identifier="label_kyc_idSelection_name"/>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="16"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rah-lg-buT" firstAttribute="centerY" secondItem="dwh-CU-G9j" secondAttribute="centerY" id="DCQ-NR-LPM"/>
+                    <constraint firstItem="nPN-nv-MRu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Mc0-1G-xSH"/>
+                    <constraint firstItem="Rah-lg-buT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dwh-CU-G9j" secondAttribute="trailing" constant="5" id="aDA-s4-ldn"/>
+                    <constraint firstItem="Rah-lg-buT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="dSf-Gz-a1w"/>
+                    <constraint firstItem="nPN-nv-MRu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="eBe-i9-mxU"/>
+                    <constraint firstAttribute="trailing" secondItem="Rah-lg-buT" secondAttribute="trailing" constant="16" id="r6Q-p8-i2E"/>
+                    <constraint firstAttribute="bottom" secondItem="nPN-nv-MRu" secondAttribute="bottom" constant="16" id="rJs-Da-9Ve"/>
+                    <constraint firstItem="dwh-CU-G9j" firstAttribute="centerY" secondItem="nPN-nv-MRu" secondAttribute="centerY" id="uy8-7m-VwX"/>
+                    <constraint firstItem="dwh-CU-G9j" firstAttribute="leading" secondItem="nPN-nv-MRu" secondAttribute="trailing" constant="16" id="xzO-u3-zqY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="idCheckImageView" destination="Rah-lg-buT" id="Aoz-Wj-Ef1"/>
+                <outlet property="idImageView" destination="nPN-nv-MRu" id="oMl-6J-LFM"/>
+                <outlet property="idLable" destination="dwh-CU-G9j" id="Mvt-p6-aIf"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>

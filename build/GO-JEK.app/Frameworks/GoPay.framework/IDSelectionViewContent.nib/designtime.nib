@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IDSelectionView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="changeIdDescriptionLabel" destination="YgJ-ck-O8Z" id="Al7-VI-TbK"/>
+                <outlet property="changeIdLabel" destination="VvE-1v-a5t" id="S7n-SP-Smj"/>
+                <outlet property="idTableView" destination="mmX-uG-tNr" id="bOt-OQ-lpw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VvE-1v-a5t">
+                    <rect key="frame" x="16" y="0.0" width="102.5" height="22"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="22"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change your unique identification type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgJ-ck-O8Z">
+                    <rect key="frame" x="16" y="28" width="256" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mmX-uG-tNr">
+                    <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="4VU-68-5Os"/>
+                        <outlet property="delegate" destination="-1" id="UYi-XZ-Bv4"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="mmX-uG-tNr" secondAttribute="bottom" id="3jv-YP-qLq"/>
+                <constraint firstItem="YgJ-ck-O8Z" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="3sB-aS-59u"/>
+                <constraint firstItem="VvE-1v-a5t" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="4Kq-dj-jAl"/>
+                <constraint firstItem="VvE-1v-a5t" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="JnI-Cd-efy"/>
+                <constraint firstItem="YgJ-ck-O8Z" firstAttribute="top" secondItem="VvE-1v-a5t" secondAttribute="bottom" constant="6" id="Sad-wf-9K7"/>
+                <constraint firstItem="mmX-uG-tNr" firstAttribute="top" secondItem="YgJ-ck-O8Z" secondAttribute="bottom" constant="11" id="bBS-K7-CtX"/>
+                <constraint firstAttribute="trailing" secondItem="mmX-uG-tNr" secondAttribute="trailing" id="oL4-9C-YdC"/>
+                <constraint firstItem="mmX-uG-tNr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s92-Pj-Pld"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

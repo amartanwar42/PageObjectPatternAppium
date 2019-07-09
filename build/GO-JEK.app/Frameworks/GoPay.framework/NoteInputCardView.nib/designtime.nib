@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+        <array key="NeoSansProMediumPatched.ttf">
+            <string>NeoSansPro-MediumPatched</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoteInputCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="deleteButton" destination="31D-r2-KlG" id="nAR-1E-lzn"/>
+                <outlet property="deleteWidthConstraint" destination="dn1-VI-U25" id="jTa-MW-vHx"/>
+                <outlet property="noteHeightConstraint" destination="WXv-uo-av7" id="BoV-GK-rPc"/>
+                <outlet property="noteTextView" destination="AV1-yO-8qr" id="ICu-3e-IhJ"/>
+                <outlet property="notesPlaceholder" destination="api-lb-rhs" id="c6x-ik-0jp"/>
+                <outlet property="titleLabel" destination="mJg-gN-xda" id="9ar-jp-9Jb"/>
+                <outlet property="topLineLabel" destination="QBJ-2g-85E" id="6qY-w4-vfz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBJ-2g-85E">
+                    <rect key="frame" x="16" y="33" width="288" height="2"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="tk5-QG-D2u"/>
+                    </constraints>
+                    <string key="text">-----------------------------------------------------------------------------------------------------------------------------------------------</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJg-gN-xda">
+                    <rect key="frame" x="16" y="0.0" width="233" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="kOn-zF-OcJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pm5-ed-sZg">
+                    <rect key="frame" x="0.0" y="45" width="320" height="25"/>
+                    <subviews>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV1-yO-8qr">
+                            <rect key="frame" x="16" y="0.0" width="288" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="Pjs-KY-Iax"/>
+                            </connections>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AV1-yO-8qr" secondAttribute="trailing" constant="16" id="NS1-xx-4ew"/>
+                        <constraint firstItem="AV1-yO-8qr" firstAttribute="top" secondItem="pm5-ed-sZg" secondAttribute="top" id="Ryo-lo-0Ng"/>
+                        <constraint firstAttribute="height" constant="25" id="WXv-uo-av7"/>
+                        <constraint firstItem="AV1-yO-8qr" firstAttribute="leading" secondItem="pm5-ed-sZg" secondAttribute="leading" constant="16" id="nPU-Sh-jqE"/>
+                        <constraint firstAttribute="bottom" secondItem="AV1-yO-8qr" secondAttribute="bottom" id="rlH-qb-S10"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="api-lb-rhs">
+                    <rect key="frame" x="17" y="45" width="279" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="v01-Zm-eRw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.76078431372549016" green="0.792156862745098" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31D-r2-KlG">
+                    <rect key="frame" x="249" y="0.0" width="55" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="55" id="dn1-VI-U25"/>
+                        <constraint firstAttribute="height" constant="35" id="s0g-fa-MgT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="13"/>
+                    <state key="normal" title="Delete">
+                        <color key="titleColor" white="0.29210379460000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QBJ-2g-85E" firstAttribute="top" secondItem="mJg-gN-xda" secondAttribute="bottom" constant="12" id="5xI-fs-i9q"/>
+                <constraint firstItem="api-lb-rhs" firstAttribute="top" secondItem="mJg-gN-xda" secondAttribute="bottom" constant="24" id="5xU-JB-Xcr"/>
+                <constraint firstItem="pm5-ed-sZg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SEf-AL-zWe"/>
+                <constraint firstAttribute="trailing" secondItem="pm5-ed-sZg" secondAttribute="trailing" id="SJ6-bw-EWm"/>
+                <constraint firstItem="api-lb-rhs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="17" id="U34-ko-PmH"/>
+                <constraint firstItem="QBJ-2g-85E" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="UeY-bE-H4j"/>
+                <constraint firstItem="31D-r2-KlG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WcV-lj-rHh"/>
+                <constraint firstItem="mJg-gN-xda" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="ZtT-aX-d7V"/>
+                <constraint firstItem="31D-r2-KlG" firstAttribute="leading" secondItem="mJg-gN-xda" secondAttribute="trailing" id="aPl-pz-aCS"/>
+                <constraint firstAttribute="trailing" secondItem="api-lb-rhs" secondAttribute="trailing" constant="24" id="ck3-PH-K7j"/>
+                <constraint firstAttribute="trailing" secondItem="QBJ-2g-85E" secondAttribute="trailing" constant="16" id="frA-NJ-95h"/>
+                <constraint firstItem="pm5-ed-sZg" firstAttribute="top" secondItem="mJg-gN-xda" secondAttribute="bottom" constant="24" id="hnt-tr-9qe"/>
+                <constraint firstItem="mJg-gN-xda" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="kHh-zk-9lY"/>
+                <constraint firstAttribute="trailing" secondItem="31D-r2-KlG" secondAttribute="trailing" constant="16" id="mZP-4b-RJX"/>
+            </constraints>
+            <point key="canvasLocation" x="33" y="53"/>
+        </view>
+    </objects>
+</document>

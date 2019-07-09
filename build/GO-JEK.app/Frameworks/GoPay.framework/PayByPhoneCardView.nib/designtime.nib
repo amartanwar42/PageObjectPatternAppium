@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMediumPatched.ttf">
+            <string>NeoSansPro-MediumPatched</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayByPhoneCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="cancelSearchBarButton" destination="kG2-sf-E2q" id="wcp-iJ-RK4"/>
+                <outlet property="listTableHeaderView" destination="SQM-r2-yzM" id="MEk-fe-VqR"/>
+                <outlet property="listTableView" destination="WSL-Xi-Lhp" id="oov-C8-iYy"/>
+                <outlet property="pasteButton" destination="wQ2-hQ-sJi" id="TGZ-Dx-6NR"/>
+                <outlet property="recentContainerView" destination="CWS-Uu-Wbl" id="RBz-CC-bLQ"/>
+                <outlet property="searchBar" destination="g3u-tM-3dq" id="TWe-2a-ich"/>
+                <outlet property="searchBarButtonWidthConstraint" destination="92P-4U-ntG" id="OFj-vv-ifw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar clipsSubviews="YES" contentMode="redraw" horizontalHuggingPriority="253" horizontalCompressionResistancePriority="753" searchBarStyle="minimal" placeholder="Enter for name, phone number" translatesAutoresizingMaskIntoConstraints="NO" id="g3u-tM-3dq">
+                    <rect key="frame" x="8" y="0.0" width="294" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="OXe-QI-fLq"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5J-rd-u5q" userLabel="Search Bar Button View">
+                    <rect key="frame" x="302" y="0.0" width="65" height="56"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="kG2-sf-E2q">
+                            <rect key="frame" x="0.0" y="0.0" width="65" height="56"/>
+                            <fontDescription key="fontDescription" name="NeoSansPro-MediumPatched" family="Neo Sans Pro" pointSize="12"/>
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="16" maxY="0.0"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wQ2-hQ-sJi">
+                            <rect key="frame" x="33" y="16" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="8I0-nj-sVg"/>
+                                <constraint firstAttribute="width" constant="24" id="vbz-yK-T61"/>
+                            </constraints>
+                            <state key="normal" image="payPasteIcon"/>
+                            <connections>
+                                <action selector="pasteButtonPressed:" destination="-1" eventType="touchUpInside" id="Hkn-b7-20H"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="kG2-sf-E2q" secondAttribute="trailing" id="077-yC-Hlz"/>
+                        <constraint firstAttribute="bottom" secondItem="kG2-sf-E2q" secondAttribute="bottom" id="49d-fn-sU7"/>
+                        <constraint firstAttribute="width" constant="65" id="92P-4U-ntG"/>
+                        <constraint firstItem="kG2-sf-E2q" firstAttribute="top" secondItem="U5J-rd-u5q" secondAttribute="top" id="GrQ-pG-sA8"/>
+                        <constraint firstAttribute="trailing" secondItem="wQ2-hQ-sJi" secondAttribute="trailing" constant="8" id="RES-QN-ncf"/>
+                        <constraint firstItem="kG2-sf-E2q" firstAttribute="leading" secondItem="U5J-rd-u5q" secondAttribute="leading" id="hic-QS-ai6"/>
+                        <constraint firstItem="wQ2-hQ-sJi" firstAttribute="centerY" secondItem="U5J-rd-u5q" secondAttribute="centerY" id="nh5-Pp-eHZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWS-Uu-Wbl">
+                    <rect key="frame" x="0.0" y="56" width="375" height="161"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="161" placeholder="YES" id="TiL-kO-Cvm"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQM-r2-yzM" customClass="SectionHeaderView" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="217" width="375" height="44"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" placeholder="YES" id="ZPh-9V-ebU"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WSL-Xi-Lhp">
+                    <rect key="frame" x="0.0" y="261" width="375" height="406"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8Ib-JC-N3c"/>
+                        <outlet property="delegate" destination="-1" id="f1k-Mr-cfG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="U5J-rd-u5q" firstAttribute="height" secondItem="g3u-tM-3dq" secondAttribute="height" id="41p-nM-4la"/>
+                <constraint firstItem="U5J-rd-u5q" firstAttribute="leading" secondItem="g3u-tM-3dq" secondAttribute="trailing" id="Axs-M4-AaH"/>
+                <constraint firstItem="g3u-tM-3dq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="H1m-zL-dTh"/>
+                <constraint firstAttribute="trailing" secondItem="CWS-Uu-Wbl" secondAttribute="trailing" id="KLx-Ve-rR3"/>
+                <constraint firstAttribute="trailing" secondItem="SQM-r2-yzM" secondAttribute="trailing" id="L2e-VV-xJ3"/>
+                <constraint firstItem="CWS-Uu-Wbl" firstAttribute="top" secondItem="g3u-tM-3dq" secondAttribute="bottom" id="MLL-GM-QyB"/>
+                <constraint firstAttribute="trailing" secondItem="U5J-rd-u5q" secondAttribute="trailing" constant="8" id="Zbh-6z-TP3"/>
+                <constraint firstAttribute="bottom" secondItem="WSL-Xi-Lhp" secondAttribute="bottom" id="bXk-Cl-mRe"/>
+                <constraint firstAttribute="trailing" secondItem="WSL-Xi-Lhp" secondAttribute="trailing" id="eZn-zy-enS"/>
+                <constraint firstItem="U5J-rd-u5q" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fme-hU-AdA"/>
+                <constraint firstItem="g3u-tM-3dq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="hzB-nV-tLY"/>
+                <constraint firstItem="SQM-r2-yzM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kGu-GP-uJq"/>
+                <constraint firstItem="SQM-r2-yzM" firstAttribute="top" secondItem="CWS-Uu-Wbl" secondAttribute="bottom" id="qno-72-Mjk"/>
+                <constraint firstItem="WSL-Xi-Lhp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xzY-qr-gdh"/>
+                <constraint firstItem="CWS-Uu-Wbl" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zMk-8c-AeZ"/>
+                <constraint firstItem="WSL-Xi-Lhp" firstAttribute="top" secondItem="SQM-r2-yzM" secondAttribute="bottom" id="zR2-Tk-Hc3"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="payPasteIcon" width="24" height="24"/>
+    </resources>
+</document>

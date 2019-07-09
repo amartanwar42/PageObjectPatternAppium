@@ -2,17 +2,18 @@
   "android": {
     "platformName": "android",
     "platformVersion": "7.0",
-    "app": "./build/wordpress.apk",
+    "app": "./build/gojek-integration.apk",
     "automationName":"UIAutomator2",
-    "appPackage": "org.wordpress.android",
-    "appActivity": "org.wordpress.android.ui.WPLaunchActivity",
+    "appPackage": "com.gojek.app.staging",
+    "appActivity": "com.gojek.home.GojekSplash",
     "deviceName": "android",
-    "noSign": true
+    "noSign": true,
+    "autoGrantPermissions": true
   },
   "iOS": {
     "platformName": "iOS",
     "app": {
-      "simulator": "./build/WordPress.zip"
+      "simulator": "./build/GO-JEK.app"
     },
     "deviceName": "iPhone",
     "wdaLaunchTimeout": 80000,
@@ -28,12 +29,12 @@
       "machineIP": "127.0.0.1",
       "simulators": [
         {
-          "deviceName": "iPhone 6",
-          "OS": "11.4"
+          "deviceName": "iPhone Xʀ",
+          "OS": "12.2"
         },
         {
-          "deviceName": "iPhone 7",
-          "OS": "11.4"
+          "deviceName": "iPhone Xs",
+          "OS": "12.2"
         }
       ]
     }

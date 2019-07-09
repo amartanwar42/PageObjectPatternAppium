@@ -1,0 +1,241 @@
+{
+    "data":{
+        "cards":[                 {
+                 "card_id":"gofood:platter:cuisinecategory",
+                 "card_type":12,
+                 "start_time":1530266306,
+                 "end_time":1530871106,
+                 "source":"platter",
+                 "service_type":5,
+                 "card_template":"gofood:platter:cuisinecategory",
+                 "service_area_id":1,
+                 "content":{
+                 "title":"Choose from cuisines",
+                 "actions":[
+                            {
+                            "description":"Martabak",
+                            "deep_link":"gojek://gofood/merchant/category/ANEKA_NASI?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/92e34ccf-cea6-4e07-8a66-1f2bd4e1f76d.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Aneka Nasi",
+                            "deep_link":"gojek://gofood/merchant/category/ANEKA_NASI?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/c0c65eee-9c64-49e9-af21-6e2378ec96fa.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Aneka Ayam & Bebek",
+                            "deep_link":"gojek://gofood/merchant/category/ANEKA_AYAM_BEBEK?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/d6534041-7d9f-466a-bb8a-ba56345fed32.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Snack & Jajanan",
+                            "deep_link":"gojek://gofood/merchant/category/SNACKS_JAJANAN?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/92e34ccf-cea6-4e07-8a66-1f2bd4e1f76d.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Pizza & Pasta",
+                            "deep_link":"gojek://gofood/merchant/category/PIZZA_PASTA?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/f2032658-ad1f-4bf6-97df-7d3a1f41e7a5.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Bakmie",
+                            "deep_link":"gojek://gofood/merchant/category/BAKMIE?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/db60ae81-17ac-40b4-ae9c-7b379cd32a2f.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Soto, Bakso, Sop",
+                            "deep_link":"gojek://gofood/merchant/category/SOTO_BAKSO_SOP?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/b3284fc6-9f64-43ce-8a6f-483f01a2edfa.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Fastfood",
+                            "deep_link":"gojek://gofood/merchant/category/FASTFOOD?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/92e34ccf-cea6-4e07-8a66-1f2bd4e1f76d.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Minuman",
+                            "deep_link":"gojek://gofood/merchant/category/MINUMAN?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/92e34ccf-cea6-4e07-8a66-1f2bd4e1f76d.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Sate",
+                            "deep_link":"gojek://gofood/merchant/category/SATE?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/115c9f3b-9412-4804-8613-b90180f10fa2.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Japanese",
+                            "deep_link":"gojek://gofood/merchant/category/JAPANESE?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/4e150404-51e8-4569-beac-9e183cc23b20.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Sweets & Desserts",
+                            "deep_link":"gojek://gofood/merchant/category/SWEETS_DESSERTS?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/868bf58a-cc71-46da-9d68-e668f64316a9.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Western",
+                            "deep_link":"gojek://gofood/merchant/category/BURGER_SANDWICH_STEAK?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/dbd0e952-e693-4752-b094-15a93c84ff5c.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Seafood",
+                            "deep_link":"gojek://gofood/merchant/category/SEAFOOD?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/8822156c-fae8-475e-941d-fe8219055913.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Chinese",
+                            "deep_link":"gojek://gofood/merchant/category/CHINESE?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/0f45edd8-3c07-4d01-89cd-e3dd42070f00.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Korean",
+                            "deep_link":"gojek://gofood/merchant/category/KOREAN?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/4458cffd-e5fa-4a52-a33c-6b34a810c26d.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Indian Food",
+                            "deep_link":"gojek://gofood/merchant/category/INDIAN_FOOD?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/95161ef8-bae9-43d7-b392-fe1263482fa3.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Middle Eastern",
+                            "deep_link":"gojek://gofood/merchant/category/MIDDLE_EASTERN?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/6e05ef41-4be1-4609-9d0b-22e62f58120f.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Coffee Shop",
+                            "deep_link":"gojek://gofood/merchant/category/COFFEE_SHOP?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/2a5c3024-67b5-4019-871e-c01eb6256440.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Thai",
+                            "deep_link":"gojek://gofood/merchant/category/THAI?source=SHUFFLE&campaign=gofood%3Aplatter%3Acuisinecategory&group=CUISINE_CATEGORY_LIST",
+                            "image_url":"http://i-integration.gojekapi.com/uploads/bc67c666-4bcb-4035-a8f2-c3529a3061e7.jpg",
+                            "image_width":200,
+                            "image_height":200
+                            }
+                            ]
+                 }
+                 },
+                 {
+                 "card_id":"gofood:platter:shortcut",
+                 "card_type":13,
+                 "start_time":1530266306,
+                 "end_time":1530871106,
+                 "priority":0.8,
+                 "source":"platter",
+                 "service_type":5,
+                 "card_template":"gofood:platter:shortcut",
+                 "service_area_id":1,
+                 "content":{
+                 "title":"Explore from categories",
+                 "actions":[
+                            {
+                            "description":"Near Me",
+                            "deep_link":"gojek://gofood/merchant/category/NEAR_ME?source=SHUFFLE&campaign=gofood%3Aplatter%3Ashortcut&group=SHORTCUT_GRID_LIST",
+                            "image_url":"https://i-integration.gojekapi.com/uploads/30d80958-69ab-4e3e-9191-b53207cc9166.png",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Best Sellers",
+                            "deep_link":"gojek://gofood/merchant/category/BEST_SELLER?source=SHUFFLE&campaign=gofood%3Aplatter%3Ashortcut&group=SHORTCUT_GRID_LIST",
+                            "image_url":"https://i-integration.gojekapi.com/uploads/cb5f264c-95ae-4af3-abdf-cf14ec9ae118.png",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Delivery Promo",
+                            "deep_link":"gojek://gofood/merchant/category/PARTNERS?source=SHUFFLE&campaign=gofood%3Aplatter%3Ashortcut&group=SHORTCUT_GRID_LIST",
+                            "image_url":"https://i-integration.gojekapi.com/uploads/9da44e50-1f31-4ada-9dbe-ce684c4f8622.png",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Newly Added",
+                            "deep_link":"gojek://gofood/merchant/category/NEW_MERCHANT?source=SHUFFLE&campaign=gofood%3Aplatter%3Ashortcut&group=SHORTCUT_GRID_LIST",
+                            "image_url":"https://i-integration.gojekapi.com/uploads/98f026ba-b8ad-49eb-8d22-586df5d64296.png",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"24 Hours",
+                            "deep_link":"gojek://gofood/merchant/category/24_HOURS?source=SHUFFLE&campaign=gofood%3Aplatter%3Ashortcut&group=SHORTCUT_GRID_LIST",
+                            "image_url":"https://i-integration.gojekapi.com/uploads/987bfbd8-80b0-435e-827a-07b8e9520d1e.png",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Budget Meal",
+                            "deep_link":"gojek://gofood/merchant/category/AFFORDABLE_PRICE?source=SHUFFLE&campaign=gofood%3Aplatter%3Ashortcut&group=SHORTCUT_GRID_LIST",
+                            "image_url":"https://i-integration.gojekapi.com/uploads/7f359167-893b-4a3b-a118-2a9f2daeca1a.png",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Promotions",
+                            "deep_link":"gojek://gofood/merchant/category/PROMOTIONS?source=SHUFFLE&campaign=gofood%3Aplatter%3Ashortcut&group=SHORTCUT_GRID_LIST",
+                            "image_url":"https://i-integration.gojekapi.com/uploads/831f3bf7-79dd-41bb-9bb6-678b8251cff4.png",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Most Loved",
+                            "deep_link":"gojek://gofood/merchant/category/MOST_LOVED?source=SHUFFLE&campaign=gofood%3Aplatter%3Ashortcut&group=SHORTCUT_GRID_LIST",
+                            "image_url":"https://i-integration.gojekapi.com/uploads/fbf3f467-9f59-4750-b004-c1ca62bf79a7.png",
+                            "image_width":200,
+                            "image_height":200
+                            },
+                            {
+                            "description":"Healthy Food",
+                            "deep_link":"gojek://gofood/merchant/category/HEALTHY_FOOD?source=SHUFFLE&campaign=gofood%3Aplatter%3Ashortcut&group=SHORTCUT_GRID_LIST",
+                            "image_url":"https://i-integration.gojekapi.com/uploads/7fcb7402-8124-4118-93e0-73b77a5083c3.png",
+                            "image_width":200,
+                            "image_height":200
+                            }
+                            ]
+                 }
+                 },
+                 ]
+    },
+    "success": true,
+    "errors": []
+}

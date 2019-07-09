@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GBXStandardTextViewCell" rowHeight="47" id="dA6-Ju-mOV" customClass="GBXContactPickerCell" customModule="GoBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dA6-Ju-mOV" id="2vn-Z0-rEa">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="46.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons-notes" translatesAutoresizingMaskIntoConstraints="NO" id="mmc-42-jNU">
+                        <rect key="frame" x="8" y="11" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="HgJ-tM-xhT"/>
+                            <constraint firstAttribute="height" constant="22" id="qul-Oa-EnN"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBV-KO-DXy" userLabel="separator">
+                        <rect key="frame" x="43" y="39" width="277" height="1"/>
+                        <color key="backgroundColor" red="0.69612538814544678" green="0.69610452651977539" blue="0.69611632823944092" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fOB-Kv-WeJ"/>
+                        </constraints>
+                    </view>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Instructions" translatesAutoresizingMaskIntoConstraints="NO" id="rC4-7p-cPm">
+                        <rect key="frame" x="37" y="4" width="275" height="27"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mmc-42-jNU" firstAttribute="leading" secondItem="2vn-Z0-rEa" secondAttribute="leading" constant="8" id="1Lo-rt-fjE"/>
+                    <constraint firstItem="rC4-7p-cPm" firstAttribute="leading" secondItem="mmc-42-jNU" secondAttribute="trailing" constant="7" id="2FG-BG-uAE"/>
+                    <constraint firstItem="mmc-42-jNU" firstAttribute="top" secondItem="2vn-Z0-rEa" secondAttribute="top" constant="11" id="3Gc-Fm-pIx"/>
+                    <constraint firstItem="yBV-KO-DXy" firstAttribute="top" secondItem="rC4-7p-cPm" secondAttribute="bottom" constant="8" id="Aak-Bv-1nc"/>
+                    <constraint firstAttribute="trailing" secondItem="rC4-7p-cPm" secondAttribute="trailing" constant="8" id="Bou-cy-vna"/>
+                    <constraint firstAttribute="trailing" secondItem="yBV-KO-DXy" secondAttribute="trailing" id="W1j-qC-zMg"/>
+                    <constraint firstItem="rC4-7p-cPm" firstAttribute="leading" secondItem="yBV-KO-DXy" secondAttribute="leading" constant="-6" id="aY3-tT-jqB"/>
+                    <constraint firstItem="rC4-7p-cPm" firstAttribute="top" secondItem="2vn-Z0-rEa" secondAttribute="topMargin" constant="-4" id="hUM-ne-uXz"/>
+                    <constraint firstItem="mmc-42-jNU" firstAttribute="centerY" secondItem="rC4-7p-cPm" secondAttribute="centerY" constant="4" id="jKB-z0-gSa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftIcon" destination="mmc-42-jNU" id="4l6-zZ-o1W"/>
+            </connections>
+            <point key="canvasLocation" x="313" y="217.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icons-notes" width="22" height="22"/>
+    </resources>
+</document>

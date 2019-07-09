@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmptyStateBlockAnimationView" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="428" height="431"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DiK-64-Tdq">
+                    <rect key="frame" x="64" y="0.0" width="300" height="300"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="DiK-64-Tdq" secondAttribute="height" multiplier="300:300" id="3d3-9P-FJq"/>
+                        <constraint firstAttribute="height" constant="300" id="BYU-RX-Oka"/>
+                        <constraint firstAttribute="width" constant="300" id="VXZ-Oe-vcA"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7Y-N3-hck">
+                    <rect key="frame" x="16" y="320" width="396" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="lessThanOrEqual" priority="750" constant="44" id="xlT-A0-eKx"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="22"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVR-ql-tGh">
+                    <rect key="frame" x="16" y="347" width="396" height="84"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="V7Y-N3-hck" secondAttribute="trailing" constant="16" id="0e1-zH-ATI"/>
+                <constraint firstItem="pVR-ql-tGh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="95T-0Q-742"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="pVR-ql-tGh" secondAttribute="bottom" id="9nE-5j-isL"/>
+                <constraint firstItem="pVR-ql-tGh" firstAttribute="top" secondItem="V7Y-N3-hck" secondAttribute="bottom" constant="5" id="9vj-2h-PJa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pVR-ql-tGh" secondAttribute="trailing" constant="16" id="G0r-gs-EVu"/>
+                <constraint firstItem="DiK-64-Tdq" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="GkH-wS-uNF"/>
+                <constraint firstItem="V7Y-N3-hck" firstAttribute="top" secondItem="DiK-64-Tdq" secondAttribute="bottom" constant="20" id="HOA-v6-OjS"/>
+                <constraint firstItem="V7Y-N3-hck" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="IJJ-cZ-rhy"/>
+                <constraint firstItem="DiK-64-Tdq" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Phi-7N-2XA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="animationContainer" destination="DiK-64-Tdq" id="vIf-Yh-oPM"/>
+                <outlet property="descriptionLabel" destination="pVR-ql-tGh" id="bv9-hE-rmV"/>
+                <outlet property="titleLabel" destination="V7Y-N3-hck" id="2ME-nE-RL4"/>
+            </connections>
+            <point key="canvasLocation" x="180.80000000000001" y="212.74362818590706"/>
+        </view>
+    </objects>
+</document>

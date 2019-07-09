@@ -1,0 +1,84 @@
+{
+    "products": [
+                 {
+                 "imageurl": "icGoRide",
+                 "name": "GO-RIDE",
+                 "deeplink": "goride",
+                 "offersCashTokens": true
+                 },
+                 {
+                 "imageurl": "icGoCar",
+                 "name": "GO-CAR",
+                 "deeplink": "gocar",
+                 "offersCashTokens": true
+                 },
+                 {
+                 "imageurl": "icGoBlueBird",
+                 "name": "GO-BLUEBIRD",
+                 "deeplink": "gobluebird",
+                 "offersCashTokens": true
+                 },
+                 {
+                 "imageurl": "icGoCar",
+                 "name": "Go-Car (L)",
+                 "deeplink": "gocarlarge",
+                 "offersCashTokens": true
+                 },
+                 {
+                 "imageurl": "icGoFood",
+                 "name": "GO-FOOD",
+                 "deeplink": "gofood",
+                 "offersCashTokens": true
+                 },
+                 {
+                 "imageurl": "icGoKilat",
+                 "name": "GO-SEND",
+                 "deeplink": "gosend",
+                 "offersCashTokens": true
+                 },
+                 {
+                 "imageurl": "icGoPulsa",
+                 "name": "GO-DEALS",
+                 "deeplink": "godeals",
+                 "offersCashTokens": false
+                 },
+                 {
+                 "imageurl": "icGoPulsa",
+                 "name": "GO-PULSA",
+                 "deeplink": "gopulsa",
+                 "offersCashTokens": false
+                 },
+                 {
+                 "imageurl": "icGoBillsMainlogoHomescreenNew",
+                 "name": "GO-BILLS",
+                 "deeplink": "gobills",
+                 "offersCashTokens": false
+                 },
+                 {
+                 "imageurl": "icGoShop",
+                 "name": "GO-SHOP",
+                 "deeplink": "goshop",
+                 "offersCashTokens": true
+                 },
+                 {
+                 "imageurl": "icGoTix",
+                 "name": "GO-TIX",
+                 "deeplink": "gotix",
+                 "offersCashTokens": true
+                 },
+                 {
+                 "imageurl": "icGoBox",
+                 "name": "GO-BOX",
+                 "deeplink": "gobox",
+                 "offersCashTokens": false
+                 },
+                 {
+                 "imageurl": "icGoMassage",
+                 "name": "GO-MASSAGE",
+                 "deeplink": "gomassage",
+                 "offersCashTokens": false
+                 }
+                 
+                 ]
+}
+

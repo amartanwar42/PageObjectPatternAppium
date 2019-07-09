@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MerchantDetailsCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="amountInputView" destination="ush-SA-Td4" id="hf9-Qk-7EA"/>
+                <outlet property="confirmButtonBottomView" destination="T7Z-iQ-q0x" id="5RR-Vy-cJh"/>
+                <outlet property="confirmButtonBottomViewHeightConstraint" destination="TNV-lN-sxh" id="V4R-lW-AQc"/>
+                <outlet property="confirmButtonTopView" destination="EYC-OB-sdz" id="tpE-7x-wnU"/>
+                <outlet property="confirmButtonTopViewWidthConstraint" destination="PMQ-Vy-Gdc" id="ONk-E9-9jo"/>
+                <outlet property="keyboardContainerView" destination="9Pr-Ge-FOo" id="j9m-Y4-5tT"/>
+                <outlet property="promoContainerView" destination="uKs-hf-AX6" id="tNJ-vI-y5Q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7Z-iQ-q0x">
+                    <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="TNV-lN-sxh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Pr-Ge-FOo">
+                    <rect key="frame" x="0.0" y="607" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" placeholder="YES" id="O1a-XE-wfT"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQp-MC-VZK">
+                    <rect key="frame" x="0.0" y="599" width="375" height="8"/>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="8" id="TCK-yc-xiN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uKs-hf-AX6">
+                    <rect key="frame" x="0.0" y="599" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" placeholder="YES" id="UJl-pV-HbN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ush-SA-Td4" customClass="AmountInputView" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" placeholder="YES" id="NuF-WD-JPf"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYC-OB-sdz">
+                    <rect key="frame" x="375" y="60" width="0.0" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="PMQ-Vy-Gdc"/>
+                        <constraint firstAttribute="height" constant="32" id="WVa-jS-d5o"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="T7Z-iQ-q0x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="889-MF-fr6"/>
+                <constraint firstItem="ush-SA-Td4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9vn-Vv-U1F"/>
+                <constraint firstItem="iQp-MC-VZK" firstAttribute="top" secondItem="uKs-hf-AX6" secondAttribute="bottom" id="CzO-oq-wCo"/>
+                <constraint firstItem="EYC-OB-sdz" firstAttribute="top" secondItem="ush-SA-Td4" secondAttribute="top" constant="60" id="G9U-yg-2BU"/>
+                <constraint firstItem="uKs-hf-AX6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jak-yg-fLb"/>
+                <constraint firstItem="ush-SA-Td4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Lkk-dE-rDq"/>
+                <constraint firstAttribute="trailing" secondItem="uKs-hf-AX6" secondAttribute="trailing" id="OaZ-yt-McJ"/>
+                <constraint firstItem="EYC-OB-sdz" firstAttribute="leading" secondItem="ush-SA-Td4" secondAttribute="trailing" id="R5b-sj-Nbp"/>
+                <constraint firstItem="T7Z-iQ-q0x" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="U5j-zG-10z"/>
+                <constraint firstAttribute="trailing" secondItem="EYC-OB-sdz" secondAttribute="trailing" id="b2D-Io-aJJ"/>
+                <constraint firstAttribute="trailing" secondItem="9Pr-Ge-FOo" secondAttribute="trailing" id="iJO-wa-C2j"/>
+                <constraint firstAttribute="trailing" secondItem="T7Z-iQ-q0x" secondAttribute="trailing" id="ifb-Z4-Kvz"/>
+                <constraint firstAttribute="trailing" secondItem="iQp-MC-VZK" secondAttribute="trailing" id="lqe-Ip-rZo"/>
+                <constraint firstItem="9Pr-Ge-FOo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="s6q-V9-eKS"/>
+                <constraint firstItem="9Pr-Ge-FOo" firstAttribute="top" secondItem="iQp-MC-VZK" secondAttribute="bottom" id="tqE-qa-30P"/>
+                <constraint firstItem="iQp-MC-VZK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vTj-9i-P7U"/>
+                <constraint firstItem="T7Z-iQ-q0x" firstAttribute="top" secondItem="9Pr-Ge-FOo" secondAttribute="bottom" id="wFa-ky-ng4"/>
+            </constraints>
+            <point key="canvasLocation" x="-60" y="7"/>
+        </view>
+    </objects>
+</document>

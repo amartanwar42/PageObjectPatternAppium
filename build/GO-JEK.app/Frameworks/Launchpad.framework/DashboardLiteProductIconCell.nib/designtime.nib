@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DashboardLiteCellIdentifier" id="oRs-w3-3R9" customClass="DashboardLiteProductIconCell" customModule="Launchpad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MTh-pf-zmf">
+                        <rect key="frame" x="12" y="12" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="4Up-ID-Ild"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RHy-fq-gtr">
+                        <rect key="frame" x="76" y="18" width="227" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeQ-bh-dbf">
+                        <rect key="frame" x="76" y="38" width="227" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_chevron" translatesAutoresizingMaskIntoConstraints="NO" id="pPT-4e-NF0">
+                        <rect key="frame" x="311" y="24" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="R08-6S-Ok1"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pPT-4e-NF0" firstAttribute="leading" secondItem="RHy-fq-gtr" secondAttribute="trailing" constant="8" id="2oT-Pd-6gj"/>
+                <constraint firstItem="MTh-pf-zmf" firstAttribute="top" secondItem="oRs-w3-3R9" secondAttribute="top" constant="12" id="7zF-2c-YoJ"/>
+                <constraint firstItem="OeQ-bh-dbf" firstAttribute="top" secondItem="RHy-fq-gtr" secondAttribute="bottom" constant="2" id="8pK-aW-FZb"/>
+                <constraint firstAttribute="bottom" secondItem="MTh-pf-zmf" secondAttribute="bottom" constant="12" id="AwA-Xe-tBw"/>
+                <constraint firstItem="MTh-pf-zmf" firstAttribute="leading" secondItem="oRs-w3-3R9" secondAttribute="leading" constant="12" id="DOK-ZP-WSb"/>
+                <constraint firstItem="RHy-fq-gtr" firstAttribute="top" secondItem="oRs-w3-3R9" secondAttribute="top" constant="18" id="UWn-OC-hCi"/>
+                <constraint firstAttribute="bottom" secondItem="pPT-4e-NF0" secondAttribute="bottom" constant="24" id="aky-3e-NJp"/>
+                <constraint firstItem="RHy-fq-gtr" firstAttribute="leading" secondItem="MTh-pf-zmf" secondAttribute="trailing" constant="16" id="dpB-6b-EK0"/>
+                <constraint firstAttribute="trailing" secondItem="pPT-4e-NF0" secondAttribute="trailing" constant="8" id="giK-c3-lbJ"/>
+                <constraint firstItem="OeQ-bh-dbf" firstAttribute="leading" secondItem="MTh-pf-zmf" secondAttribute="trailing" constant="16" id="ssK-Jk-ZXR"/>
+                <constraint firstItem="pPT-4e-NF0" firstAttribute="top" secondItem="oRs-w3-3R9" secondAttribute="top" constant="24" id="xD0-nb-j7n"/>
+                <constraint firstItem="pPT-4e-NF0" firstAttribute="leading" secondItem="OeQ-bh-dbf" secondAttribute="trailing" constant="8" id="yaN-MX-Y1z"/>
+            </constraints>
+            <size key="customSize" width="353" height="71"/>
+            <connections>
+                <outlet property="iconImageView" destination="MTh-pf-zmf" id="fUV-eJ-cCu"/>
+                <outlet property="subtitleLabel" destination="OeQ-bh-dbf" id="Go4-Ek-cN8"/>
+                <outlet property="titleLabel" destination="RHy-fq-gtr" id="osR-3v-gYH"/>
+            </connections>
+            <point key="canvasLocation" x="-108.5" y="187"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ico_chevron" width="8" height="13"/>
+    </resources>
+</document>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="46" id="KGk-i7-Jjw" customClass="SenderTextCell" customModule="GoChatSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxo-IO-Eyq">
+                        <rect key="frame" x="227" y="4" width="77" height="25"/>
+                        <color key="backgroundColor" red="0.2666666667" green="0.6705882353" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="9ZM-qO-2Ri"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nuX-D3-40b">
+                        <rect key="frame" x="227" y="17" width="77" height="25"/>
+                        <color key="backgroundColor" red="0.2666666667" green="0.6705882353" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="j7l-0g-345"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csF-bX-Sbu">
+                        <rect key="frame" x="227" y="4" width="77" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Halo" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="593-4w-1Vd">
+                                <rect key="frame" x="16" y="8" width="29.5" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPC-Ou-2x4">
+                                <rect key="frame" x="53" y="14" width="16" height="16"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="16" id="2lD-OM-54M"/>
+                                    <constraint firstAttribute="height" constant="16" id="vyk-0x-RDs"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="_pending"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2666666667" green="0.6705882353" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="593-4w-1Vd" firstAttribute="leading" secondItem="csF-bX-Sbu" secondAttribute="leading" constant="16" id="7pb-FW-xVp"/>
+                            <constraint firstItem="593-4w-1Vd" firstAttribute="top" secondItem="csF-bX-Sbu" secondAttribute="top" constant="8" id="e9o-z4-hB6"/>
+                            <constraint firstAttribute="bottom" secondItem="mPC-Ou-2x4" secondAttribute="bottom" constant="8" id="mrS-Cg-E09"/>
+                            <constraint firstItem="mPC-Ou-2x4" firstAttribute="leading" secondItem="593-4w-1Vd" secondAttribute="trailing" constant="7.5" id="paK-af-ebF"/>
+                            <constraint firstAttribute="trailing" secondItem="mPC-Ou-2x4" secondAttribute="trailing" constant="8" id="vtp-Ig-HJs"/>
+                            <constraint firstAttribute="bottom" secondItem="593-4w-1Vd" secondAttribute="bottom" constant="8" id="zs6-nh-CZ0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="csF-bX-Sbu" secondAttribute="trailing" constant="16" id="4Dk-Oh-bw2"/>
+                    <constraint firstItem="nuX-D3-40b" firstAttribute="leading" secondItem="csF-bX-Sbu" secondAttribute="leading" id="83N-I0-zLP"/>
+                    <constraint firstItem="nuX-D3-40b" firstAttribute="trailing" secondItem="csF-bX-Sbu" secondAttribute="trailing" id="Ebn-Bq-SXO"/>
+                    <constraint firstItem="lxo-IO-Eyq" firstAttribute="trailing" secondItem="csF-bX-Sbu" secondAttribute="trailing" id="JbU-ZU-ZiH"/>
+                    <constraint firstItem="csF-bX-Sbu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="Key-rM-mLA"/>
+                    <constraint firstItem="nuX-D3-40b" firstAttribute="bottom" secondItem="csF-bX-Sbu" secondAttribute="bottom" id="gNl-zB-6p7"/>
+                    <constraint firstItem="lxo-IO-Eyq" firstAttribute="top" secondItem="csF-bX-Sbu" secondAttribute="top" id="mn2-bx-lBh"/>
+                    <constraint firstAttribute="bottom" secondItem="csF-bX-Sbu" secondAttribute="bottom" constant="3.5" id="nfg-fE-uon"/>
+                    <constraint firstItem="lxo-IO-Eyq" firstAttribute="leading" secondItem="csF-bX-Sbu" secondAttribute="leading" id="tdV-Ap-lRy"/>
+                    <constraint firstItem="csF-bX-Sbu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="75" id="wJN-Hh-bTc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="bottomCornersView" destination="nuX-D3-40b" id="aui-G1-7Rm"/>
+                <outlet property="bubbleView" destination="csF-bX-Sbu" id="8ya-XS-P3u"/>
+                <outlet property="messageLabel" destination="593-4w-1Vd" id="QdV-Ey-Ebx"/>
+                <outlet property="statusButton" destination="mPC-Ou-2x4" id="KX4-g6-F18"/>
+                <outlet property="topCornersView" destination="lxo-IO-Eyq" id="kDb-ra-VLA"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="_pending" width="16" height="16"/>
+    </resources>
+</document>

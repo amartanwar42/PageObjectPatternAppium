@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment version="2048" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GBXLocationViewCell" rowHeight="112" id="KGk-i7-Jjw" customClass="GBXLocationViewCell" customModule="GoBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="384" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="384" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons-divider" translatesAutoresizingMaskIntoConstraints="NO" id="7kW-a9-3Ph">
+                        <rect key="frame" x="20" y="95" width="344" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Qcp-Nc-Tby"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwF-cq-cWi" userLabel="Address">
+                        <rect key="frame" x="20" y="17" width="344" height="41"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="41" id="irZ-pb-D1L"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="um4-hr-LeC" userLabel="Details">
+                        <rect key="frame" x="20" y="66" width="344" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Hsh-GF-Gk7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="SwF-cq-cWi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="C7b-hn-MyR"/>
+                    <constraint firstItem="um4-hr-LeC" firstAttribute="top" secondItem="SwF-cq-cWi" secondAttribute="bottom" constant="8" id="Cjl-cq-ZzW"/>
+                    <constraint firstItem="SwF-cq-cWi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="EnR-Ev-NV5"/>
+                    <constraint firstItem="um4-hr-LeC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Osf-kH-mMV"/>
+                    <constraint firstItem="7kW-a9-3Ph" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Rdh-lc-JE2"/>
+                    <constraint firstAttribute="trailing" secondItem="7kW-a9-3Ph" secondAttribute="trailing" constant="20" id="avh-5m-ifH"/>
+                    <constraint firstAttribute="trailing" secondItem="SwF-cq-cWi" secondAttribute="trailing" constant="20" id="bMX-QJ-nMy"/>
+                    <constraint firstAttribute="trailing" secondItem="um4-hr-LeC" secondAttribute="trailing" constant="20" id="qK6-g9-i3t"/>
+                    <constraint firstItem="7kW-a9-3Ph" firstAttribute="top" secondItem="um4-hr-LeC" secondAttribute="bottom" constant="8" id="xhZ-xR-OqE"/>
+                    <constraint firstAttribute="bottom" secondItem="7kW-a9-3Ph" secondAttribute="bottom" constant="2" id="y2e-VI-SCE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="SwF-cq-cWi" id="Cw3-Yq-jPa"/>
+                <outlet property="detailsLabel" destination="um4-hr-LeC" id="u5f-Tt-AEK"/>
+                <outlet property="divider" destination="7kW-a9-3Ph" id="C82-ye-jhm"/>
+            </connections>
+            <point key="canvasLocation" x="239" y="204"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icons-divider" width="641" height="25"/>
+    </resources>
+</document>

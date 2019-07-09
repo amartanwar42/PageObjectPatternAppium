@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplitBillNavigationTitleView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="firstProfileImage" destination="OVf-N6-Jlu" id="1j1-5z-VTc"/>
+                <outlet property="secondProfileImage" destination="Evq-hd-o3N" id="avt-ci-rIh"/>
+                <outlet property="subtitleLabel" destination="FWf-qr-mAy" id="ewn-9Z-dry"/>
+                <outlet property="titleLabel" destination="NRx-Eg-gzp" id="4vP-NB-TOk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="56"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Evq-hd-o3N" userLabel="Second Profile Image" customClass="ProfileImage" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="36" y="12" width="32" height="32"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="W8i-zj-XgL"/>
+                        <constraint firstAttribute="width" constant="32" id="ede-XD-jFk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVf-N6-Jlu" userLabel="First Profile Image" customClass="ProfileImage" customModule="GoPay" customModuleProvider="target">
+                    <rect key="frame" x="16" y="12" width="32" height="32"/>
+                    <color key="backgroundColor" red="0.85098039219999999" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="OCY-cr-na7"/>
+                        <constraint firstAttribute="width" constant="32" id="gIg-vb-vDu"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You, Pratik &amp; 3 more" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRx-Eg-gzp">
+                    <rect key="frame" x="80" y="12" width="131.5" height="14"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="14"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splitting between 5 people" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWf-qr-mAy">
+                    <rect key="frame" x="80" y="28" width="152" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXb-sX-Hyh" userLabel="TitleLabelTapped">
+                    <rect key="frame" x="80" y="12" width="131.5" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="kdQ-01-yhc"/>
+                    </constraints>
+                    <connections>
+                        <action selector="titleLabelTapped:" destination="-1" eventType="touchUpInside" id="x7O-Gc-ITz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FWf-qr-mAy" firstAttribute="leading" secondItem="NRx-Eg-gzp" secondAttribute="leading" id="9vf-Bq-sUR"/>
+                <constraint firstItem="Evq-hd-o3N" firstAttribute="leading" secondItem="OVf-N6-Jlu" secondAttribute="trailing" constant="-12" id="CZw-Tq-tJn"/>
+                <constraint firstItem="Evq-hd-o3N" firstAttribute="centerY" secondItem="OVf-N6-Jlu" secondAttribute="centerY" id="Hdj-WF-4mr"/>
+                <constraint firstItem="AXb-sX-Hyh" firstAttribute="top" secondItem="NRx-Eg-gzp" secondAttribute="top" id="Hou-Fq-Zec"/>
+                <constraint firstItem="NRx-Eg-gzp" firstAttribute="leading" secondItem="Evq-hd-o3N" secondAttribute="trailing" constant="12" id="PsD-rg-C7M"/>
+                <constraint firstItem="AXb-sX-Hyh" firstAttribute="trailing" secondItem="NRx-Eg-gzp" secondAttribute="trailing" id="RUc-jZ-K0V"/>
+                <constraint firstItem="FWf-qr-mAy" firstAttribute="top" secondItem="NRx-Eg-gzp" secondAttribute="bottom" constant="2" id="XB0-H4-P3e"/>
+                <constraint firstItem="NRx-Eg-gzp" firstAttribute="top" secondItem="OVf-N6-Jlu" secondAttribute="top" id="YQj-5N-cdC"/>
+                <constraint firstItem="AXb-sX-Hyh" firstAttribute="leading" secondItem="NRx-Eg-gzp" secondAttribute="leading" id="d9R-3p-XXU"/>
+                <constraint firstItem="OVf-N6-Jlu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="tVr-6J-psf"/>
+                <constraint firstItem="OVf-N6-Jlu" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="ypH-SL-f3s"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="124" y="-106.14692653673164"/>
+        </view>
+    </objects>
+</document>

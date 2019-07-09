@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhoneNumbersCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="PuF-Zv-fdK" id="AiP-df-t0K"/>
+                <outlet property="phoneTableView" destination="Ikp-pE-Mis" id="FGx-AX-SUA"/>
+                <outlet property="titleLabel" destination="gA4-RR-Vu2" id="XNK-3i-8Kw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="399"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA4-RR-Vu2">
+                    <rect key="frame" x="16" y="0.0" width="343" height="22"/>
+                    <accessibility key="accessibilityConfiguration" identifier="label_directDebit_varifyNumber_title"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="22"/>
+                    <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a BCA-registered phone number below to use as a verification for your account." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuF-Zv-fdK">
+                    <rect key="frame" x="16" y="30" width="343" height="33.5"/>
+                    <accessibility key="accessibilityConfiguration" identifier="label_directDebit_verifyNumber_subTitle"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ikp-pE-Mis">
+                    <rect key="frame" x="0.0" y="73.5" width="375" height="325.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="zgF-GZ-oxL"/>
+                        <outlet property="delegate" destination="-1" id="syE-Xb-r29"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ikp-pE-Mis" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1KF-9W-p7x"/>
+                <constraint firstAttribute="trailing" secondItem="Ikp-pE-Mis" secondAttribute="trailing" id="IPj-g1-vw7"/>
+                <constraint firstItem="Ikp-pE-Mis" firstAttribute="top" secondItem="PuF-Zv-fdK" secondAttribute="bottom" constant="10" id="In5-ca-Iuz"/>
+                <constraint firstItem="gA4-RR-Vu2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="NN9-6G-H0H"/>
+                <constraint firstItem="gA4-RR-Vu2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QOz-7f-Ih2"/>
+                <constraint firstItem="PuF-Zv-fdK" firstAttribute="top" secondItem="gA4-RR-Vu2" secondAttribute="bottom" constant="8" id="iRW-16-Qz6"/>
+                <constraint firstAttribute="bottom" secondItem="Ikp-pE-Mis" secondAttribute="bottom" id="n1G-Lo-BwY"/>
+                <constraint firstAttribute="trailing" secondItem="gA4-RR-Vu2" secondAttribute="trailing" constant="16" id="nEp-fz-5dh"/>
+                <constraint firstItem="PuF-Zv-fdK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="qSf-pb-USH"/>
+                <constraint firstAttribute="trailing" secondItem="PuF-Zv-fdK" secondAttribute="trailing" constant="16" id="qnr-GC-kgl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="274" y="91"/>
+        </view>
+    </objects>
+</document>

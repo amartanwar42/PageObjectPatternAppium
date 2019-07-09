@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PromoListCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="cardTitleLabel" destination="i3m-bG-6Yz" id="aHA-Jh-jnb"/>
+                <outlet property="listTableView" destination="kPW-PH-Ed0" id="gVl-PG-BGa"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3m-bG-6Yz">
+                    <rect key="frame" x="16" y="0.0" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kPW-PH-Ed0">
+                    <rect key="frame" x="0.0" y="37" width="375" height="630"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="xpj-Pl-IWg"/>
+                        <outlet property="delegate" destination="-1" id="Pdh-6I-RvV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="kPW-PH-Ed0" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="3zK-FP-YsM"/>
+                <constraint firstAttribute="trailing" secondItem="kPW-PH-Ed0" secondAttribute="trailing" id="Kal-gT-Ayv"/>
+                <constraint firstItem="i3m-bG-6Yz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="MI5-GJ-2c7"/>
+                <constraint firstItem="i3m-bG-6Yz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Qa0-QG-NBc"/>
+                <constraint firstItem="kPW-PH-Ed0" firstAttribute="top" secondItem="i3m-bG-6Yz" secondAttribute="bottom" constant="16" id="Zhm-hA-cR3"/>
+                <constraint firstItem="kPW-PH-Ed0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oTZ-fz-i5K"/>
+                <constraint firstAttribute="trailing" secondItem="i3m-bG-6Yz" secondAttribute="trailing" constant="16" id="x6L-Rj-4C6"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

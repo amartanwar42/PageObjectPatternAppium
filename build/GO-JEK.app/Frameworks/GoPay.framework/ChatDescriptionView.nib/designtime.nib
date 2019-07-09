@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatDescriptionView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="notes" destination="baI-op-FB2" id="ng0-gB-Jfc"/>
+                <outlet property="notesContainerView" destination="bRL-yl-Xo2" id="6EC-wu-DF8"/>
+                <outlet property="notesTopMargin" destination="PHl-n1-0SG" id="l0K-iG-TTN"/>
+                <outletCollection property="labelVerticalPaddings" destination="MSe-of-jR6" collectionClass="NSMutableArray" id="tnA-YJ-7jK"/>
+                <outletCollection property="labelVerticalPaddings" destination="blN-Rp-F0W" collectionClass="NSMutableArray" id="zuG-E3-5Bp"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="33"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bRL-yl-Xo2" userLabel="notesBackgroundView">
+                    <rect key="frame" x="0.0" y="10" width="223.5" height="23"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dinner at Pasaraya mall. 🌮🍩🍟1" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="199.5" translatesAutoresizingMaskIntoConstraints="NO" id="baI-op-FB2" userLabel="notesLabel">
+                            <rect key="frame" x="12" y="4" width="199.5" height="15"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="0.12" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="baI-op-FB2" secondAttribute="bottom" constant="4" id="MSe-of-jR6"/>
+                        <constraint firstItem="baI-op-FB2" firstAttribute="leading" secondItem="bRL-yl-Xo2" secondAttribute="leading" constant="12" id="O37-oG-R0m"/>
+                        <constraint firstItem="baI-op-FB2" firstAttribute="top" secondItem="bRL-yl-Xo2" secondAttribute="top" constant="4" id="blN-Rp-F0W"/>
+                        <constraint firstAttribute="trailing" secondItem="baI-op-FB2" secondAttribute="trailing" constant="12" id="pPc-xO-hm2"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="12"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="bRL-yl-Xo2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="PHl-n1-0SG"/>
+                <constraint firstItem="bRL-yl-Xo2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QLK-IH-nPN"/>
+                <constraint firstAttribute="bottom" secondItem="bRL-yl-Xo2" secondAttribute="bottom" id="psi-x8-XS7"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bRL-yl-Xo2" secondAttribute="trailing" id="xhb-Gn-MOp"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="182" y="-443.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="d6p-ez-AIb" userLabel="Profile Header View" customClass="ProfileHeaderView" customModule="Launchpad" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yoa-X8-SHG">
+                    <rect key="frame" x="20" y="16" width="240" height="16"/>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="16"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzv-aF-rlb">
+                    <rect key="frame" x="20" y="36" width="240" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="klD-8B-yXx">
+                    <rect key="frame" x="20" y="56" width="240" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3L6-Yr-tpb" customClass="TextButton" customModule="Asphalt">
+                    <rect key="frame" x="276" y="30" width="83" height="32"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="dRa-3U-xue"/>
+                        <constraint firstAttribute="width" constant="83" id="z7f-YL-xSU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Edit Profile"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="fontSize">
+                            <real key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="buttonType" value="primary"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3L6-Yr-tpb" secondAttribute="trailing" constant="16" id="36W-VJ-nLZ"/>
+                <constraint firstItem="Yoa-X8-SHG" firstAttribute="trailing" secondItem="Wzv-aF-rlb" secondAttribute="trailing" id="BME-CB-8bx"/>
+                <constraint firstItem="3L6-Yr-tpb" firstAttribute="centerY" secondItem="d6p-ez-AIb" secondAttribute="centerY" id="CT9-Jm-mYU"/>
+                <constraint firstItem="Wzv-aF-rlb" firstAttribute="top" secondItem="Yoa-X8-SHG" secondAttribute="bottom" constant="4" id="Oyx-LI-g1g"/>
+                <constraint firstItem="Wzv-aF-rlb" firstAttribute="leading" secondItem="Yoa-X8-SHG" secondAttribute="leading" id="Wtq-Uf-CA0"/>
+                <constraint firstItem="klD-8B-yXx" firstAttribute="top" secondItem="Wzv-aF-rlb" secondAttribute="bottom" constant="4" id="WuR-nO-fY1"/>
+                <constraint firstItem="Yoa-X8-SHG" firstAttribute="leading" secondItem="d6p-ez-AIb" secondAttribute="leading" constant="20" id="Y3L-Vv-UzM"/>
+                <constraint firstItem="3L6-Yr-tpb" firstAttribute="leading" secondItem="Wzv-aF-rlb" secondAttribute="trailing" constant="16" id="ZJ5-wf-xf7"/>
+                <constraint firstItem="klD-8B-yXx" firstAttribute="leading" secondItem="Wzv-aF-rlb" secondAttribute="leading" id="bpo-FO-XtE"/>
+                <constraint firstItem="Yoa-X8-SHG" firstAttribute="top" secondItem="d6p-ez-AIb" secondAttribute="top" constant="16" id="up5-di-ysO"/>
+                <constraint firstItem="klD-8B-yXx" firstAttribute="trailing" secondItem="Wzv-aF-rlb" secondAttribute="trailing" id="zsB-yO-pA1"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="editProfileButton" destination="3L6-Yr-tpb" id="bgJ-If-W7W"/>
+                <outlet property="emailLabel" destination="Wzv-aF-rlb" id="1In-5w-dn2"/>
+                <outlet property="nameLabel" destination="Yoa-X8-SHG" id="Ruy-Xl-R9T"/>
+                <outlet property="phoneLabel" destination="klD-8B-yXx" id="lRu-0y-d7n"/>
+            </connections>
+            <point key="canvasLocation" x="478.5" y="-234"/>
+        </view>
+    </objects>
+</document>

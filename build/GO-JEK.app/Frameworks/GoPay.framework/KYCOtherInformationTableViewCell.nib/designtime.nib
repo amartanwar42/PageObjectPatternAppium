@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="KYCOtherInformationTableViewCell" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YCn-cs-NFq">
+                        <rect key="frame" x="16" y="24" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="5Di-nM-GZa"/>
+                            <constraint firstAttribute="height" constant="24" id="Yvm-u0-CSH"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" image="chevronAccessory" translatesAutoresizingMaskIntoConstraints="NO" id="41w-mx-IqF">
+                        <rect key="frame" x="343" y="24" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="3ff-or-Njx"/>
+                            <constraint firstAttribute="width" constant="24" id="pFA-6a-F00"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNE-vJ-848">
+                        <rect key="frame" x="56" y="18" width="271" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Current residence" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4L-Xf-1wu">
+                                <rect key="frame" x="0.0" y="0.0" width="271" height="15"/>
+                                <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="15"/>
+                                <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="211, Grand Kemang, Jl. Kemang Raya, Jakarta" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLV-Fc-urt">
+                                <rect key="frame" x="0.0" y="19" width="271" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="b4L-Xf-1wu" secondAttribute="trailing" id="3wF-Kt-5Wz"/>
+                            <constraint firstAttribute="trailing" secondItem="bLV-Fc-urt" secondAttribute="trailing" id="H8E-0C-iQP"/>
+                            <constraint firstItem="b4L-Xf-1wu" firstAttribute="leading" secondItem="dNE-vJ-848" secondAttribute="leading" id="Hga-kb-FfI"/>
+                            <constraint firstItem="bLV-Fc-urt" firstAttribute="leading" secondItem="dNE-vJ-848" secondAttribute="leading" id="P4L-cH-CjU"/>
+                            <constraint firstItem="b4L-Xf-1wu" firstAttribute="top" secondItem="dNE-vJ-848" secondAttribute="top" id="ax8-Az-BVa"/>
+                            <constraint firstItem="bLV-Fc-urt" firstAttribute="top" secondItem="b4L-Xf-1wu" secondAttribute="bottom" constant="4" id="pSf-IS-yWn"/>
+                            <constraint firstAttribute="bottom" secondItem="bLV-Fc-urt" secondAttribute="bottom" id="ri8-tH-97J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="41w-mx-IqF" firstAttribute="leading" secondItem="dNE-vJ-848" secondAttribute="trailing" constant="16" id="4TJ-XO-roa"/>
+                    <constraint firstAttribute="bottom" secondItem="YCn-cs-NFq" secondAttribute="bottom" priority="999" constant="24" id="CX5-DW-tEe"/>
+                    <constraint firstItem="41w-mx-IqF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ghy-IQ-7Dd"/>
+                    <constraint firstItem="dNE-vJ-848" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VMv-WE-vOS"/>
+                    <constraint firstItem="dNE-vJ-848" firstAttribute="leading" secondItem="YCn-cs-NFq" secondAttribute="trailing" constant="16" id="WMu-c2-PYc"/>
+                    <constraint firstAttribute="trailing" secondItem="41w-mx-IqF" secondAttribute="trailing" constant="8" id="dH7-B5-Q2E"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dNE-vJ-848" secondAttribute="bottom" constant="16" id="fBc-Ee-I6k"/>
+                    <constraint firstItem="YCn-cs-NFq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="rit-1o-OoJ"/>
+                    <constraint firstItem="YCn-cs-NFq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" priority="999" constant="24" id="uf7-5b-Ka7"/>
+                    <constraint firstItem="dNE-vJ-848" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="xZ5-ds-GrU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <accessibility key="accessibilityConfiguration" identifier="cell_kyc_confirmation_image">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <connections>
+                <outlet property="informationDescriptionLabel" destination="bLV-Fc-urt" id="xtk-sW-7t4"/>
+                <outlet property="informationImageView" destination="YCn-cs-NFq" id="7Ot-Ra-9Fi"/>
+                <outlet property="informationTitleLabel" destination="b4L-Xf-1wu" id="002-iV-lJu"/>
+                <outlet property="labelSeparatorConstraint" destination="pSf-IS-yWn" id="BKu-rp-KeD"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="chevronAccessory" width="24" height="24"/>
+    </resources>
+</document>

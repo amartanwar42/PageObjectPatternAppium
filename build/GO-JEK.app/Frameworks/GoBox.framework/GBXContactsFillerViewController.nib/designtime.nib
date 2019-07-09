@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GBXContactsFillerViewController" customModule="GoBox" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="6lV-69-QgG" id="OYZ-DM-O7O"/>
+                <outlet property="tapRecognizer" destination="CvH-9x-E37" id="YIa-NV-rnQ"/>
+                <outlet property="view" destination="pfs-fL-akP" id="Ul7-hy-lxl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="pfs-fL-akP">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" indicatorStyle="white" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="3" rowHeight="80" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="6lV-69-QgG">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="6lV-69-QgG" firstAttribute="top" secondItem="pfs-fL-akP" secondAttribute="top" id="BuD-Oa-zgU"/>
+                <constraint firstAttribute="bottom" secondItem="6lV-69-QgG" secondAttribute="bottom" id="GXh-w5-yid"/>
+                <constraint firstItem="6lV-69-QgG" firstAttribute="leading" secondItem="pfs-fL-akP" secondAttribute="leading" id="Jos-fF-Hyr"/>
+                <constraint firstAttribute="trailing" secondItem="6lV-69-QgG" secondAttribute="trailing" id="UVJ-Ui-8cV"/>
+            </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="CvH-9x-E37" appends="YES" id="wYs-Sw-NE3"/>
+            </connections>
+            <point key="canvasLocation" x="214" y="476"/>
+        </view>
+        <tapGestureRecognizer id="CvH-9x-E37">
+            <connections>
+                <action selector="handleTap:" destination="-1" id="P4B-dF-wXO"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="instructionHeaderCellIdentifier" rowHeight="85" id="KGk-i7-Jjw" customClass="OptionHeaderTableViewCell" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VEd-jf-9ba">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="8"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="DYx-Rd-iXb"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top-up Instructions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJJ-qU-ZPR">
+                        <rect key="frame" x="16" y="24" width="288" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Gjj-rF-ctc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Transaction Fee Rp1.000-3.000" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vNC-3I-Zie">
+                        <rect key="frame" x="16" y="58" width="288" height="10.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="characterWrap" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1d1-o3-2PP">
+                        <rect key="frame" x="16" y="79.5" width="288" height="5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="o8g-3X-dSU"/>
+                        </constraints>
+                        <string key="text">_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="5"/>
+                        <color key="textColor" red="0.74509803921568629" green="0.74509803921568629" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vNC-3I-Zie" firstAttribute="top" secondItem="WJJ-qU-ZPR" secondAttribute="bottom" constant="16" id="4xy-fw-BF9"/>
+                    <constraint firstItem="vNC-3I-Zie" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Aak-9H-Pa9"/>
+                    <constraint firstAttribute="trailing" secondItem="vNC-3I-Zie" secondAttribute="trailing" constant="16" id="GMC-kU-8hZ"/>
+                    <constraint firstAttribute="bottom" secondItem="vNC-3I-Zie" secondAttribute="bottom" constant="16" id="O7q-qd-BoR"/>
+                    <constraint firstItem="WJJ-qU-ZPR" firstAttribute="top" secondItem="VEd-jf-9ba" secondAttribute="bottom" constant="16" id="S0Y-TM-M3A"/>
+                    <constraint firstAttribute="trailing" secondItem="WJJ-qU-ZPR" secondAttribute="trailing" constant="16" id="Uwf-t2-S6w"/>
+                    <constraint firstItem="1d1-o3-2PP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XLW-5g-1nA"/>
+                    <constraint firstAttribute="trailing" secondItem="VEd-jf-9ba" secondAttribute="trailing" id="g6g-Is-2Ew"/>
+                    <constraint firstAttribute="trailing" secondItem="1d1-o3-2PP" secondAttribute="trailing" constant="16" id="gg8-Tz-MM5"/>
+                    <constraint firstAttribute="bottom" secondItem="1d1-o3-2PP" secondAttribute="bottom" id="i69-E7-YQS"/>
+                    <constraint firstItem="VEd-jf-9ba" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="if9-Hc-dsX"/>
+                    <constraint firstItem="WJJ-qU-ZPR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="nIz-No-LZz"/>
+                    <constraint firstItem="VEd-jf-9ba" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zxp-A0-iNw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomTagConstraint" destination="O7q-qd-BoR" id="tFd-kZ-kol"/>
+                <outlet property="headerTitle" destination="WJJ-qU-ZPR" id="RQJ-XF-Fhr"/>
+                <outlet property="lineHeightConstraint" destination="DYx-Rd-iXb" id="25Z-yG-PPF"/>
+                <outlet property="tagsInfo" destination="vNC-3I-Zie" id="eXF-oN-8Id"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="75.5"/>
+        </tableViewCell>
+    </objects>
+</document>

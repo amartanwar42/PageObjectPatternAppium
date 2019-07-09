@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" reuseIdentifier="phoneNumberCellIdentifier" rowHeight="72" id="KGk-i7-Jjw" customClass="PhoneNumberTableViewCell" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="71.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2i-kM-Vub">
+                        <rect key="frame" x="72" y="28" width="232" height="16"/>
+                        <accessibility key="accessibilityConfiguration" identifier="directDebit_registeredPhoneNumber_label"/>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="16"/>
+                        <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneNumberIcon" translatesAutoresizingMaskIntoConstraints="NO" id="MLO-gJ-RcP">
+                        <rect key="frame" x="16" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="8rU-hU-rvy"/>
+                            <constraint firstAttribute="height" constant="40" id="PhN-Ww-AIZ"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="V2i-kM-Vub" firstAttribute="leading" secondItem="MLO-gJ-RcP" secondAttribute="trailing" constant="16" id="6MC-z9-ZC7"/>
+                    <constraint firstItem="MLO-gJ-RcP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="MD4-vJ-iEF"/>
+                    <constraint firstItem="MLO-gJ-RcP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="PV5-RG-WkC"/>
+                    <constraint firstItem="V2i-kM-Vub" firstAttribute="centerY" secondItem="MLO-gJ-RcP" secondAttribute="centerY" id="lYK-KA-SNt"/>
+                    <constraint firstAttribute="trailing" secondItem="V2i-kM-Vub" secondAttribute="trailing" constant="16" id="sG5-Dh-4x6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="phoneImageView" destination="MLO-gJ-RcP" id="HJB-US-YP5"/>
+                <outlet property="phoneNumberLabel" destination="V2i-kM-Vub" id="KU5-bi-M5h"/>
+            </connections>
+            <point key="canvasLocation" x="-76" y="-57"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="phoneNumberIcon" width="40" height="40"/>
+    </resources>
+</document>

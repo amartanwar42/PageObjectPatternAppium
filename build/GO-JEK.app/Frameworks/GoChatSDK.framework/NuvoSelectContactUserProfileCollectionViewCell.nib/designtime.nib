@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NuvoSelectContactUserProfileCollectionViewCell" id="ZSe-Ia-wYi" customClass="NuvoSelectContactUserProfileCollectionViewCell" customModule="GoChatSDK" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="48" height="56"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="48" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yi-QE-XZp" userLabel="ProfileView">
+                        <rect key="frame" x="4" y="0.0" width="40" height="40"/>
+                        <color key="backgroundColor" red="1" green="0.1857388616" blue="0.57339501380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jiz-5u-bhw">
+                        <rect key="frame" x="30" y="26" width="16" height="16"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="16" id="djf-9D-Y8w"/>
+                            <constraint firstAttribute="height" constant="16" id="eNC-8Y-JsV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="10"/>
+                        <state key="normal" image="selected_group_member_close_button">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AhI-9b-IYS">
+                        <rect key="frame" x="0.0" y="44" width="48" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="jiz-5u-bhw" firstAttribute="trailing" secondItem="9yi-QE-XZp" secondAttribute="trailing" constant="2" id="Df4-Vb-sXo"/>
+                <constraint firstItem="9yi-QE-XZp" firstAttribute="leading" secondItem="ZSe-Ia-wYi" secondAttribute="leading" constant="4" id="WBK-aN-VEQ"/>
+                <constraint firstItem="9yi-QE-XZp" firstAttribute="top" secondItem="ZSe-Ia-wYi" secondAttribute="top" id="ZRV-hR-XFd"/>
+                <constraint firstItem="AhI-9b-IYS" firstAttribute="top" secondItem="9yi-QE-XZp" secondAttribute="bottom" constant="4" id="Zu3-EP-O78"/>
+                <constraint firstItem="AhI-9b-IYS" firstAttribute="trailing" secondItem="uQr-tE-Sxh" secondAttribute="trailing" id="frA-vi-fvt"/>
+                <constraint firstItem="uQr-tE-Sxh" firstAttribute="bottom" secondItem="AhI-9b-IYS" secondAttribute="bottom" id="kW4-Ou-pzf"/>
+                <constraint firstAttribute="bottom" secondItem="9yi-QE-XZp" secondAttribute="bottom" constant="16" id="mxL-Ws-jCb"/>
+                <constraint firstItem="AhI-9b-IYS" firstAttribute="leading" secondItem="uQr-tE-Sxh" secondAttribute="leading" id="plc-xy-BtB"/>
+                <constraint firstAttribute="trailing" secondItem="9yi-QE-XZp" secondAttribute="trailing" constant="4" id="rBE-Fj-ard"/>
+                <constraint firstItem="jiz-5u-bhw" firstAttribute="bottom" secondItem="9yi-QE-XZp" secondAttribute="bottom" constant="2" id="wSw-HA-pWt"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="uQr-tE-Sxh"/>
+            <connections>
+                <outlet property="cancelButton" destination="jiz-5u-bhw" id="QHy-so-MQp"/>
+                <outlet property="chatIconViewContainer" destination="9yi-QE-XZp" id="0KQ-85-NaJ"/>
+                <outlet property="contactNameLabel" destination="AhI-9b-IYS" id="HBw-s8-tUh"/>
+            </connections>
+            <point key="canvasLocation" x="-118.40000000000001" y="153.82308845577214"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="selected_group_member_close_button" width="17" height="17"/>
+    </resources>
+</document>

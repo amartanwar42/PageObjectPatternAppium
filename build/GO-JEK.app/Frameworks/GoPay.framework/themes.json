@@ -1,0 +1,150 @@
+{
+    "themes": [
+        {
+            "id": "THEME_TAXI",
+            "themeData": {
+                "animation":"taxi",
+                "textColor": "#FFFFFF",
+                "startColor": "#5BA0F5",
+                "endColor": "#216BC4",
+                "emojiIcon": "ic_go_pay_emoji_taxi",
+                "verifiedIcon": "ic_go_pay_verified_white",
+                "payIcon": "dashboard-banner-iconv2",
+                "notesIconBackground": "#FFFFFF",
+                "notesTextBackground": "#FFFFFF",
+                "arrowIcon": "ic_go_pay_grey_theme_down"
+            },
+            "selectorData": {
+                "icon": "ic_go_pay_theme_taxi",
+                "title": "go_pay_p2p_theming_taxi",
+                "iconStartColor": "#DBEBFF",
+                "iconEndColor": "#5BA0F5",
+                "themeBGColor": "#000000",
+                "label": null
+            }
+        },
+        {
+            "id": "THEME_MEAL",
+            "themeData": {
+                "animation": "meal",
+                "textColor": "#FFFFFF",
+                "startColor": "#ED646A",
+                "endColor": "#CF212A",
+                "emojiIcon": "ic_go_pay_emoji_meal",
+                "verifiedIcon": "ic_go_pay_verified_white",
+                "payIcon": "dashboard-banner-iconv2",
+                "notesIconBackground": "#FFFFFF",
+                "notesTextBackground": "#FFFFFF",
+                "arrowIcon": "ic_go_pay_grey_theme_down"
+            },
+            "selectorData": {
+                "icon": "ic_go_pay_theme_meal",
+                "title": "go_pay_p2p_theming_meal",
+                "iconStartColor": "#FCE3E4",
+                "iconEndColor": "#ED646A",
+                "themeBGColor": "#000000",
+                "label": null
+            }
+        },
+        {
+            "id": "THEME_CLASSIC",
+            "themeData": {
+                "animation": "classic",
+                "textColor": "#1C1C1C",
+                "startColor": "#FFFFFF",
+                "endColor": "#FFFFFF",
+                "emojiIcon": "ic_go_pay_emoji_classic",
+                "verifiedIcon": "ic_go_pay_verified_blue",
+                "payIcon": "goPayIcon",
+                "notesIconBackground": "#000000",
+                "notesTextBackground": "#000000",
+                "arrowIcon": "ic_go_pay_grey_theme_down"
+            },
+            "selectorData": {
+                "icon": "ic_go_pay_theme_classic",
+                "title": "go_pay_p2p_theming_classic",
+                "iconStartColor": "#dbebff",
+                "iconEndColor": "#5ba0f5",
+                "themeBGColor": "#000000",
+                "label": null
+            }
+        },
+        {
+            "id": "THEME_RAMADAN",
+            "themeData": {
+                "animation": "eid.json",
+                "textColor": "#FFFFFF",
+                "startColor": "#FC9B64",
+                "endColor": "#B85518",
+                "emojiIcon": "ic_go_pay_emoji_ramadan",
+                "verifiedIcon": "ic_go_pay_verified_white",
+                "payIcon": "dashboard-banner-iconv2",
+                "notesIconBackground": "#FFFFFF",
+                "notesTextBackground": "#FFFFFF",
+                "arrowIcon": "ic_go_pay_grey_theme_down"
+            },
+            "selectorData": {
+                "icon": "ic_go_pay_theme_ramadan",
+                "title": "go_pay_p2p_theming_ramadhan",
+                "selectedTextColor": "#FFFFFF",
+                "normalTextColor": "#FFFFFF",
+                "iconStartColor": "#FEE7DA",
+                "iconEndColor": "#E67336",
+                "themeBGColor": "#000000",
+                "label": {
+                    "text": "go_pay_p2p_theming_slider_status_label",
+                    "textColor": "#000000",
+                    "backgroundColor": "#FFFFFF"
+                }
+            }
+        },
+        {
+            "id": "THEME_LOVE",
+            "themeData": {
+                "animation": "love.json",
+                "textColor": "#FFFFFF",
+                "startColor": "#ED646A",
+                "endColor": "#CF212A",
+                "emojiIcon": "ic_go_pay_emoji_love",
+                "verifiedIcon": "ic_go_pay_verified_white",
+                "payIcon": "dashboard-banner-iconv2",
+                "notesIconBackground": "#FFFFFF",
+                "notesTextBackground": "#FFFFFF",
+                "arrowIcon": "ic_go_pay_grey_theme_down"
+            },
+            "selectorData": {
+                "icon": "ic_go_pay_theme_love",
+                "title": "go_pay_p2p_theming_love",
+                "iconStartColor": "#FCE3E4",
+                "iconEndColor": "#ED646A",
+                "themeBGColor": "#000000",
+                "label": null
+            }
+        },
+        {
+            "id": "THEME_THANKS",
+            "themeData": {
+                "animation": "thankyou.json",
+                "textColor": "#FFFFFF",
+                "startColor": "#5BA0F5",
+                "endColor": "#216BC4",
+                "emojiIcon": "ic_go_pay_emoji_thanks",
+                "verifiedIcon": "ic_go_pay_verified_white",
+                "payIcon": "dashboard-banner-iconv2",
+                "notesIconBackground": "#FFFFFF",
+                "notesTextBackground": "#FFFFFF",
+                "arrowIcon": "ic_go_pay_grey_theme_down"
+            },
+            "selectorData": {
+                "icon": "ic_go_pay_theme_thanks",
+                "title": "go_pay_p2p_theming_thanks",
+                "selectedTextColor": "#FFFFFF",
+                "normalTextColor": "#FFFFFF",
+                "iconStartColor": "#DBEBFF",
+                "iconEndColor": "#5BA0F5",
+                "themeBGColor": "#000000",
+                "label": null
+            }
+        }
+    ]
+}

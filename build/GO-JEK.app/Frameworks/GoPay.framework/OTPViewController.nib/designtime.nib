@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OTPViewController" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="codeViewContainer" destination="p7Z-df-Cx7" id="CPp-Nr-0EH"/>
+                <outlet property="codeViewContainerWidthConstraint" destination="UZm-B6-Ndv" id="eaa-ek-HFI"/>
+                <outlet property="descriptionLabel" destination="icI-uT-Dym" id="YPH-aM-3jL"/>
+                <outlet property="errorLabel" destination="ljX-oi-wcl" id="9o5-OE-g2y"/>
+                <outlet property="otpImageView" destination="QuM-8s-eLv" id="Scq-wX-A2o"/>
+                <outlet property="resendActivityIndicator" destination="jdc-lE-wAQ" id="gf6-U4-IoZ"/>
+                <outlet property="resendButton" destination="YD0-eC-FPd" id="WcE-dT-zK8"/>
+                <outlet property="resendButtonWidthConstraint" destination="eOm-cR-JDB" id="Kyr-ja-2lo"/>
+                <outlet property="resendTimerLabel" destination="Bv9-7e-ekl" id="qUU-Mj-VYU"/>
+                <outlet property="resendTimerView" destination="zpp-vm-39h" id="Xbl-JC-d6G"/>
+                <outlet property="scrollView" destination="CEb-v8-V3Z" id="4P7-ri-L7a"/>
+                <outlet property="titleLabel" destination="6Mw-Id-atk" id="fgK-BJ-wJF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEb-v8-V3Z">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dCK-Ux-dSb">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="230.5"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="otpIlustration" translatesAutoresizingMaskIntoConstraints="NO" id="QuM-8s-eLv">
+                                    <rect key="frame" x="16" y="0.0" width="116" height="72"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="image_otpview_illustration"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="72" id="hEy-qr-gap"/>
+                                        <constraint firstAttribute="width" constant="116" id="pvp-jp-fI4"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification code sent!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Mw-Id-atk">
+                                    <rect key="frame" x="16" y="82" width="343" height="22"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="label_otpview_title"/>
+                                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="22"/>
+                                    <color key="textColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the code we sent to your registered phone number +62 812 888 8888" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icI-uT-Dym">
+                                    <rect key="frame" x="16" y="113" width="343" height="33.5"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="label_otpview_description"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7Z-df-Cx7">
+                                    <rect key="frame" x="16" y="164.5" width="136" height="29"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="136" id="UZm-B6-Ndv"/>
+                                        <constraint firstAttribute="height" constant="29" id="oQc-xb-sEm"/>
+                                    </constraints>
+                                </view>
+                                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpp-vm-39h">
+                                    <rect key="frame" x="288" y="169.5" width="63" height="19"/>
+                                    <subviews>
+                                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="jdc-lE-wAQ">
+                                            <rect key="frame" x="0.0" y="-0.5" width="20" height="20"/>
+                                        </activityIndicatorView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bv9-7e-ekl">
+                                            <rect key="frame" x="24" y="2.5" width="39" height="14"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="label_otpview_resendTimer"/>
+                                            <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="Bv9-7e-ekl" firstAttribute="leading" secondItem="jdc-lE-wAQ" secondAttribute="trailing" constant="4" id="7eN-Hi-L33"/>
+                                        <constraint firstItem="Bv9-7e-ekl" firstAttribute="centerY" secondItem="zpp-vm-39h" secondAttribute="centerY" id="QCc-ax-6Pd"/>
+                                        <constraint firstAttribute="trailing" secondItem="Bv9-7e-ekl" secondAttribute="trailing" id="bMx-GS-cR4"/>
+                                        <constraint firstItem="jdc-lE-wAQ" firstAttribute="leading" secondItem="zpp-vm-39h" secondAttribute="leading" id="dNJ-JQ-wmQ"/>
+                                        <constraint firstItem="jdc-lE-wAQ" firstAttribute="centerY" secondItem="zpp-vm-39h" secondAttribute="centerY" id="edD-HS-b7r"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YD0-eC-FPd" customClass="TextButton" customModule="Asphalt">
+                                    <rect key="frame" x="267" y="169.5" width="84" height="19"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="button_otpview_resend"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="19" id="I4N-rC-gMm"/>
+                                        <constraint firstAttribute="width" constant="84" id="eOm-cR-JDB"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="buttonType" value="warning"/>
+                                        <userDefinedRuntimeAttribute type="string" keyPath="titleText" value="Resend Code"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="resendButtonTap:" destination="-1" eventType="touchUpInside" id="d7w-7X-VVx"/>
+                                    </connections>
+                                </view>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect code. Try again. You can do this!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljX-oi-wcl">
+                                    <rect key="frame" x="16" y="213.5" width="343" height="17"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="label_otpview_error"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.87450980389999999" green="0.1960784314" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="QuM-8s-eLv" firstAttribute="leading" secondItem="dCK-Ux-dSb" secondAttribute="leading" constant="16" id="2Pu-wW-gR8"/>
+                                <constraint firstItem="icI-uT-Dym" firstAttribute="leading" secondItem="dCK-Ux-dSb" secondAttribute="leading" constant="16" id="BOs-AW-Ku8"/>
+                                <constraint firstItem="6Mw-Id-atk" firstAttribute="top" secondItem="QuM-8s-eLv" secondAttribute="bottom" constant="10" id="DjO-m3-aaj"/>
+                                <constraint firstItem="icI-uT-Dym" firstAttribute="top" secondItem="6Mw-Id-atk" secondAttribute="bottom" constant="9" id="HMD-hg-g6b"/>
+                                <constraint firstItem="YD0-eC-FPd" firstAttribute="centerY" secondItem="p7Z-df-Cx7" secondAttribute="centerY" id="Lof-Wf-bnm"/>
+                                <constraint firstItem="zpp-vm-39h" firstAttribute="bottom" secondItem="YD0-eC-FPd" secondAttribute="bottom" id="OMW-ke-0p9"/>
+                                <constraint firstItem="QuM-8s-eLv" firstAttribute="top" secondItem="dCK-Ux-dSb" secondAttribute="top" id="WMg-NG-3GT"/>
+                                <constraint firstItem="p7Z-df-Cx7" firstAttribute="top" secondItem="icI-uT-Dym" secondAttribute="bottom" constant="18" id="ct7-me-5cJ"/>
+                                <constraint firstAttribute="trailing" secondItem="YD0-eC-FPd" secondAttribute="trailing" constant="24" id="e7H-cd-SfI"/>
+                                <constraint firstItem="ljX-oi-wcl" firstAttribute="leading" secondItem="dCK-Ux-dSb" secondAttribute="leading" constant="16" id="icF-kv-Vfi"/>
+                                <constraint firstItem="ljX-oi-wcl" firstAttribute="top" secondItem="p7Z-df-Cx7" secondAttribute="bottom" constant="20" id="ijT-nS-yNm"/>
+                                <constraint firstAttribute="trailing" secondItem="ljX-oi-wcl" secondAttribute="trailing" constant="16" id="imk-IL-Knw"/>
+                                <constraint firstItem="zpp-vm-39h" firstAttribute="trailing" secondItem="YD0-eC-FPd" secondAttribute="trailing" id="nq7-Ag-QWt"/>
+                                <constraint firstItem="p7Z-df-Cx7" firstAttribute="leading" secondItem="dCK-Ux-dSb" secondAttribute="leading" constant="16" id="tfr-Ut-Z19"/>
+                                <constraint firstItem="zpp-vm-39h" firstAttribute="top" secondItem="YD0-eC-FPd" secondAttribute="top" id="wiF-eb-6Mt"/>
+                                <constraint firstAttribute="trailing" secondItem="6Mw-Id-atk" secondAttribute="trailing" constant="16" id="yJ6-y6-uAX"/>
+                                <constraint firstItem="6Mw-Id-atk" firstAttribute="leading" secondItem="dCK-Ux-dSb" secondAttribute="leading" constant="16" id="yRq-Nf-LEJ"/>
+                                <constraint firstAttribute="trailing" secondItem="icI-uT-Dym" secondAttribute="trailing" constant="16" id="z8R-D9-vwB"/>
+                                <constraint firstAttribute="bottom" secondItem="ljX-oi-wcl" secondAttribute="bottom" id="zKa-wx-PsB"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="dCK-Ux-dSb" secondAttribute="trailing" id="2eR-i2-3WI"/>
+                        <constraint firstItem="dCK-Ux-dSb" firstAttribute="leading" secondItem="CEb-v8-V3Z" secondAttribute="leading" id="8au-XN-KSh"/>
+                        <constraint firstAttribute="bottom" secondItem="dCK-Ux-dSb" secondAttribute="bottom" id="PRg-Hx-tjG"/>
+                        <constraint firstItem="dCK-Ux-dSb" firstAttribute="top" secondItem="CEb-v8-V3Z" secondAttribute="top" id="c8f-Ub-YIk"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CEb-v8-V3Z" secondAttribute="trailing" id="5B4-9r-Au0"/>
+                <constraint firstItem="CEb-v8-V3Z" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="axJ-QB-hca"/>
+                <constraint firstAttribute="bottom" secondItem="CEb-v8-V3Z" secondAttribute="bottom" id="axy-Zh-tN6"/>
+                <constraint firstItem="CEb-v8-V3Z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f5m-zY-ycS"/>
+                <constraint firstItem="dCK-Ux-dSb" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="vxg-do-Fmz"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="otpIlustration" width="116" height="72"/>
+    </resources>
+</document>

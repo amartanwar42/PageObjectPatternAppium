@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InstructionTableViewCellIdentifier" rowHeight="0.0" id="KGk-i7-Jjw" userLabel="InstructionTableViewCell" customClass="InstructionTableViewCell" customModule="GoPay" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="383" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="383" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make sure you take the photo of your original KTP (not scanned or photocopy)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZG-hn-goz">
+                        <rect key="frame" x="36" y="11" width="331" height="21.5"/>
+                        <accessibility key="accessibilityConfiguration" identifier="label_kyc_instructions_text"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Beo-4x-kSz">
+                        <rect key="frame" x="16" y="21" width="4" height="4"/>
+                        <color key="backgroundColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="4" id="7PX-Kf-TDV"/>
+                            <constraint firstAttribute="width" constant="4" id="bLG-0W-qt0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Beo-4x-kSz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="4gP-hr-Gan"/>
+                    <constraint firstItem="UZG-hn-goz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="Cjw-tv-OeP"/>
+                    <constraint firstAttribute="bottom" secondItem="UZG-hn-goz" secondAttribute="bottom" constant="11" id="GPN-B4-CYc"/>
+                    <constraint firstAttribute="trailing" secondItem="UZG-hn-goz" secondAttribute="trailing" constant="16" id="Gj9-9z-OjC"/>
+                    <constraint firstItem="Beo-4x-kSz" firstAttribute="top" secondItem="UZG-hn-goz" secondAttribute="top" constant="10" id="UcC-ug-AD3"/>
+                    <constraint firstItem="UZG-hn-goz" firstAttribute="leading" secondItem="Beo-4x-kSz" secondAttribute="trailing" constant="16" id="UwK-cw-Vrq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="documentTextLabel" destination="UZG-hn-goz" id="LiN-I8-hge"/>
+            </connections>
+            <point key="canvasLocation" x="65.5" y="14"/>
+        </tableViewCell>
+    </objects>
+</document>

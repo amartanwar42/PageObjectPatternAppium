@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansProMedium.ttf">
+            <string>NeoSansPro-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserBlockView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="blockImageView" destination="JUW-Ao-Gcd" id="5Vb-rH-PnK"/>
+                <outlet property="buttonsSeparatorConstraint" destination="yQk-lF-iNt" id="iQU-KY-FVF"/>
+                <outlet property="closeButton" destination="FDD-ie-IAQ" id="G48-bC-fBp"/>
+                <outlet property="descriptionLabbel" destination="Zoo-l4-tZN" id="fro-UA-5N6"/>
+                <outlet property="primaryButton" destination="lD2-8j-Q7E" id="EFs-vC-BvD"/>
+                <outlet property="rightButton" destination="um0-6s-ipU" id="JYv-7m-PJC"/>
+                <outlet property="secondaryButton" destination="O3F-5R-q2r" id="D2g-2Q-K8x"/>
+                <outlet property="secondaryButtonHeightConstraint" destination="B8B-7Z-iSC" id="WLL-dn-xwg"/>
+                <outlet property="titleLabel" destination="KU9-cT-OU3" id="iA6-49-ttB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FDD-ie-IAQ">
+                    <rect key="frame" x="16" y="25" width="35" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="button_blockView_close"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="PCU-AU-mSs"/>
+                        <constraint firstAttribute="width" constant="35" id="aRu-TV-mcP"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" image="closeIconNew"/>
+                </button>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="um0-6s-ipU">
+                    <rect key="frame" x="335" y="25" width="24" height="35"/>
+                    <accessibility key="accessibilityConfiguration" identifier="button_blockView_right"/>
+                    <state key="normal" image="needHelp"/>
+                    <connections>
+                        <action selector="rightButtonClicked:" destination="-1" eventType="touchUpInside" id="ws1-eD-laY"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PsZ-89-YMH">
+                    <rect key="frame" x="0.0" y="196.5" width="375" height="274.5"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JUW-Ao-Gcd">
+                            <rect key="frame" x="51.5" y="0.0" width="272" height="172"/>
+                            <accessibility key="accessibilityConfiguration" identifier="image_blockView"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="JUW-Ao-Gcd" secondAttribute="height" multiplier="272:172" id="NXn-7o-k67"/>
+                                <constraint firstAttribute="width" priority="250" constant="272" id="YCv-f9-jfn"/>
+                                <constraint firstAttribute="height" priority="250" constant="172" id="x0F-Hq-CDe"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WALLET LOCKED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KU9-cT-OU3">
+                            <rect key="frame" x="113.5" y="192" width="149" height="20"/>
+                            <accessibility key="accessibilityConfiguration" identifier="label_blockView_title"/>
+                            <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zoo-l4-tZN">
+                            <rect key="frame" x="16.5" y="217" width="342.5" height="57.5"/>
+                            <accessibility key="accessibilityConfiguration" identifier="label_blockView_description"/>
+                            <string key="text">Due to suspicious activity, you cannot use your GO-PAY account temporarily. Please reach out to our customer care for further information.</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="JUW-Ao-Gcd" firstAttribute="top" secondItem="PsZ-89-YMH" secondAttribute="top" id="0xa-7y-0xw"/>
+                        <constraint firstItem="Zoo-l4-tZN" firstAttribute="top" secondItem="KU9-cT-OU3" secondAttribute="bottom" constant="5" id="6JV-Kc-f2d"/>
+                        <constraint firstItem="KU9-cT-OU3" firstAttribute="centerX" secondItem="PsZ-89-YMH" secondAttribute="centerX" id="BMh-OE-pQy"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KU9-cT-OU3" secondAttribute="trailing" constant="16" id="BeU-xe-E78"/>
+                        <constraint firstItem="KU9-cT-OU3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PsZ-89-YMH" secondAttribute="leading" constant="16" id="Twa-mE-hgx"/>
+                        <constraint firstItem="Zoo-l4-tZN" firstAttribute="centerX" secondItem="PsZ-89-YMH" secondAttribute="centerX" id="V4H-MI-UFs"/>
+                        <constraint firstItem="KU9-cT-OU3" firstAttribute="top" secondItem="JUW-Ao-Gcd" secondAttribute="bottom" constant="20" id="e7U-F3-zhv"/>
+                        <constraint firstItem="JUW-Ao-Gcd" firstAttribute="centerX" secondItem="PsZ-89-YMH" secondAttribute="centerX" id="fKu-Mm-VEb"/>
+                        <constraint firstAttribute="bottom" secondItem="Zoo-l4-tZN" secondAttribute="bottom" id="iTc-ak-VH9"/>
+                        <constraint firstItem="Zoo-l4-tZN" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PsZ-89-YMH" secondAttribute="leading" constant="16" id="kop-NC-Dqv"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Zoo-l4-tZN" secondAttribute="trailing" constant="16" id="zkP-qo-4lQ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O3F-5R-q2r">
+                    <rect key="frame" x="16" y="547" width="343" height="44"/>
+                    <accessibility key="accessibilityConfiguration" identifier="button_blockView_secondary"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="B8B-7Z-iSC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="14"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.23921568630000001" green="0.75294117650000003" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lD2-8j-Q7E">
+                    <rect key="frame" x="16" y="607" width="343" height="44"/>
+                    <color key="backgroundColor" red="0.27058823529411763" green="0.6705882352941176" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                    <accessibility key="accessibilityConfiguration" identifier="button_blockView_primary"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="iV1-Y6-Nbb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="NeoSansPro-Medium" family="Neo Sans Pro" pointSize="14"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PsZ-89-YMH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="FDD-ie-IAQ" secondAttribute="bottom" constant="10" id="7Fm-1c-Guw"/>
+                <constraint firstItem="PsZ-89-YMH" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" priority="250" id="7cn-mZ-JoN"/>
+                <constraint firstAttribute="trailing" secondItem="lD2-8j-Q7E" secondAttribute="trailing" constant="16" id="9E7-EK-AQ3"/>
+                <constraint firstAttribute="trailing" secondItem="PsZ-89-YMH" secondAttribute="trailing" id="CbS-KL-34F"/>
+                <constraint firstAttribute="trailing" secondItem="um0-6s-ipU" secondAttribute="trailing" constant="16" id="Dbl-H5-nMc"/>
+                <constraint firstItem="FDD-ie-IAQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="Lnx-vb-7w1"/>
+                <constraint firstAttribute="bottom" secondItem="lD2-8j-Q7E" secondAttribute="bottom" constant="16" id="OLk-ds-IcZ"/>
+                <constraint firstItem="PsZ-89-YMH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dCP-ue-RSQ"/>
+                <constraint firstItem="lD2-8j-Q7E" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="fha-IA-yo2"/>
+                <constraint firstItem="FDD-ie-IAQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="h7b-0d-0Gj"/>
+                <constraint firstAttribute="trailing" secondItem="O3F-5R-q2r" secondAttribute="trailing" constant="16" id="h9k-Pj-4Jg"/>
+                <constraint firstItem="O3F-5R-q2r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="iGp-pf-Be2"/>
+                <constraint firstItem="FDD-ie-IAQ" firstAttribute="bottom" secondItem="um0-6s-ipU" secondAttribute="bottom" id="oXd-IT-86v"/>
+                <constraint firstItem="FDD-ie-IAQ" firstAttribute="top" secondItem="um0-6s-ipU" secondAttribute="top" id="sHS-DI-Tpa"/>
+                <constraint firstItem="O3F-5R-q2r" firstAttribute="top" relation="greaterThanOrEqual" secondItem="PsZ-89-YMH" secondAttribute="bottom" constant="10" id="vUa-pM-Iyn"/>
+                <constraint firstItem="lD2-8j-Q7E" firstAttribute="top" secondItem="O3F-5R-q2r" secondAttribute="bottom" constant="16" id="yQk-lF-iNt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="34.5" y="44"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeIconNew" width="24" height="24"/>
+        <image name="needHelp" width="24" height="24"/>
+    </resources>
+</document>

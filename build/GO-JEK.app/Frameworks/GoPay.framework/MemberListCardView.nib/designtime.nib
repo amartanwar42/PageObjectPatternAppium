@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MemberListCardView" customModule="GoPay" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomShadowView" destination="OJ4-S4-Lpz" id="CYF-Hj-Erw"/>
+                <outlet property="proceedButtonHeightConstraint" destination="gDR-9O-HFf" id="l2F-OL-6kP"/>
+                <outlet property="proceedButtonView" destination="Awo-qr-gPQ" id="FPk-i6-FxF"/>
+                <outlet property="searchBar" destination="vMb-5g-8ET" id="yna-YJ-ltt"/>
+                <outlet property="tableView" destination="OSK-oF-hVA" id="aIk-wc-LNP"/>
+                <outlet property="tableViewBottomConstraint" destination="wdu-ka-5Aq" id="8gt-ZL-1MH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tEX-8e-e95">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Enter for name, phone number" translatesAutoresizingMaskIntoConstraints="NO" id="vMb-5g-8ET">
+                    <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="2XU-fp-2jX"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OSK-oF-hVA">
+                    <rect key="frame" x="0.0" y="100" width="414" height="686"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Tr8-dy-4a2"/>
+                        <outlet property="delegate" destination="-1" id="rvi-Rw-YPo"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJ4-S4-Lpz" userLabel="Bottom Shadow View" customClass="ShadowView" customModule="Asphalt">
+                    <rect key="frame" x="0.0" y="780" width="414" height="6"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="6" id="CbK-wB-p6s"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="separatorLeftInset">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="shadowPosition" value="bottom"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="separatorStyle" value="none"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Awo-qr-gPQ" userLabel="Procceed Button View">
+                    <rect key="frame" x="0.0" y="786" width="414" height="76"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="gDR-9O-HFf"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Awo-qr-gPQ" firstAttribute="bottom" secondItem="w9d-bP-641" secondAttribute="bottom" id="0oY-7D-I9v"/>
+                <constraint firstItem="OJ4-S4-Lpz" firstAttribute="leading" secondItem="w9d-bP-641" secondAttribute="leading" id="5YV-GA-mXA"/>
+                <constraint firstItem="vMb-5g-8ET" firstAttribute="top" secondItem="w9d-bP-641" secondAttribute="top" id="E1z-ij-4lU"/>
+                <constraint firstItem="OSK-oF-hVA" firstAttribute="leading" secondItem="w9d-bP-641" secondAttribute="leading" id="Ga4-LT-5jQ"/>
+                <constraint firstItem="Awo-qr-gPQ" firstAttribute="trailing" secondItem="w9d-bP-641" secondAttribute="trailing" id="K79-fz-UnC"/>
+                <constraint firstItem="OJ4-S4-Lpz" firstAttribute="top" secondItem="Awo-qr-gPQ" secondAttribute="top" constant="-6" id="T0Z-k9-0YJ"/>
+                <constraint firstItem="Awo-qr-gPQ" firstAttribute="leading" secondItem="w9d-bP-641" secondAttribute="leading" id="Vmf-Ht-cSa"/>
+                <constraint firstItem="w9d-bP-641" firstAttribute="trailing" secondItem="vMb-5g-8ET" secondAttribute="trailing" id="hPh-1Q-PEB"/>
+                <constraint firstItem="vMb-5g-8ET" firstAttribute="leading" secondItem="w9d-bP-641" secondAttribute="leading" id="kBo-rn-Qdx"/>
+                <constraint firstItem="OJ4-S4-Lpz" firstAttribute="trailing" secondItem="w9d-bP-641" secondAttribute="trailing" id="snB-Pc-hte"/>
+                <constraint firstItem="OSK-oF-hVA" firstAttribute="top" secondItem="vMb-5g-8ET" secondAttribute="bottom" id="vGc-bf-Zo0"/>
+                <constraint firstItem="w9d-bP-641" firstAttribute="bottom" secondItem="OSK-oF-hVA" secondAttribute="bottom" constant="76" id="wdu-ka-5Aq"/>
+                <constraint firstItem="w9d-bP-641" firstAttribute="trailing" secondItem="OSK-oF-hVA" secondAttribute="trailing" id="ycg-Kb-qFi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="w9d-bP-641"/>
+        </view>
+    </objects>
+</document>

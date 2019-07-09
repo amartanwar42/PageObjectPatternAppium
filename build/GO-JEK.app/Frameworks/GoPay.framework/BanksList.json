@@ -1,0 +1,728 @@
+[
+    {
+        "bank_code_member": "1290013",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH BALI",
+        "bic_member": "ABALIDBS",
+        "short_bank_name": "PT. BPD BALI"
+    },
+    {
+        "bank_code_member": "9450305",
+        "bank_name": "PT. BANK AGRIS",
+        "bic_member": "AGSSIDJA",
+        "short_bank_name": "BANK AGRIS"
+    },
+    {
+        "bank_code_member": "4940014",
+        "bank_name": "PT. BANK RAKYAT INDONESIA AGRONIAGA TBK.",
+        "bic_member": "AGTBIDJA",
+        "short_bank_name": "AGRONIAGA"
+    },
+    {
+        "bank_code_member": "0610306",
+        "bank_name": "PT. BANK ANZ INDONESIA",
+        "bic_member": "ANZBIDJX",
+        "short_bank_name": "ANZ INDONESIA"
+    },
+    {
+        "bank_code_member": "5170016",
+        "bank_name": "PT. BANK PANIN SYARIAH",
+        "bic_member": "ARFAIDJ1",
+        "short_bank_name": "BANK PANIN SYARIAH"
+    },
+    {
+        "bank_code_member": "0370028",
+        "bank_name": "PT. BANK ARTHA GRAHA INTERNASIONAL TBK.",
+        "bic_member": "ARTGIDJA",
+        "short_bank_name": "BAG INTERNASIONAL"
+    },
+    {
+        "bank_code_member": "5420012",
+        "bank_name": "PT. BANK ARTOS INDONESIA",
+        "bic_member": "ATOSIDJ1",
+        "short_bank_name": "BANK ARTOS"
+    },
+    {
+        "bank_code_member": "1670015",
+        "bank_name": "PT. BANK QNB INDONESIA TBK.",
+        "bic_member": "AWANIDJA",
+        "short_bank_name": "BANK QNB"
+    },
+    {
+        "bank_code_member": "0760010",
+        "bank_name": "PT. BANK BUMI ARTA",
+        "bic_member": "BBAIIDJA",
+        "short_bank_name": "BBA"
+    },
+    {
+        "bank_code_member": "0130475",
+        "bank_name": "PT. BANK PERMATA TBK.",
+        "bic_member": "BBBAIDJA",
+        "short_bank_name": "BANK PERMATA"
+    },
+    {
+        "bank_code_member": "0230016",
+        "bank_name": "PT. BANK UOB INDONESIA",
+        "bic_member": "BBIJIDJA",
+        "short_bank_name": "UOB INDONESIA"
+    },
+    {
+        "bank_code_member": "4410010",
+        "bank_name": "PT. BANK BUKOPIN Tbk.",
+        "bic_member": "BBUKIDJA",
+        "short_bank_name": "BUKOPIN"
+    },
+    {
+        "bank_code_member": "0540308",
+        "bank_name": "PT. BANK CAPITAL INDONESIA",
+        "bic_member": "BCIAIDJA",
+        "short_bank_name": "BANK CAPITAL"
+    },
+    {
+        "bank_code_member": "0110042",
+        "bank_name": "PT. BANK DANAMON INDONESIA Tbk.",
+        "bic_member": "BDINIDJA",
+        "short_bank_name": "BANK DANAMON"
+    },
+    {
+        "bank_code_member": "5230011",
+        "bank_name": "PT. BANK SAHABAT SAMPOERNA",
+        "bic_member": "BDIPIDJ1",
+        "short_bank_name": "BANK SAMPOERNA"
+    },
+    {
+        "bank_code_member": "1110012",
+        "bank_name": "PT. BANK DKI",
+        "bic_member": "BDKIIDJ1",
+        "short_bank_name": "BANK DKI"
+    },
+    {
+        "bank_code_member": "9500307",
+        "bank_name": "PT. BANK COMMONWEALTH",
+        "bic_member": "BICNIDJA",
+        "short_bank_name": "BANK COMMONWEALTH"
+    },
+    {
+        "bank_code_member": "5550018",
+        "bank_name": "BANK INDEX SELINDO",
+        "bic_member": "BIDXIDJA",
+        "short_bank_name": "BANK INDEX"
+    },
+    {
+        "bank_code_member": "0690300",
+        "bank_name": "BANK OF CHINA",
+        "bic_member": "BKCHIDJA",
+        "short_bank_name": "BOC"
+    },
+    {
+        "bank_code_member": "0080017",
+        "bank_name": "PT. BANK MANDIRI (PERSERO) TBK",
+        "bic_member": "BMRIIDJA",
+        "short_bank_name": "BANK MANDIRI"
+    },
+    {
+        "bank_code_member": "0220026",
+        "bank_name": "PT. BANK CIMB NIAGA TBK",
+        "bic_member": "BNIAIDJA",
+        "short_bank_name": "BANK CIMB"
+    },
+    {
+        "bank_code_member": "0090010",
+        "bank_name": "PT. BANK NEGARA INDONESIA (PERSERO)",
+        "bic_member": "BNINIDJA",
+        "short_bank_name": "BANK BNI"
+    },
+    {
+        "bank_code_member": "0420305",
+        "bank_name": "THE BANK OF TOKYO MITSUBISHI UFJ LTD.",
+        "bic_member": "BOTKIDJX",
+        "short_bank_name": "BTMU"
+    },
+    {
+        "bank_code_member": "0020307",
+        "bank_name": "PT. BANK RAKYAT INDONESIA (PERSERO)",
+        "bic_member": "BRINIDJA",
+        "short_bank_name": "BRI"
+    },
+    {
+        "bank_code_member": "2120001",
+        "bank_name": "PT. BANK WOORI SAUDARA INDONESIA 1906,TBK",
+        "bic_member": "BSDRIDJA",
+        "short_bank_name": "BANK WOORI SAUDARA"
+    },
+    {
+        "bank_code_member": "4510017",
+        "bank_name": "PT. BANK SYARIAH MANDIRI Tbk.",
+        "bic_member": "BSMDIDJA",
+        "short_bank_name": "BSM"
+    },
+    {
+        "bank_code_member": "1200016",
+        "bank_name": "PT. BPD SUMSEL DAN BABEL",
+        "bic_member": "BSSPIDSP",
+        "short_bank_name": "BPD SUMSEL BABEL"
+    },
+    {
+        "bank_code_member": "2000150",
+        "bank_name": "PT. BANK TABUNGAN NEGARA (PERSERO)",
+        "bic_member": "BTANIDJA",
+        "short_bank_name": "BTN"
+    },
+    {
+        "bank_code_member": "4850010",
+        "bank_name": "PT. BANK MNC INTERNASIONAL, TBK",
+        "bic_member": "BUMIIDJA",
+        "short_bank_name": "MNC BANK"
+    },
+    {
+        "bank_code_member": "5060016",
+        "bank_name": "PT. BANK MEGA SYARIAH",
+        "bic_member": "BUTGIDJ1",
+        "short_bank_name": "BANK MEGA SYARIAH"
+    },
+    {
+        "bank_code_member": "0140397",
+        "bank_name": "PT. BANK CENTRAL ASIA Tbk.",
+        "bic_member": "CENAIDJA",
+        "short_bank_name": "BCA"
+    },
+    {
+        "bank_code_member": "0950011",
+        "bank_name": "PT. BANK JTRUST INDONESIA, TBK",
+        "bic_member": "CICTIDJA",
+        "short_bank_name": "BANK JTRUST"
+    },
+    {
+        "bank_code_member": "0310305",
+        "bank_name": "CITIBANK, NA",
+        "bic_member": "CITIIDJX",
+        "short_bank_name": "CITIBANK"
+    },
+    {
+        "bank_code_member": "9490307",
+        "bank_name": "PT. BANK CTBC INDONESIA",
+        "bic_member": "CTCBIDJA",
+        "short_bank_name": "CTBC INDONESIA"
+    },
+    {
+        "bank_code_member": "0460307",
+        "bank_name": "PT. BANK DBS INDONESIA",
+        "bic_member": "DBSBIDJA",
+        "short_bank_name": "DBS"
+    },
+    {
+        "bank_code_member": "4220051",
+        "bank_name": "PT. BANK SYARIAH BRI",
+        "bic_member": "DJARIDJ1",
+        "short_bank_name": "SYARIAH BRI"
+    },
+    {
+        "bank_code_member": "0870010",
+        "bank_name": "PT. BANK EKONOMI RAHARJA",
+        "bic_member": "EKONIDJA",
+        "short_bank_name": "BANK EKONOMI"
+    },
+    {
+        "bank_code_member": "5580017",
+        "bank_name": "PT. BANK PUNDI INDONESIA",
+        "bic_member": "EKSTIDJ1",
+        "short_bank_name": "BANK PUNDI"
+    },
+    {
+        "bank_code_member": "1610017",
+        "bank_name": "PT. BANK GANESHA",
+        "bic_member": "GNESIDJA",
+        "short_bank_name": "BANK GANESHA"
+    },
+    {
+        "bank_code_member": "4840017",
+        "bank_name": "PT. BANK KEB HANA INDONESIA",
+        "bic_member": "HNBNIDJA",
+        "short_bank_name": "BANK KEB HANA"
+    },
+    {
+        "bank_code_member": "5670011",
+        "bank_name": "PT. BANK HARDA INTERNATIONAL",
+        "bic_member": "HRDAIDJ1",
+        "short_bank_name": "BANK HARDA"
+    },
+    {
+        "bank_code_member": "0410302",
+        "bank_name": "PT. BANK HSBC INDONESIA",
+        "bic_member": "HSBCIDJA",
+        "short_bank_name": "HSBC"
+    },
+    {
+        "bank_code_member": "0160131",
+        "bank_name": "PT. BANK MAYBANK INDONESIA Tbk.",
+        "bic_member": "IBBKIDJA",
+        "short_bank_name": "BANK MAYBANK"
+    },
+    {
+        "bank_code_member": "1640016",
+        "bank_name": "PT. BANK ICBC INDONESIA",
+        "bic_member": "ICBKIDJA",
+        "short_bank_name": "BANK ICBC"
+    },
+    {
+        "bank_code_member": "4980016",
+        "bank_name": "PT. BANK SBI INDONESIA",
+        "bic_member": "IDMOIDJ1",
+        "short_bank_name": "BANK SBI"
+    },
+    {
+        "bank_code_member": "5130014",
+        "bank_name": "PT. BANK INA PERDANA",
+        "bic_member": "INPBIDJ1",
+        "short_bank_name": "BANK INA"
+    },
+    {
+        "bank_code_member": "4720014",
+        "bank_name": "PT. BANK JASA JAKARTA",
+        "bic_member": "JSABIDJ1",
+        "short_bank_name": "BANK JASA JAKARTA"
+    },
+    {
+        "bank_code_member": "5350014",
+        "bank_name": "PT. BANK KESEJAHTERAAN EKONOMI",
+        "bic_member": "KSEBIDJ1",
+        "short_bank_name": "BANK KESEJAHTERAAN"
+    },
+    {
+        "bank_code_member": "5030017",
+        "bank_name": "PT. BANK NATIONALNOBU",
+        "bic_member": "LFIBIDJ1",
+        "short_bank_name": "BANK NATIONALNOBU"
+    },
+    {
+        "bank_code_member": "5260010",
+        "bank_name": "PT. BANK DINAR INDONESIA",
+        "bic_member": "LMANIDJ1",
+        "short_bank_name": "BANK DINAR"
+    },
+    {
+        "bank_code_member": "5480010",
+        "bank_name": "PT. BANK MULTI ARTA SENTOSA",
+        "bic_member": "MASBIDJ1",
+        "short_bank_name": "BANK MAS"
+    },
+    {
+        "bank_code_member": "1570018",
+        "bank_name": "PT. BANK MASPION",
+        "bic_member": "MASDIDJ1",
+        "short_bank_name": "BANK MASPION"
+    },
+    {
+        "bank_code_member": "0970017",
+        "bank_name": "PT. BANK MAYAPADA Tbk.",
+        "bic_member": "MAYAIDJA",
+        "short_bank_name": "BANK MAYAPADA"
+    },
+    {
+        "bank_code_member": "5530012",
+        "bank_name": "PT. BANK MAYORA",
+        "bic_member": "MAYOIDJA",
+        "short_bank_name": "BANK MAYORA"
+    },
+    {
+        "bank_code_member": "9470302",
+        "bank_name": "PT. BANK MAYBANK SYARIAH INDONESIA",
+        "bic_member": "MBBEIDJA",
+        "short_bank_name": "MAYBANK SYARIAH"
+    },
+    {
+        "bank_code_member": "0360300",
+        "bank_name": "PT. BANK WINDU KENTJANA INTERNASIONAL, TBK",
+        "bic_member": "MCORIDJA",
+        "short_bank_name": "BANK WINDU KENTJANA"
+    },
+    {
+        "bank_code_member": "1510010",
+        "bank_name": "PT. BANK MESTIKA DHARMA",
+        "bic_member": "MEDHIDS1",
+        "short_bank_name": "BANK MESTIKA"
+    },
+    {
+        "bank_code_member": "1520013",
+        "bank_name": "PT. BANK SHINHAN INDONESIA",
+        "bic_member": "MEEKIDJ1",
+        "short_bank_name": "BANK SHINHAN IND"
+    },
+    {
+        "bank_code_member": "4260121",
+        "bank_name": "PT. BANK MEGA Tbk.",
+        "bic_member": "MEGAIDJA",
+        "short_bank_name": "BANK MEGA"
+    },
+    {
+        "bank_code_member": "1470011",
+        "bank_name": "PT. BANK MUAMALAT INDONESIA",
+        "bic_member": "MUABIDJA",
+        "short_bank_name": "BANK MUAMALAT"
+    },
+    {
+        "bank_code_member": "9480304",
+        "bank_name": "PT. BANK OCBC NISP, Tbk.",
+        "bic_member": "NISPIDJA",
+        "short_bank_name": "BANK OCBC NISP"
+    },
+    {
+        "bank_code_member": "1450015",
+        "bank_name": "PT. BANK NUSANTARA PARAHYANGAN",
+        "bic_member": "NUPAIDJ6",
+        "short_bank_name": "BN PARAHYANGAN"
+    },
+    {
+        "bank_code_member": "1160017",
+        "bank_name": "PT. BANK ACEH",
+        "bic_member": "PDACIDJ1",
+        "short_bank_name": "BANK ACEH"
+    },
+    {
+        "bank_code_member": "1330012",
+        "bank_name": "PT. BPD BENGKULU",
+        "bic_member": "PDBKIDJ1",
+        "short_bank_name": "BANK BENGKULU"
+    },
+    {
+        "bank_code_member": "1320019",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH PAPUA",
+        "bic_member": "PDIJIDJ1",
+        "short_bank_name": "BPD PAPUA"
+    },
+    {
+        "bank_code_member": "1100019",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH JABAR DAN BANTEN",
+        "bic_member": "PDJBIDJA",
+        "short_bank_name": "BANK JABAR"
+    },
+    {
+        "bank_code_member": "1130348",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH JAWA TENGAH",
+        "bic_member": "PDJGIDJ1",
+        "short_bank_name": "BANK JATENG"
+    },
+    {
+        "bank_code_member": "1150014",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH JAMBI",
+        "bic_member": "PDJMIDJ1",
+        "short_bank_name": "BPD JAMBI"
+    },
+    {
+        "bank_code_member": "1140011",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH JATIM",
+        "bic_member": "PDJTIDJ1",
+        "short_bank_name": "BANK JATIM"
+    },
+    {
+        "bank_code_member": "1230015",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH KALBAR",
+        "bic_member": "PDKBIDJ1",
+        "short_bank_name": "BPD KALBAR"
+    },
+    {
+        "bank_code_member": "1250011",
+        "bank_name": "PT. BPD KALIMANTAN TENGAH",
+        "bic_member": "PDKGIDJ1",
+        "short_bank_name": "BPD KALTENG"
+    },
+    {
+        "bank_code_member": "1220012",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH KALSEL",
+        "bic_member": "PDKSIDJ1",
+        "short_bank_name": "BPD KALSEL"
+    },
+    {
+        "bank_code_member": "1240018",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH KALTIM",
+        "bic_member": "PDKTIDJ1",
+        "short_bank_name": "BPD KALTIM"
+    },
+    {
+        "bank_code_member": "1210051",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH LAMPUNG",
+        "bic_member": "PDLPIDJ1",
+        "short_bank_name": "BANK LAMPUNG"
+    },
+    {
+        "bank_code_member": "1310016",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH MALUKU",
+        "bic_member": "PDMLIDJ1",
+        "short_bank_name": "BANK MALUKU"
+    },
+    {
+        "bank_code_member": "1280010",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH NTB",
+        "bic_member": "PDNBIDJ1",
+        "short_bank_name": "BANK NTB"
+    },
+    {
+        "bank_code_member": "1300013",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH NTT",
+        "bic_member": "PDNTIDJ1",
+        "short_bank_name": "BPD NTT"
+    },
+    {
+        "bank_code_member": "1190016",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH RIAU KEPRI",
+        "bic_member": "PDRIIDJA",
+        "short_bank_name": "BANK RIAU"
+    },
+    {
+        "bank_code_member": "1180013",
+        "bank_name": "PT. BANK NAGARI",
+        "bic_member": "PDSBIDJ1",
+        "short_bank_name": "BANK NAGARI"
+    },
+    {
+        "bank_code_member": "1170010",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH SUMUT",
+        "bic_member": "PDSUIDJ1",
+        "short_bank_name": "BANK SUMUT"
+    },
+    {
+        "bank_code_member": "1340015",
+        "bank_name": "PT. BPD SULAWESI TENGAH",
+        "bic_member": "PDWGIDJ1",
+        "short_bank_name": "BPD SULTENG"
+    },
+    {
+        "bank_code_member": "1350018",
+        "bank_name": "PT. BPD SULAWESI TENGGARA",
+        "bic_member": "PDWRIDJ1",
+        "short_bank_name": "BPD SULTRA"
+    },
+    {
+        "bank_code_member": "1260027",
+        "bank_name": "PT. BANK SULSELBAR",
+        "bic_member": "PDWSIDJ1",
+        "short_bank_name": "BANK SULSELBAR"
+    },
+    {
+        "bank_code_member": "1270017",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH SULUT",
+        "bic_member": "PDWUIDJ1",
+        "short_bank_name": "BPD SULUT"
+    },
+    {
+        "bank_code_member": "1120015",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH DIY",
+        "bic_member": "PDYKIDJ1",
+        "short_bank_name": "BANK BPD DIY"
+    },
+    {
+        "bank_code_member": "0190017",
+        "bank_name": "PT. PANIN BANK Tbk.",
+        "bic_member": "PINBIDJA",
+        "short_bank_name": "PANIN BANK"
+    },
+    {
+        "bank_code_member": "5200012",
+        "bank_name": "PT. PRIMA MASTER BANK",
+        "bic_member": "PMASIDJ1",
+        "short_bank_name": "PRIMA MASTER"
+    },
+    {
+        "bank_code_member": "5470046",
+        "bank_name": "PT. BANK TABUNGAN PENSIUNAN NASIONAL SYARIAH",
+        "bic_member": "PUBAIDJ1",
+        "short_bank_name": "BANK BTPN SYARIAH"
+    },
+    {
+        "bank_code_member": "0890016",
+        "bank_name": "PT. BANK RABOBANK INTERNATIONAL INDONESIA",
+        "bic_member": "RABOIDJA",
+        "short_bank_name": "RABOBANK"
+    },
+    {
+        "bank_code_member": "5010011",
+        "bank_name": "PT. BANK ROYAL INDONESIA",
+        "bic_member": "ROYBIDJ1",
+        "short_bank_name": "BANK ROYAL"
+    },
+    {
+        "bank_code_member": "1530016",
+        "bank_name": "PT. BANK SINARMAS",
+        "bic_member": "SBJKIDJA",
+        "short_bank_name": "BANK SINARMAS"
+    },
+    {
+        "bank_code_member": "0500306",
+        "bank_name": "STANDARD CHARTERED BANK",
+        "bic_member": "SCBLIDJX",
+        "short_bank_name": "STANDCHARD"
+    },
+    {
+        "bank_code_member": "5210031",
+        "bank_name": "PT. BANK SYARIAH BUKOPIN",
+        "bic_member": "SDOBIDJ1",
+        "short_bank_name": "BANK SYARIAH BUKOPIN"
+    },
+    {
+        "bank_code_member": "0450304",
+        "bank_name": "PT. BANK SUMITOMO MITSUI INDONESIA",
+        "bic_member": "SUNIIDJA",
+        "short_bank_name": "SUMITOMO"
+    },
+    {
+        "bank_code_member": "4050072",
+        "bank_name": "PT. BANK VICTORIA SYARIAH",
+        "bic_member": "SWAGIDJ1",
+        "short_bank_name": "BANK VICTORIASYARIAH"
+    },
+    {
+        "bank_code_member": "1460047",
+        "bank_name": "PT. BANK OF INDIA INDONESIA, TBK",
+        "bic_member": "SWBAIDJ1",
+        "short_bank_name": "BANK OF INDIA IND"
+    },
+    {
+        "bank_code_member": "1169924",
+        "bank_name": "PT. BANK ACEH UNIT USAHA SYARIAH",
+        "bic_member": "SYACIDJ1",
+        "short_bank_name": "BANK ACEH UUS"
+    },
+    {
+        "bank_code_member": "0139926",
+        "bank_name": "PT. BANK PERMATA,TBK UNIT USAHA SYARIAH",
+        "bic_member": "SYBBIDJ1",
+        "short_bank_name": "BANK PERMATA UUS"
+    },
+    {
+        "bank_code_member": "0119920",
+        "bank_name": "PT. BANK DANAMON INDONESIA UNIT USAHA SYARIAH",
+        "bic_member": "SYBDIDJ1",
+        "short_bank_name": "BANK DANAMON UUS"
+    },
+    {
+        "bank_code_member": "0169925",
+        "bank_name": "PT. BANK MAYBANK INDONESIA Tbk. UNIT USAHA SYARIAH",
+        "bic_member": "SYBKIDJ1",
+        "short_bank_name": "BANK MAYBANK UUS"
+    },
+    {
+        "bank_code_member": "2009928",
+        "bank_name": "PT. BANK TABUNGAN NEGARA (PERSERO) UNIT USAHA SYARIAH",
+        "bic_member": "SYBTIDJ1",
+        "short_bank_name": "BTN UUS"
+    },
+    {
+        "bank_code_member": "5360017",
+        "bank_name": "PT. BANK BCA SYARIAH",
+        "bic_member": "SYCAIDJ1",
+        "short_bank_name": "BANK BCA SYARIAH"
+    },
+    {
+        "bank_code_member": "1119929",
+        "bank_name": "PT. BANK DKI UNIT USAHA SYARIAH",
+        "bic_member": "SYDKIDJ1",
+        "short_bank_name": "BANK DKI UUS"
+    },
+    {
+        "bank_code_member": "4250018",
+        "bank_name": "PT. BANK JABAR BANTEN SYARIAH",
+        "bic_member": "SYJBIDJ1",
+        "short_bank_name": "BANK JABAR SYARIAH"
+    },
+    {
+        "bank_code_member": "1139925",
+        "bank_name": "PT. BPD JAWA TENGAH UNIT USAHA SYARIAH",
+        "bic_member": "SYJGIDJ1",
+        "short_bank_name": "BANK JATENG UUS"
+    },
+    {
+        "bank_code_member": "1149928",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH JATIM - UNIT USAHA SYARIAH",
+        "bic_member": "SYJTIDJ1",
+        "short_bank_name": "BANK JATIM - UUS"
+    },
+    {
+        "bank_code_member": "1239922",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH KALBAR UUS",
+        "bic_member": "SYKBIDJ1",
+        "short_bank_name": "BPD KALBAR UUS"
+    },
+    {
+        "bank_code_member": "1229929",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH KALSEL - UNIT USAHA SYARIAH",
+        "bic_member": "SYKSIDJ1",
+        "short_bank_name": "BPD KALSEL UUS"
+    },
+    {
+        "bank_code_member": "1249925",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH KALTIM - UNIT USAHA SYARIAH",
+        "bic_member": "SYKTIDJ1",
+        "short_bank_name": "BPD KALTIM UUS"
+    },
+    {
+        "bank_code_member": "0229920",
+        "bank_name": "PT. BANK CIMB NIAGA TBK - UNIT USAHA SYARIAH",
+        "bic_member": "SYNAIDJ1",
+        "short_bank_name": "BANK CIMB NIAGA UUS"
+    },
+    {
+        "bank_code_member": "4270027",
+        "bank_name": "PT BANK BNI SYARIAH",
+        "bic_member": "SYNIIDJ1",
+        "short_bank_name": "BNI SYARIAH"
+    },
+    {
+        "bank_code_member": "0289928",
+        "bank_name": "PT. BANK OCBC NISP TBK. - UNIT USAHA SYARIAH",
+        "bic_member": "SYONIDJ1",
+        "short_bank_name": "BANK OCBC NISP - UUS"
+    },
+    {
+        "bank_code_member": "1209923",
+        "bank_name": "PT. BPD SUMSEL DAN BABEL UNIT USAHA SYARIAH",
+        "bic_member": "SYSSIDJ1",
+        "short_bank_name": "BPD SUMSEL BABEL UUS"
+    },
+    {
+        "bank_code_member": "1179927",
+        "bank_name": "PT. BANK PEMBANGUNAN DAERAH SUMUT UUS",
+        "bic_member": "SYSUIDJ1",
+        "short_bank_name": "BPD SUMUT UUS"
+    },
+    {
+        "bank_code_member": "1539923",
+        "bank_name": "PT. BANK SINARMAS UNIT USAHA SYARIAH",
+        "bic_member": "SYTBIDJ1",
+        "short_bank_name": "BANK SINARMAS UUS"
+    },
+    {
+        "bank_code_member": "1269947",
+        "bank_name": "PT. BANK SULSELBAR UNIT USAHA SYARIAH",
+        "bic_member": "SYWSIDJ1",
+        "short_bank_name": "BANK SULSELBAR UUS"
+    },
+    {
+        "bank_code_member": "1129922",
+        "bank_name": "PT.BANK PEMBANGUNAN DAERAH DIY UNIT USAHA SYARIAH",
+        "bic_member": "SYYKIDJ1",
+        "short_bank_name": "BANK BPD DIY UUS"
+    },
+    {
+        "bank_code_member": "2130101",
+        "bank_name": "PT. BANK BTPN",
+        "bic_member": "TAPEIDJ1",
+        "short_bank_name": "BTPN"
+    },
+    {
+        "bank_code_member": "5660018",
+        "bank_name": "PT. BANK VICTORIA INTERNATIONAL",
+        "bic_member": "VICTIDJ1",
+        "short_bank_name": "BANK VICTORIA"
+    },
+    {
+        "bank_code_member": "4900012",
+        "bank_name": "PT. BANK YUDHA BHAKTI",
+        "bic_member": "YUDBIDJ1",
+        "short_bank_name": "BANK YUDHA BHAKTI"
+    },
+    {
+        "bank_code_member": "5640012",
+        "bank_name": "PT. BANK MANDIRI TASPEN POS",
+        "bic_member": "SIHBIDJ1",
+        "short_bank_name": "BANK MANDIRI TASPEN POS"
+    }
+]
